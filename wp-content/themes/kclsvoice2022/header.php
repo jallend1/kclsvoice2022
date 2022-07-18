@@ -11,7 +11,12 @@
     <header>
     <div class="logo">
         <a href="<?php echo home_url(); ?>">
-            <img src="<?php echo get_theme_file_uri('assets/images/local1857logo.png'); ?>" alt="KCLS Voice Logo" >
+            <?php 
+                if(has_custom_logo()) {
+                    the_custom_logo();
+                } else { ?>
+                    <img src="<?php echo get_theme_file_uri('assets/images/local1857logo.png'); ?>" alt="KCLS Voice Logo" >
+                <?php } ?>        
         </a>    
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
