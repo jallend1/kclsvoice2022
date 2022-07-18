@@ -1,7 +1,9 @@
 <?php
 
 function kcls_voice_styles() {
-    wp_enqueue_style( 'kcls-voice-main-css', get_stylesheet_uri(), array(), filemtime(get_template_directory() . '/style.css'), false);
+    // Enqueues Google Font Inter
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Inter:400,700', array(), '1.0.0' );
+    wp_enqueue_style( 'kcls-voice-main-css', get_stylesheet_uri(), ['google-fonts'], filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_script('kcls-voice-custom-script', get_template_directory_uri() . '/assets/js/script.js', array(), filemtime(get_template_directory() . '/assets/js/script.js'), true );
 }
 

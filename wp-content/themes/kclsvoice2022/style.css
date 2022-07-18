@@ -15,5 +15,33 @@ This theme, like WordPress, is licensed under the GPL.
 */
 
 body {
-  background-color: red;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.menu {
+  height: 80px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.menu-item {
+  padding: 0 1.2rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: black;
 }
