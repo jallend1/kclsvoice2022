@@ -15,9 +15,12 @@ This theme, like WordPress, is licensed under the GPL.
 */
 
 body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-header {
+nav {
   display: flex;
   justify-content: space-between;
 }
@@ -32,7 +35,6 @@ header {
   display: flex;
   align-items: center;
   margin: 0;
-  font-family: 'Inter', sans-serif;
 }
 
 .menu-item {
@@ -44,4 +46,58 @@ header {
   font-weight: bold;
   font-size: 0.75rem;
   color: black;
+}
+
+.kcls-main-header {
+  color: white;
+  width: 100vw;
+  min-height: 60vh;
+  background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)),
+    url(./assets/images/snoqualmie.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.left-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.left-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.left-header p {
+  line-height: 1.5rem;
+  max-width: 80%;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.cta-button {
+  background-color: #4f954f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 15px;
 }
