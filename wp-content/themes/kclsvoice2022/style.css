@@ -102,3 +102,23 @@ nav {
   border-radius: 15px;
   max-width: 300px;
 }
+
+.kcls-contact-boxes {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.kcls-contact-box {
+  text-align: center;
+}
+
+.kcls-contact-box img {
+  max-width: 100px;
+  border-radius: 30px;
+}
+
+.kcls-contact-box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
