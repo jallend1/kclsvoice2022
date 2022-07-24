@@ -28,6 +28,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  background-color: transparent;
 }
 
 .logo img {
@@ -53,7 +54,7 @@ nav {
   color: white;
 }
 
-.kcls-main-header {
+.kcls-main-banner {
   color: white;
   width: 100vw;
   min-height: 60vh;
@@ -62,11 +63,6 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
-
-.kcls-main-header-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 2rem;
