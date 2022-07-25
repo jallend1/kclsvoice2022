@@ -65,8 +65,7 @@ nav {
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  padding-top: 200px;
+  padding: 200px 2rem 2rem 2rem;
 }
 
 .left-header {
