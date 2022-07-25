@@ -132,3 +132,10 @@ nav {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.kcls-recent-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 2rem;
+}
