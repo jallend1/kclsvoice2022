@@ -91,9 +91,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./save */ "./src/save.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./block.json */ "./src/block.json");
-/* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
-
+/* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
 
 
 
@@ -103,7 +101,7 @@ __webpack_require__.r(__webpack_exports__);
   title: "KCLS - Hero",
   icon: "admin-customizer",
   category: "common",
-  edit: _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_5__["default"],
+  edit: _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_4__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
 
@@ -234,16 +232,6 @@ function _extends() {
   };
   return _extends.apply(this, arguments);
 }
-
-/***/ }),
-
-/***/ "./src/block.json":
-/*!************************!*\
-  !*** ./src/block.json ***!
-  \************************/
-/***/ ((module) => {
-
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"create-block/kcls-custom-blocks","version":"1.0.0","title":"Kcls Custom Blocks","category":"widgets","icon":"smiley","description":"Custom blocks for KCLS Voice website","supports":{"html":false},"textdomain":"kcls-custom-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
