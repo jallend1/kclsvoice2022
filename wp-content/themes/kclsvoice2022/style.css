@@ -136,7 +136,50 @@ nav {
 
 .kcls-recent-posts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'main main side-1 side-2'
+    'main main side-3 side-4';
   grid-gap: 1rem;
   padding: 2rem;
+  height: 200px;
+}
+
+.kcls-recent-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 1rem;
+}
+
+.left-column h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kcls-recent-post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kcls-recent-post-time {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.kcls-most-recent-post {
+  grid-area: main;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
 }
