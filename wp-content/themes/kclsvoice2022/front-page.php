@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div class="kcls-main-banner">
+<div class="kcls-front-page">
+    <div class="kcls-main-banner">
         <div class="left-header">
             <h1>Local 1857</h1>
             <h2>King County Library System employees are stronger together.
@@ -11,6 +12,7 @@
         <div class="right-header">
             <?php get_template_part('template-parts/kcls-contact-boxes'); ?>
         </div>
-</div>
+    </div>
     <?php get_template_part('template-parts/kcls-recent-news'); ?>
-<?php get_footer(); ?>
+    </div>
+    <?php get_footer(); ?>

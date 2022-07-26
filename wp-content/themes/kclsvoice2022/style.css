@@ -16,6 +16,8 @@ This theme, like WordPress, is licensed under the GPL.
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -59,13 +61,22 @@ nav {
   color: white;
 }
 
+/* ************** */
+/* * FRONT PAGE * */
+/* ************** */
+
+.kcls-front-page {
+  display: flex;
+  flex-direction: column;
+}
+
 /* *********** */
 /* MAIN BANNER */
 /* *********** */
 
 .kcls-main-banner {
   color: white;
-  width: 100vw;
+  width: 100%;
   min-height: 60vh;
   background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)),
     url(./assets/images/snoqualmie.jpg);
@@ -150,7 +161,6 @@ nav {
     'main main side-1 side-2'
     'main main side-3 side-4';
   grid-gap: 1rem;
-  height: 200px;
 }
 
 .kcls-recent-post {
@@ -159,18 +169,18 @@ nav {
   grid-gap: 1rem;
 }
 
-.left-column {
+.news-left-column {
   display: flex;
   flex-direction: column;
 }
 
-.left-column h2 {
+.news-left-column h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
 
-.right-column {
+.news-right-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,7 +203,25 @@ nav {
   flex-direction: column;
 }
 
+.news-left-column > main {
+  padding-left: 1rem;
+}
+
+.kcls-additional-post {
+  margin-top: 1rem;
+}
+
 .kcls-section-title {
-  padding: 0;
-  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.kcls-heading {
+  width: 80%;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #1d548c;
+  padding: 1.1rem 3rem;
 }

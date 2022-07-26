@@ -7,31 +7,31 @@
 $the_query = new WP_Query($args); ?>
 
 <div class="kcls-news">
-    <header class="kcls-section-title">
-        <h2 class="kcls-heading">Latest News</h2>
-    </header>
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <!-- If current post is most recent, applies unique styling -->      
-                    <div 
-                        class="kcls-recent-post <?php 
-                                if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
-                                else echo 'kcls-additional-post';
-                            ?>">
-                    <div class="left-column">
-                        <div> 
-                            <h2><?php the_title(); ?></h2>
-                            <p class="kcls-recent-post-time"><?php the_time(); ?></p>
-                        </div>
-                        <!-- Shows excerpt only for most recent post -->
-                        <?php if($the_query->current_post === 0) { ?>
-                            <main>
-                                <p><?php the_excerpt(); ?></p>
-                            </main>
+            <div class="kcls-recent-post <?php 
+                            // If current post is most recent, applies unique styling       
+                            if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
+                            else echo 'kcls-additional-post';
+                        ?>">
+                    <div class="news-left-column">    
+                    <?php if($the_query->current_post === 0) { ?>
+                            <header class="kcls-section-title">
+                                <h2 class="kcls-heading">Latest News</h2>
+                            </header>      
                         <?php } ?>
+                        <main>
+                            <h3><?php the_title(); ?></h3>
+                            <p class="kcls-recent-post-time"><?php the_time(); ?></p>
+                            <?php 
+                                // Shows excerpt only for most recent post
+                                if($the_query->current_post === 0) { ?>
+                                    <p><?php the_excerpt(); ?></p>
+                            <?php } ?>
+                        </main>
                     </div>
-                    <div class="right-column">
+                    <div class="news-right-column">
                         <?php if ( has_post_thumbnail() ) ?>
                         <div class="kcls-recent-post-thumbnail">
                             <?php the_post_thumbnail('medium'); ?>
