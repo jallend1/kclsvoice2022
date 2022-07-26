@@ -1,5 +1,10 @@
 <?php get_header(); ?>
-
-<?php get_template_part('template-parts/kcls-recent-news'); ?>
+<?php 
+    while(have_posts()) {
+        the_post();
+        the_content(); ?>
+        <hr />
+    <?php }
+?>
 
 <?php get_footer(); ?>
