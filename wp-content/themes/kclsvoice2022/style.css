@@ -147,14 +147,13 @@ nav {
     'main main side-1 side-2'
     'main main side-3 side-4';
   grid-gap: 1rem;
-  padding: 2rem;
   height: 200px;
 }
 
 .kcls-recent-post {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 1rem;
+  grid-gap: 1rem;
 }
 
 .left-column {
@@ -191,8 +190,7 @@ nav {
   flex-direction: column;
 }
 
-.kcls-heading {
-  background-color: red;
-  width: 100%;
+.kcls-section-title {
+  padding: 0;
   margin: 0;
 }
