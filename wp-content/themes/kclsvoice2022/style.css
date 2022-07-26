@@ -228,3 +228,47 @@ nav {
   background-color: #1d548c;
   padding: 1.1rem 3rem;
 }
+
+/* *************** */
+/* * BLOG BANNER * */
+/* *************** */
+
+.kcls-blog-banner {
+  margin: 0;
+  color: white;
+  width: 100%;
+  min-height: 40vh;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.3)),
+    url(./assets/images/blog.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kcls-blog-details {
+  max-width: 60%;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #1d548c;
+  padding: 1.1rem 3rem;
+}
+
+.kcls-publish-details {
+  font-size: 0.75rem;
+}
+
+.kcls-blog-post {
+  max-width: 80%;
+  margin: auto;
+  margin: 2rem;
+}
+
+.kcls-blog-post-content > p {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
