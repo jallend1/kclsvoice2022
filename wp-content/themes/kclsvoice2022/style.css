@@ -137,13 +137,17 @@ nav {
 .kcls-recent-posts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     'main main side-1 side-2'
     'main main side-3 side-4';
   grid-gap: 1rem;
   padding: 2rem;
   height: 200px;
+}
+
+.kcls-heading {
+  background-color: red;
 }
 
 .kcls-recent-post {
@@ -177,6 +181,8 @@ nav {
 
 .kcls-most-recent-post {
   grid-area: main;
+  display: flex;
+  flex-direction: column;
 }
 
 .left-column {
