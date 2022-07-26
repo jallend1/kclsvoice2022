@@ -27,7 +27,7 @@ $the_query = new WP_Query($args); ?>
                             <?php 
                                 // Shows excerpt only for most recent post
                                 if($the_query->current_post === 0) { ?>
-                                    <p><?php the_excerpt(); ?></p>
+                                    <div class="kcls-main-news-excerpt"><?php the_excerpt(); ?></div>
                             <?php } ?>
                         </main>
                     </div>
