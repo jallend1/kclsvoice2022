@@ -193,4 +193,6 @@ nav {
 
 .kcls-heading {
   background-color: red;
+  width: 100%;
+  margin: 0;
 }

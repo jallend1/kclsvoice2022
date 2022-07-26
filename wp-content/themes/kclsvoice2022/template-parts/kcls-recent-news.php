@@ -12,13 +12,12 @@ $the_query = new WP_Query($args); ?>
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                <!-- If current post is most recent, applies unique styling -->
-                <?php 
-                    if($the_query->current_post === 0) {?>
-                    <div class="kcls-recent-post kcls-most-recent-post">
-                <?php } else { ?>
-                    <div class="kcls-recent-post kcls-additional-post">
-                        <?php } ?>
+                <!-- If current post is most recent, applies unique styling -->      
+                    <div 
+                        class="kcls-recent-post <?php 
+                                if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
+                                else echo 'kcls-additional-post';
+                            ?>">
                     <div class="left-column">
                         <div> 
                             <h2><?php the_title(); ?></h2>
