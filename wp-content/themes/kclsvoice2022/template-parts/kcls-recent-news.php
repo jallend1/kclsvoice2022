@@ -6,7 +6,7 @@
 );
 $the_query = new WP_Query($args); ?>
 
-<!-- <div class="kcls-news"> -->
+<div class="kcls-news">
     <header class="kcls-section-title">
         <h2 class="kcls-heading">Latest News</h2>
     </header>
@@ -41,4 +41,4 @@ $the_query = new WP_Query($args); ?>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
     </div>
-<!-- </div> -->
+</div>
