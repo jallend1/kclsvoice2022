@@ -23,7 +23,7 @@ $the_query = new WP_Query($args); ?>
                         <?php } ?>
                         <main>
                             <h3><?php the_title(); ?></h3>
-                            <p class="kcls-recent-post-time"><?php the_time(); ?></p>
+                            <p class="kcls-recent-post-time"><?php the_date(); ?></p>
                             <?php 
                                 // Shows excerpt only for most recent post
                                 if($the_query->current_post === 0) { ?>
