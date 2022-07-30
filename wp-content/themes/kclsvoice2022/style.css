@@ -108,6 +108,7 @@ nav {
 }
 
 .left-header p {
+  padding: 1.25rem 0;
   line-height: 1.5rem;
   max-width: 500px;
 }
@@ -116,6 +117,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 2rem;
 }
 
@@ -129,6 +131,8 @@ nav {
   background-color: rgba(48, 45, 45, 0.678);
   border: #4f954f solid 1px;
   border-radius: 15px;
+  max-width: 600px;
+  padding: 1.5rem;
 }
 
 .kcls-contact-box {
