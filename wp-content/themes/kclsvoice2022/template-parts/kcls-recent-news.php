@@ -48,6 +48,10 @@ $the_query = new WP_Query($args); ?>
         <?php wp_reset_postdata(); ?>
     </div>
     <footer class="kcls-recent-news-footer">
-        <button class="kcls-view-blog-button">See More News...</button>
+        <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
+            <button class="kcls-view-blog-button">
+                See More News...
+            </button>
+        </a>
     </footer>
 </div>
