@@ -21,6 +21,17 @@ function kcls_voice_theme_setup(){
     add_theme_support('post-thumbnails');
 }
 
+function kcls_get_post_image() {
+    global $post;
+    $first_img = '';
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+    if(!$first_img) {
+        $first_img = get_template_directory_uri() . '/assets/images/local1857logo.png';
+    }
+    return $first_img;
+}
+
 add_action( 'init', 'kcls_voice_register_menus' );
 add_action( 'wp_enqueue_scripts', 'kcls_voice_styles' );
 add_action( 'after_setup_theme', 'kcls_voice_theme_setup' );

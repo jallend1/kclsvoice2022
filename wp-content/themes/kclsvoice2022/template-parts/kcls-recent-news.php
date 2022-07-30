@@ -23,8 +23,14 @@ $the_query = new WP_Query($args); ?>
                     </div>
                     <div class="kcls-news-image">
                         <div class="kcls-recent-post-thumbnail">
-                            <?php if ( has_post_thumbnail() ) ?>
-                            <?php the_post_thumbnail('medium'); ?>
+                            <?php if ( has_post_thumbnail() ){
+                                the_post_thumbnail('medium');
+                            } 
+                            // If no featured image, display the first image from the post or default logo
+                            else {
+                                $first_img = kcls_get_post_image();
+                                echo '<img src="' . $first_img . '" alt="' . get_the_title() . '">';
+                            } ?> 
                         </div>
                     </div>
                 </div>
