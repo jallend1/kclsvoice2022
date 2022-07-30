@@ -7,6 +7,9 @@
 $the_query = new WP_Query($args); ?>
 
 <div class="kcls-news">
+    <header class="kcls-section-title">
+        <h2 class="kcls-heading">Latest News</h2>
+    </header>      
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -16,11 +19,6 @@ $the_query = new WP_Query($args); ?>
                             else echo 'kcls-additional-post';
                         ?>">
                     <div class="news-left-column">    
-                    <?php if($the_query->current_post === 0) { ?>
-                            <header class="kcls-section-title">
-                                <h2 class="kcls-heading">Latest News</h2>
-                            </header>      
-                        <?php } ?>
                         <main>
                             <h3><?php the_title(); ?></h3>
                             <p class="kcls-recent-post-time"><?php the_date(); ?></p>
