@@ -12,31 +12,29 @@ $the_query = new WP_Query($args); ?>
     </header>      
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <div class="kcls-recent-post <?php 
-                            // If current post is most recent, applies unique styling       
-                            if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
-                            else echo 'kcls-additional-post';
-                        ?>">
-                    <div class="news-left-column">    
-                        <main>
-                            <h3><?php the_title(); ?></h3>
-                            <p class="kcls-recent-post-time"><?php the_date(); ?></p>
-                            <?php 
-                                // Shows excerpt only for most recent post
-                                if($the_query->current_post === 0) { ?>
-                                    <div class="kcls-main-news-excerpt"><?php the_excerpt(); ?></div>
-                            <?php } ?>
-                        </main>
+                    // If the most recent post, add relevant class
+                    if($the_query->current_post === 0) echo 'kcls-most-recent-post'; ?>">
+                <div class="kcls-recent-post-basic">
+                    <div class="kcls-news-details">
+                        <h3><?php the_title(); ?></h3>
+                        <p class="kcls-recent-post-time"><?php the_date(); ?></p>    
                     </div>
-                    <div class="news-right-column">
-                        <?php if ( has_post_thumbnail() ) ?>
+                    <div class="kcls-news-image">
                         <div class="kcls-recent-post-thumbnail">
+                            <?php if ( has_post_thumbnail() ) ?>
                             <?php the_post_thumbnail('medium'); ?>
                         </div>
                     </div>
-                </div>    
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
+                </div>
+                <?php if($the_query->current_post === 0){ ?>
+                        <div class="kcls-recent-post-expanded">
+                            <?php the_excerpt(); ?>
+                        </div>
+                    <?php } ?>
+            </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
     </div>
 </div>
