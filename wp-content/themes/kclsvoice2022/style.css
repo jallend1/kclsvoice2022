@@ -172,28 +172,27 @@ nav {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 1rem;
 }
 
-.kcls-recent-post {
-  margin: 0 1.2rem;
-}
-
-.kcls-recent-post-basic {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.kcls-recent-post-basic h3 {
-  font-size: 1.5rem;
+.kcls-most-recent-post h3 {
+  font-size: 1.7rem;
   font-weight: bold;
   margin: 0;
 }
 
+.kcls-recent-post {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 1.2rem;
+  padding: 1.2rem;
+  border: solid 1px #4f954f17;
+  box-shadow: 10px 10px 10px #4f954f17;
+}
+
 .kcls-recent-post img {
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
 }
 
@@ -207,9 +206,10 @@ nav {
   line-height: 1.5rem;
 }
 
-.kcls-additional-post {
-  margin-top: 1rem;
-  margin: 2rem;
+.kcls-blurb-and-image {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .kcls-heading {

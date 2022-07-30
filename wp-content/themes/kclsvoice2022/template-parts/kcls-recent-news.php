@@ -13,14 +13,21 @@ $the_query = new WP_Query($args); ?>
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="kcls-recent-post <?php 
-                    // If the most recent post, add relevant class
-                    if($the_query->current_post === 0) echo 'kcls-most-recent-post'; ?>">
-                <div class="kcls-recent-post-basic">
-                    <div class="kcls-news-details">
-                        <h3><?php the_title(); ?></h3>
-                        <p class="kcls-recent-post-time"><?php the_date(); ?></p>    
-                    </div>
+            <div 
+                class="<?php
+                    // Applies unique class to most recent post
+                    if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
+                    else echo('kcls-recent-post'); ?>">                
+                <div class="kcls-news-details">
+                    <h3><?php the_title(); ?></h3>
+                    <p class="kcls-recent-post-time"><?php the_date(); ?></p>    
+                </div>
+                <div 
+                    class="kcls-recent-post-expanded <?php if($the_query->current_post === 0) echo 'kcls-blurb-and-image';?>">
+                    <?php 
+                        // Shows excerpt if it is the most recent post
+                        if($the_query->current_post === 0) the_excerpt(); 
+                    ?> 
                     <div class="kcls-news-image">
                         <div class="kcls-recent-post-thumbnail">
                             <?php if ( has_post_thumbnail() ){
@@ -28,17 +35,12 @@ $the_query = new WP_Query($args); ?>
                             } 
                             // If no featured image, display the first image from the post or default logo
                             else {
-                                $first_img = kcls_get_post_image();
-                                echo '<img src="' . $first_img . '" alt="' . get_the_title() . '">';
+                                $kcls_post_img = kcls_get_post_image();
+                                echo '<img src="' . $kcls_post_img . '" alt="' . get_the_title() . '">';
                             } ?> 
                         </div>
                     </div>
                 </div>
-                <?php if($the_query->current_post === 0){ ?>
-                        <div class="kcls-recent-post-expanded">
-                            <?php the_excerpt(); ?>
-                        </div>
-                    <?php } ?>
             </div>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
