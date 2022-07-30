@@ -150,6 +150,23 @@ nav {
   transform: scale(1.1);
 }
 
+/* *************** */
+/* SECTION HEADING */
+/* *************** */
+
+.kcls-heading {
+  margin-bottom: 1rem;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #1d548c;
+  padding: 1.1rem 3rem;
+}
+
 /* *********** */
 /* LATEST NEWS */
 /* *********** */
@@ -212,17 +229,19 @@ nav {
   align-items: center;
 }
 
-.kcls-heading {
-  margin-bottom: 1rem;
-  width: 80%;
-  max-width: 600px;
+.kcls-recent-news-footer {
+  display: flex;
+  justify-content: right;
+  margin: 0 2rem;
+}
+
+.kcls-view-blog-button {
+  padding: 1.25rem;
+  background-color: #4f954f;
+  border: none;
   color: white;
-  font-weight: bold;
-  font-size: 2.5rem;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background-color: #1d548c;
-  padding: 1.1rem 3rem;
+  font-size: 1.25rem;
+  border-radius: 15px;
 }
 
 /* *************** */

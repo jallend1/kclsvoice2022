@@ -45,4 +45,7 @@ $the_query = new WP_Query($args); ?>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
     </div>
+    <footer class="kcls-recent-news-footer">
+        <button class="kcls-view-blog-button">See More News...</button>
+    </footer>
 </div>
