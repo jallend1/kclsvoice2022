@@ -19,7 +19,9 @@ $the_query = new WP_Query($args); ?>
                     if($the_query->current_post === 0) echo 'kcls-most-recent-post'; 
                     else echo('kcls-recent-post'); ?>">                
                 <div class="kcls-news-details">
-                    <h3><?php the_title(); ?></h3>
+                    <a href="<?php the_permalink(); ?>">
+                        <h3><?php the_title(); ?></h3>
+                    </a>
                     <p class="kcls-recent-post-time"><?php the_date(); ?></p>    
                 </div>
                 <div 
