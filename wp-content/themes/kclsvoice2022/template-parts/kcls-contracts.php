@@ -1,6 +1,6 @@
 <div class="kcls-contracts-section">
     <header class="kcls-section-title">
-        <h2 class="kcls-heading">Contracts</h2>
+        <h2 class="kcls-heading">Know Your Contract</h2>
     </header>
     <main class="kcls-contracts">
         <div class="kcls-contract">
