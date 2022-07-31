@@ -37,7 +37,7 @@ function kcls_modify_excerpt_length(){
 }
 
 function kcls_modify_excerpt_more(){
-    return '<span class="kcls-news-excerpt"><a href="' . get_permalink() . '">Read More...</a></span>';
+    return '...<span class="kcls-news-excerpt"><a href="' . get_permalink() . '">Read More...</a></span>';
 }
 
 add_action( 'init', 'kcls_voice_register_menus' );

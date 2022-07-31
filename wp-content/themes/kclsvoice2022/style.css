@@ -202,6 +202,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  /* background-color: white; */
 }
 
 .kcls-most-recent-post h3 {
