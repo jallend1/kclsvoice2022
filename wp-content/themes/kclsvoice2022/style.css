@@ -202,7 +202,6 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /* background-color: white; */
 }
 
 .kcls-most-recent-post h3 {
@@ -316,4 +315,56 @@ nav {
 .kcls-blog-post-content > p {
   margin: 1rem 0;
   line-height: 1.5rem;
+}
+
+/* ************* */
+/* * CONTRACTS * */
+/* ************* */
+
+.kcls-contracts-section {
+  margin: 0;
+  color: white;
+  width: 100%;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.3));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kcls-contracts {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.3rem;
+}
+
+.kcls-contract {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px #071420;
+  color: #071420;
+  background-color: #fff;
+}
+
+.kcls-contract:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.kcls-contract-details h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.kcls-contract-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.kcls-contract-details {
+  text-align: center;
 }
