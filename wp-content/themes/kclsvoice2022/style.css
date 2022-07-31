@@ -154,11 +154,6 @@ nav {
 /* SECTION HEADING */
 /* *************** */
 
-.kcls-section {
-  width: 95%;
-  margin: auto;
-}
-
 .kcls-heading {
   margin-bottom: 1rem;
   width: 80%;
@@ -251,7 +246,7 @@ nav {
 .kcls-recent-news-footer {
   display: flex;
   justify-content: right;
-  margin: 0 2rem;
+  margin: 2rem;
 }
 
 .kcls-view-blog-button {
@@ -325,25 +320,25 @@ nav {
   margin: 0;
   color: white;
   width: 100%;
-  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.3));
+  background: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 .kcls-contracts {
   display: flex;
   justify-content: space-evenly;
-  padding: 1.3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .kcls-contract {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  max-width: 300px;
+  align-items: center;
+  min-width: 300px;
   margin: 1.2rem;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 15px;
   box-shadow: 15px 15px 15px #071420;
   color: #071420;
@@ -355,16 +350,18 @@ nav {
   transform: scale(1.1);
 }
 
-.kcls-contract-details h3 {
-  font-size: 3rem;
-  font-weight: normal;
+.kcls-contract-image {
+  border-radius: 50%;
+  border: solid 3px #1d548c;
+  padding: 1.15rem;
 }
 
 .kcls-contract-image img {
-  max-width: 100%;
-  height: auto;
+  max-height: 50px;
 }
 
 .kcls-contract-details {
+  margin: 2rem;
   text-align: center;
+  font-size: 1.25rem;
 }
