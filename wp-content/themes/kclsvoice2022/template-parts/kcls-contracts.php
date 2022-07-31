@@ -1,4 +1,4 @@
-<div class="kcls-contracts-section">
+<div class="kcls-know-your-contracts">
     <header class="kcls-section-title">
         <h2 class="kcls-heading">Know Your Contract</h2>
     </header>
