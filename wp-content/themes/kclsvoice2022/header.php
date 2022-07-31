@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
-    <nav>
+    <nav class="kcls-nav">
         <div class="logo">
             <a href="<?php echo home_url(); ?>">
                 <?php 

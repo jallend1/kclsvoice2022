@@ -30,12 +30,13 @@ body {
 /*    NAV MENU     */
 /* *************** */
 
-nav {
+.kcls-nav {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
   position: absolute;
   width: 100%;
+  z-index: 5;
 }
 
 .logo img {
