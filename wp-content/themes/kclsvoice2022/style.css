@@ -210,6 +210,11 @@ nav {
   margin: 0;
 }
 
+.kcls-news-excerpt {
+  display: block;
+  padding-top: 1rem;
+}
+
 .kcls-recent-post {
   display: grid;
   grid-template-columns: 2fr 1fr;

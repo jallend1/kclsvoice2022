@@ -32,6 +32,16 @@ function kcls_get_post_image() {
     return $first_img;
 }
 
+function kcls_modify_excerpt_length(){
+    return 30;
+}
+
+function kcls_modify_excerpt_more(){
+    return '<span class="kcls-news-excerpt"><a href="' . get_permalink() . '">Read More...</a></span>';
+}
+
 add_action( 'init', 'kcls_voice_register_menus' );
 add_action( 'wp_enqueue_scripts', 'kcls_voice_styles' );
 add_action( 'after_setup_theme', 'kcls_voice_theme_setup' );
+add_filter( 'excerpt_length', 'kcls_modify_excerpt_length' );
+add_filter( 'excerpt_more', 'kcls_modify_excerpt_more' );
