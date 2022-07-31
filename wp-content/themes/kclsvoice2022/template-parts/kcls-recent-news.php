@@ -10,6 +10,7 @@ $the_query = new WP_Query($args); ?>
     <header class="kcls-section-title">
         <h2 class="kcls-heading">Latest News</h2>
     </header>      
+    <main class="kcls-section">
     <div class="kcls-recent-posts">
         <?php if ( $the_query->have_posts() ) ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -54,4 +55,5 @@ $the_query = new WP_Query($args); ?>
             </button>
         </a>
     </footer>
+    </main>
 </div>

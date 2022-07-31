@@ -154,6 +154,11 @@ nav {
 /* SECTION HEADING */
 /* *************** */
 
+.kcls-section {
+  width: 95%;
+  margin: auto;
+}
+
 .kcls-heading {
   margin-bottom: 1rem;
   width: 80%;
@@ -172,6 +177,13 @@ nav {
 /* *********** */
 
 .kcls-news {
+  background: #e4e4e4;
+}
+
+.kcls-news a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
 }
 
 .kcls-recent-posts {
@@ -204,8 +216,10 @@ nav {
   align-items: center;
   margin: 1.2rem;
   padding: 1.2rem;
-  border: solid 1px #4f954f17;
-  box-shadow: 10px 10px 10px #4f954f17;
+  box-shadow: 15px 15px 15px #071420;
+  background-color: #1d548c;
+  color: white;
+  border-radius: 15px;
 }
 
 .kcls-recent-post img {
