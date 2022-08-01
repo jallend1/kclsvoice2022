@@ -262,10 +262,13 @@ body {
 @media screen and (max-width: 1200px) {
   .kcls-recent-posts {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+
   .kcls-recent-post {
-    max-width: 300px;
+    width: 300px;
+    max-height: 300px;
   }
 }
 
