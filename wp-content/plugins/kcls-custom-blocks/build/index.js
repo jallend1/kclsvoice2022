@@ -46,7 +46,7 @@ function KCLSKnowYourContract() {
     className: "kcls-contract-image"
   }], ["core/paragraph", {
     className: "kcls-contract-title",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Contract Title")
+    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Facilities Contract")
   }]]]]]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSKnowYourContractBlocks
@@ -97,6 +97,11 @@ function KCLSMainHero() {
     content: "King County Library System employees are stronger together."
   }], ["core/paragraph", {
     content: "When you signed your membership card, you became part of an employee Union that represents approximately 1,000 members at KCLS. Membership gives you the right to participate in decisions that affect your wages, hours, and working conditions. Union members participate in the democratic governance of the Union, and have access to member-only benefits."
+  }]]], ["core/group", {
+    className: "right-header"
+  }, [["core/button", {
+    className: "kcls-cta-button",
+    text: "Get Involved"
   }]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSMainHeroBlocks

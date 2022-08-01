@@ -50,7 +50,7 @@ export default function KCLSKnowYourContract() {
 													"core/paragraph",
 													{
 														className: "kcls-contract-title",
-														content: __("Contract Title"),
+														content: __("Facilities Contract"),
 													},
 												],
 											],

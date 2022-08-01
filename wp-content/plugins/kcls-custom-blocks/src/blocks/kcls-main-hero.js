@@ -45,6 +45,16 @@ export default function KCLSMainHero() {
 								],
 							],
 						],
+						[
+							"core/group",
+							{ className: "right-header" },
+							[
+								[
+									"core/button",
+									{ className: "kcls-cta-button", text: "Get Involved" },
+								],
+							],
+						],
 					],
 				],
 			],
