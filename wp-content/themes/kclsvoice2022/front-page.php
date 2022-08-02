@@ -10,7 +10,12 @@
             </div>
         </div>
         <div class="right-header">
-            <?php get_template_part('template-parts/kcls-contact-boxes'); ?>
+            <button class="kcls-cta-button">
+                <a href="#">
+                    <span>Get Involved</span>
+                </a>
+            </button>
+            <!-- <?php get_template_part('template-parts/kcls-contact-boxes'); ?> -->
         </div>
     </div>
     <?php get_template_part('template-parts/kcls-recent-news'); ?>

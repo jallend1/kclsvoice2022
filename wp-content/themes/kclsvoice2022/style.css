@@ -117,8 +117,10 @@ body {
 .right-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;
+  align-items: center; */
   align-items: center;
+  justify-content: flex-end;
   padding: 2rem;
 }
 
@@ -370,4 +372,19 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 1.25rem;
+}
+
+.kcls-cta-button {
+  background-color: #4f954f;
+  border: none;
+  font-size: 2.5rem;
+  border-radius: 15px;
+  padding: 1.25rem;
+  font-weight: bold;
+  width: 400px;
+}
+
+.kcls-cta-button a {
+  color: white;
+  text-decoration: none;
 }
