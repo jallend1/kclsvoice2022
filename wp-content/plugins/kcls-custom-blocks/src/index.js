@@ -3,6 +3,7 @@ import "./style.scss";
 import save from "./save";
 import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
+import KCLSStayActive from "./blocks/kcls-stay-active";
 
 registerBlockType("kcls/main-hero", {
 	title: "KCLS - Hero",
@@ -17,5 +18,13 @@ registerBlockType("kcls/know-your-contract", {
 	icon: "admin-customizer",
 	category: "common",
 	edit: KCLSKnowYourContract,
+	save,
+});
+
+registerBlockType("kcls/stay-active", {
+	title: "KCLS - Stay Active",
+	icon: "admin-customizer",
+	category: "common",
+	edit: KCLSStayActive,
 	save,
 });
