@@ -1,6 +1,6 @@
 import { __ } from "@wordpress/i18n";
 import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
-import DefaultImage from "../images/teamwork.jpg";
+import Teamwork from "../images/teamwork.jpg";
 import "../editor.scss";
 
 export default function KCLSStayActive() {
@@ -20,7 +20,8 @@ export default function KCLSStayActive() {
 								[
 									"core/image",
 									{
-										url: DefaultImage,
+										url: Teamwork,
+										alt: "Teamwork makes the dream work.",
 									},
 								],
 							],

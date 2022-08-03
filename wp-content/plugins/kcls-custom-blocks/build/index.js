@@ -143,7 +143,8 @@ function KCLSStayActive() {
   }, [["core/group", {
     className: "kcls-stay-active-section-image"
   }, [["core/image", {
-    url: _images_teamwork_jpg__WEBPACK_IMPORTED_MODULE_4__
+    url: _images_teamwork_jpg__WEBPACK_IMPORTED_MODULE_4__,
+    alt: "Teamwork makes the dream work."
   }]]], ["core/group", {
     className: "kcls-stay-active-section-text"
   }, [["core/heading", {
