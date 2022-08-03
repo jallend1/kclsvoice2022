@@ -71,59 +71,6 @@ body {
   flex-direction: column;
 }
 
-/* *********** */
-/* MAIN BANNER */
-/* *********** */
-
-.kcls-main-banner {
-  color: white;
-  width: 100%;
-  min-height: 60vh;
-  background: linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)),
-    url(./assets/images/snoqualmie.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 200px 2rem 2rem 2rem;
-}
-
-.left-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 2rem;
-}
-
-.left-header h1 {
-  font-size: 4rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.left-header h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.left-header p {
-  padding: 1.25rem 0;
-  line-height: 1.5rem;
-  max-width: 500px;
-}
-
-.right-header {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2rem;
-}
-
 /* ****************** */
 /* COMMUNICATIONS BOX */
 /* ****************** */
@@ -373,19 +320,4 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 1.25rem;
-}
-
-.kcls-cta-button {
-  background-color: #4f954f;
-  border: none;
-  font-size: 2.5rem;
-  border-radius: 15px;
-  padding: 1.25rem;
-  font-weight: bold;
-  width: 400px;
-}
-
-.kcls-cta-button a {
-  color: white;
-  text-decoration: none;
 }

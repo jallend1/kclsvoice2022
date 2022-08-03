@@ -88,7 +88,7 @@ function KCLSMainHero() {
   }, [["core/group", {
     className: "kcls-hero-content"
   }, [["core/group", {
-    className: "left-header"
+    className: "kcls-left-banner"
   }, [["core/heading", {
     level: 1,
     content: "Local 1857"
@@ -98,7 +98,7 @@ function KCLSMainHero() {
   }], ["core/paragraph", {
     content: "When you signed your membership card, you became part of an employee Union that represents approximately 1,000 members at KCLS. Membership gives you the right to participate in decisions that affect your wages, hours, and working conditions. Union members participate in the democratic governance of the Union, and have access to member-only benefits."
   }]]], ["core/group", {
-    className: "right-header"
+    className: "kcls-right-banner"
   }, [["core/button", {
     className: "kcls-cta-button",
     text: "Get Involved"

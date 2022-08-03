@@ -11,6 +11,75 @@
 	padding: 2px;
 }
 
+/* *********** */
+/* MAIN BANNER */
+/* *********** */
+
+.kcls-main-banner > div {
+	min-height: 60vh;
+}
+
+.kcls-hero-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 60vh;
+	align-items: center;
+}
+
+.kcls-hero-content > div {
+	min-height: 50vh;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.kcls-left-banner {
+	height: 100%;
+}
+
+.kcls-left-banner > div {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 2rem;
+}
+
+.kcls-left-banner h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.kcls-left-banner h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.kcls-left-banner p {
+	padding: 1.25rem 0;
+	line-height: 1.5rem;
+	max-width: 500px;
+}
+
+.kcls-right-banner > div {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 2rem;
+}
+
+.kcls-cta-button a {
+	border-radius: 25px;
+	padding: 2rem;
+	font-size: 2rem;
+	background-color: #4f954f;
+}
+
 /* *************** */
 /* * STAY ACTIVE * */
 /* *************** */

@@ -19,7 +19,7 @@ export default function KCLSMainHero() {
 					[
 						[
 							"core/group",
-							{ className: "left-header" },
+							{ className: "kcls-left-banner" },
 							[
 								[
 									"core/heading",
@@ -47,7 +47,7 @@ export default function KCLSMainHero() {
 						],
 						[
 							"core/group",
-							{ className: "right-header" },
+							{ className: "kcls-right-banner" },
 							[
 								[
 									"core/button",
