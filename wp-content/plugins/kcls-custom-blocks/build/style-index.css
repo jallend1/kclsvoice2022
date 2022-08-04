@@ -86,7 +86,6 @@
 /* * STAY ACTIVE * */
 /* *************** */
 .kcls-stay-active-section {
-  width: 100vw;
   background-color: #1d548c;
   color: white;
   margin: 0;
@@ -96,7 +95,7 @@
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -122,12 +121,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .kcls-stay-active-section-text p {
   font-size: 1.5rem;
   line-height: 2rem;
-  max-width: 300px;
   padding-top: 2rem;
   font-weight: 200;
 }
@@ -171,6 +170,7 @@
   box-shadow: 15px 15px 15px #071420;
   color: #071420;
   background-color: #fff;
+  max-width: 500px;
 }
 
 .kcls-contract img {
