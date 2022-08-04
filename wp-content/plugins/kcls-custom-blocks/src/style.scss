@@ -15,23 +15,18 @@
 /* MAIN BANNER */
 /* *********** */
 
-.kcls-main-banner > div {
-	min-height: 60vh;
-}
-
 .kcls-hero-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 60vh;
 	align-items: center;
 }
 
 .kcls-hero-content > div {
-	min-height: 50vh;
-	padding: 1rem;
+	min-height: 60vh;
+	padding: 2rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1.5fr 1fr;
 }
 
 .kcls-left-banner {
@@ -42,8 +37,9 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-end;
 	padding: 2rem;
+	min-width: 400px;
 }
 
 .kcls-left-banner h1 {
@@ -157,8 +153,8 @@
 	color: white;
 	width: 100%;
 	background: white;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 	padding-top: 1.5rem;
 }
 
