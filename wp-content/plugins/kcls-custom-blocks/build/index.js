@@ -20,6 +20,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../editor.scss */ "./src/editor.scss");
+/* harmony import */ var _images_contract_1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../images/contract-1.png */ "./src/images/contract-1.png");
+/* harmony import */ var _images_contract_2_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/contract-2.png */ "./src/images/contract-2.png");
+/* harmony import */ var _images_contract_3_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../images/contract-3.png */ "./src/images/contract-3.png");
+
+
+
 
 
 
@@ -32,7 +38,6 @@ function KCLSKnowYourContract() {
     className: "kcls-section-title"
   }, [["core/heading", {
     level: 2,
-    className: "kcls-know-your-contract",
     content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Know Your Contract")
   }]]], ["core/group", {
     className: "kcls-contracts"
@@ -43,10 +48,31 @@ function KCLSKnowYourContract() {
   }, [["core/group", {
     className: "kcls-contract"
   }, [["core/image", {
+    url: _images_contract_1_png__WEBPACK_IMPORTED_MODULE_5__,
     className: "kcls-contract-image"
   }], ["core/paragraph", {
     className: "kcls-contract-title",
     content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Facilities Contract")
+  }]]]]], ["core/column", {
+    className: "kcls-contracts-column"
+  }, [["core/group", {
+    className: "kcls-contract"
+  }, [["core/image", {
+    url: _images_contract_2_png__WEBPACK_IMPORTED_MODULE_6__,
+    className: "kcls-contract-image"
+  }], ["core/paragraph", {
+    className: "kcls-contract-title",
+    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Main Unit")
+  }]]]]], ["core/column", {
+    className: "kcls-contracts-column"
+  }, [["core/group", {
+    className: "kcls-contract"
+  }, [["core/image", {
+    url: _images_contract_3_png__WEBPACK_IMPORTED_MODULE_7__,
+    className: "kcls-contract-image"
+  }], ["core/paragraph", {
+    className: "kcls-contract-title",
+    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Page Unit")
   }]]]]]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSKnowYourContractBlocks
@@ -259,6 +285,36 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/images/contract-1.png":
+/*!***********************************!*\
+  !*** ./src/images/contract-1.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/contract-1.0d950e95.png";
+
+/***/ }),
+
+/***/ "./src/images/contract-2.png":
+/*!***********************************!*\
+  !*** ./src/images/contract-2.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/contract-2.0178be7a.png";
+
+/***/ }),
+
+/***/ "./src/images/contract-3.png":
+/*!***********************************!*\
+  !*** ./src/images/contract-3.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/contract-3.e14a117b.png";
 
 /***/ }),
 
