@@ -100,11 +100,18 @@
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 1200px;
 }
 
-.kcls-stay-active-section-image img {
+.kcls-stay-active-section-image figure {
 	max-height: 300px;
+	border-radius: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.kcls-stay-active-section-image figure img {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+	max-height: 250px;
 }
 
 .kcls-stay-active-section-title {
@@ -154,6 +161,7 @@
 	background: white;
 	display: flex;
 	flex-direction: column;
+	padding-top: 1.5rem;
 }
 
 .kcls-contract > div {
