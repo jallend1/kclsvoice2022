@@ -93,7 +93,6 @@
 }
 
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
-	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	display: grid;
@@ -153,7 +152,7 @@
 // /* * CONTRACTS * */
 // /* ************* */
 
-.kcls-know-your-contract {
+.kcls-know-your-contract > div {
 	margin: 0;
 	color: white;
 	width: 100%;
@@ -163,18 +162,24 @@
 	padding-top: 1.5rem;
 }
 
+.kcls-contracts {
+	max-width: 90%;
+	margin: auto;
+}
+
 .kcls-contract > div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-width: 300px;
-	margin: 1.2rem;
+	// margin: 1.2rem;
+	margin: auto;
 	padding: 2rem;
 	border-radius: 15px;
 	box-shadow: 15px 15px 15px #071420;
 	color: #071420;
 	background-color: #fff;
-	max-width: 500px;
+	max-width: 400px;
 }
 
 .kcls-contract img {
@@ -197,4 +202,5 @@
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.25rem;
+	word-break: normal;
 }
