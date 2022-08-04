@@ -1,9 +1,18 @@
 import { registerBlockType } from "@wordpress/blocks";
 import "./style.scss";
 import save from "./save";
+import KCLSCommunications from "./blocks/kcls-communications";
 import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
 import KCLSStayActive from "./blocks/kcls-stay-active";
+
+registerBlockType("kcls/kcls-communications", {
+	title: "KCLS Communications",
+	icon: "email",
+	category: "common",
+	edit: KCLSCommunications,
+	save,
+});
 
 registerBlockType("kcls/main-hero", {
 	title: "KCLS - Hero",

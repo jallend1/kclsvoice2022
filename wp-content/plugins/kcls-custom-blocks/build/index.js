@@ -2,6 +2,38 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/kcls-communications.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/kcls-communications.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ KCLSCommunications)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../editor.scss */ "./src/editor.scss");
+
+
+
+
+
+function KCLSCommunications() {
+  const KCLSCommunicationsBlocks = [];
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
+    template: KCLSCommunicationsBlocks
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/blocks/kcls-know-your-contract.js":
 /*!***********************************************!*\
   !*** ./src/blocks/kcls-know-your-contract.js ***!
@@ -206,34 +238,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./save */ "./src/save.js");
-/* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
-/* harmony import */ var _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/kcls-know-your-contract */ "./src/blocks/kcls-know-your-contract.js");
-/* harmony import */ var _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/kcls-stay-active */ "./src/blocks/kcls-stay-active.js");
+/* harmony import */ var _blocks_kcls_communications__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/kcls-communications */ "./src/blocks/kcls-communications.js");
+/* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
+/* harmony import */ var _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/kcls-know-your-contract */ "./src/blocks/kcls-know-your-contract.js");
+/* harmony import */ var _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/kcls-stay-active */ "./src/blocks/kcls-stay-active.js");
 
 
 
 
 
 
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-communications", {
+  title: "KCLS Communications",
+  icon: "email",
+  category: "common",
+  edit: _blocks_kcls_communications__WEBPACK_IMPORTED_MODULE_3__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/main-hero", {
   title: "KCLS - Hero",
   icon: "admin-customizer",
   category: "common",
-  edit: _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_3__["default"],
+  edit: _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_4__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/know-your-contract", {
   title: "KCLS - Know Your Contract",
   icon: "admin-customizer",
   category: "common",
-  edit: _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_4__["default"],
+  edit: _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_5__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/stay-active", {
   title: "KCLS - Stay Active",
   icon: "admin-customizer",
   category: "common",
-  edit: _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_5__["default"],
+  edit: _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 
