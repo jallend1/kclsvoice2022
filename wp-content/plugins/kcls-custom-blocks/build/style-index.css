@@ -155,6 +155,7 @@
 .kcls-contracts {
   max-width: 90%;
   margin: auto;
+  padding: 2rem;
 }
 
 .kcls-contract > div {
