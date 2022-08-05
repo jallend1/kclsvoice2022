@@ -9,7 +9,7 @@
             <?php
         endwhile;
     endif; ?>
-    <?php get_template_part('template-parts/kcls-contracts'); ?>
+    <!-- <?php get_template_part('template-parts/kcls-contracts'); ?> -->
     <?php get_template_part('template-parts/kcls-recent-news'); ?>
     </div>
     <?php get_footer(); ?>
