@@ -82,10 +82,10 @@
 /* * STAY ACTIVE * */
 /* *************** */
 .kcls-stay-active-section {
-  background-color: #1d548c;
+  background-color: #009e57;
   color: white;
   margin: 0;
-  padding: 1rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
@@ -135,7 +135,7 @@
 }
 
 .kcls-stay-active-section-cta-button a {
-  background-color: #4f954f;
+  background-color: #124a92;
   border: none;
   color: white;
   font-size: 1.5rem;
@@ -149,7 +149,6 @@
   color: white;
   width: 100%;
   background: white;
-  padding-top: 1.5rem;
 }
 
 .kcls-contracts {
@@ -183,7 +182,7 @@
 
 .kcls-contract-image {
   border-radius: 50%;
-  border: solid 3px #1d548c;
+  border: solid 3px #124a92;
   padding: 1.15rem;
 }
 
@@ -193,6 +192,44 @@
   text-align: center;
   font-size: 1.25rem;
   word-break: normal;
+}
+
+.kcls-communications {
+  margin-bottom: 2rem;
+}
+
+.kcls-communications-content > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 2rem;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+.kcls-communications-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px #071420;
+  color: #071420;
+  background-color: #fff;
+}
+
+.kcls-communications-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.kcls-communications-image {
+  max-width: 100px;
+  margin: auto;
+}
+
+.kcls-communications-text {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
