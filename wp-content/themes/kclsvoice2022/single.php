@@ -7,15 +7,15 @@
             </div>
     </header>
     <div class="kcls-blog-page-content">
-        <main class="kcls-blog-post">
-            <div class="kcls-blog-post-content">
+        <div class="kcls-blog-post">
+            <main class="kcls-blog-post-content">
                 <?php the_content(); ?>
-            </div>
-            <div class="kcls-blog-post-navigation">
+            </main>
+            <footer class="kcls-blog-post-navigation">
                 <?php previous_post_link('%link', 'Previous Post - %title'); ?>
                 <?php next_post_link('%link', 'Next Post - %title'); ?>
-            </div>
-        </main>
+            </footer>
+        </div>
         <aside>
             <?php get_sidebar('blog'); ?>
         </aside>
