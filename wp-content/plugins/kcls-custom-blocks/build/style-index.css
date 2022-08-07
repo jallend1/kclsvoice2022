@@ -148,7 +148,6 @@
   margin: 0;
   color: white;
   width: 100%;
-  background: var(--kcls-light);
 }
 
 .kcls-contracts {
@@ -167,7 +166,7 @@
   border-radius: 15px;
   box-shadow: 15px 15px 15px #071420;
   color: #071420;
-  background-color: var(--kcls-light);
+  background-color: #fff;
   max-width: 400px;
 }
 
