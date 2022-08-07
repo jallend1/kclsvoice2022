@@ -332,3 +332,27 @@ body {
   max-width: 100%;
   max-height: 150px;
 }
+
+/* ******** */
+/* * PAGE * */
+/* ******** */
+
+.kcls-page-banner {
+  margin: 0;
+  color: white;
+  width: 100%;
+  min-height: 40vh;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.8)),
+    url(./assets/images/bookshelves.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kcls-page-title {
+  text-align: center;
+  font-size: 3rem;
+}
