@@ -74,7 +74,7 @@
 	padding: 2rem;
 	font-size: 2rem;
 	font-weight: bold;
-	background-color: #4f954f;
+	background-color: var(--kcls-green);
 }
 
 /* *************** */
@@ -82,7 +82,7 @@
 /* *************** */
 
 .kcls-stay-active-section {
-	background-color: #009e57;
+	background-color: var(--kcls-green);
 	color: white;
 	margin: 0;
 	padding: 3rem 3rem;
@@ -135,8 +135,7 @@
 }
 
 .kcls-stay-active-section-cta-button a {
-	// background-color: #4f954f;
-	background-color: #124a92;
+	background-color: var(--kcls-blue);
 	border: none;
 	color: white;
 	font-size: 1.5rem;
@@ -153,7 +152,7 @@
 	margin: 0;
 	color: white;
 	width: 100%;
-	background: white;
+	background: var(--kcls-light);
 	// display: flex;
 	// flex-direction: column;
 	// padding-top: 1.5rem;
@@ -175,7 +174,7 @@
 	border-radius: 15px;
 	box-shadow: 15px 15px 15px #071420;
 	color: #071420;
-	background-color: #fff;
+	background-color: var(--kcls-light);
 	max-width: 400px;
 }
 
@@ -190,7 +189,7 @@
 
 .kcls-contract-image {
 	border-radius: 50%;
-	border: solid 3px #124a92;
+	border: solid 3px var(--kcls-blue);
 	padding: 1.15rem;
 }
 

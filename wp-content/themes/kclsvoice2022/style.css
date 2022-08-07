@@ -14,6 +14,12 @@ Text Domain: kclsvoice2022
 This theme, like WordPress, is licensed under the GPL.
 */
 
+:root {
+  --kcls-light: #eef3f8;
+  --kcls-blue: #124a92;
+  --kcls-green: #00a0b0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -111,10 +117,10 @@ body {
   max-width: 600px;
   color: white;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.25rem;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  background-color: #124a92;
+  background-color: var(--kcls-blue);
   padding: 1.1rem 3rem;
 }
 
@@ -123,8 +129,7 @@ body {
 /* *********** */
 
 .kcls-news {
-  background: #e4e4e4;
-  background-color: white;
+  background-color: var(--kcls-light);
 }
 
 .kcls-news a {
@@ -169,7 +174,7 @@ body {
   margin: 1.2rem;
   padding: 1.2rem;
   box-shadow: 15px 15px 15px #071420;
-  background-color: #124a92;
+  background-color: var(--kcls-blue);
   color: white;
   border-radius: 15px;
   max-width: 400px;
@@ -204,7 +209,7 @@ body {
 
 .kcls-view-blog-button {
   padding: 1.25rem;
-  background-color: #009e57;
+  background-color: var(--kcls-green);
   border: none;
   color: white;
   font-size: 1.25rem;
@@ -249,7 +254,7 @@ body {
   font-weight: bold;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
-  background-color: #124a92;
+  background-color: var(--kcls-blue);
   padding: 1.1rem 3rem;
 }
 
