@@ -1,5 +1,5 @@
 <div class="kcls-blog-sidebar">
-    <h3 class="kcls-blog-sidebar-heading">Recent News</h3>
+    <h2 class="kcls-blog-sidebar-heading">Recent News</h2>
     <?php 
         $latest_news = new WP_Query(array(
             'post_type' => 'post',
