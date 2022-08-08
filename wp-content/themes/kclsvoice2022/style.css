@@ -322,7 +322,6 @@ body {
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
-  text-align: center;
   color: var(--kcls-light);
   box-shadow: 5px 5px 10px #071420;
 }
@@ -337,11 +336,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 1rem;
 }
 .kcls-sidebar-post a {
   text-decoration: none;
   color: var(--kcls-light);
-  /* padding: 1rem; */
 }
 
 .kcls-sidebar-post-thumbnail > img {
