@@ -6,8 +6,7 @@
     </header>
     <div class="kcls-page-content">
         <?php the_content(); ?>
+    </div>
+    <?php get_footer(); ?>
+    <?php endwhile; ?>
 </div>
-</div>
-<?php endwhile; ?>
-
-<?php get_footer(); ?>

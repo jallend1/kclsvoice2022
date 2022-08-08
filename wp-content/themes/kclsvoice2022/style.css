@@ -27,11 +27,13 @@ This theme, like WordPress, is licensed under the GPL.
   word-break: normal !important;
 }
 
+html,
 body {
   padding: 0;
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--kcls-light);
+  min-height: calc(100vh - 200px);
 }
 
 /* *************** */
@@ -337,6 +339,16 @@ body {
 /* * PAGE * */
 /* ******** */
 
+.kcls-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: calc(100vh - 100px - 100px); */
+  background-color: var(--kcls-light);
+  position: relative;
+}
+
 .kcls-page-banner {
   margin: 0;
   color: white;
@@ -355,4 +367,16 @@ body {
 .kcls-page-title {
   text-align: center;
   font-size: 3rem;
+}
+
+/* ********** */
+/* * FOOTER * */
+/* ********** */
+
+.kcls-footer {
+  background-color: var(--kcls-blue);
+  height: 100px;
+  width: 100%;
+  /* position: absolute;
+  bottom: 0; */
 }
