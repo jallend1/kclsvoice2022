@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/kcls-recent-news",
+  "version": "1.0.0",
+  "title": "KCLS Recent News",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Recent News Block for KCLS Voice website",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "kcls-recent-news",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
