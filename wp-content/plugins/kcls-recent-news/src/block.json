@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "kcls/kcls-recent-news",
+	"version": "0.1.0",
+	"title": "KCLS Recent News",
+	"category": "theme",
+	"icon": "smiley",
+	"description": "Most recent news posts block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "kcls-recent-news",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
