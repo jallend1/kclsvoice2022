@@ -85,12 +85,10 @@
 	background-color: var(--kcls-green);
 	color: white;
 	margin: 0;
-	padding: 3rem 3rem;
+	padding: 3rem 0;
 }
 
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
-	display: flex;
-	justify-content: space-between;
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -152,15 +150,12 @@
 	margin: 0;
 	color: white;
 	width: 100%;
-	// display: flex;
-	// flex-direction: column;
-	// padding-top: 1.5rem;
 }
 
 .kcls-contracts {
-	max-width: 90%;
+	// max-width: 95%;
 	margin: auto;
-	padding: 2rem;
+	padding: 3rem 0;
 }
 
 .kcls-contract > div {

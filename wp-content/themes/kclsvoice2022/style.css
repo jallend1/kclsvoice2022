@@ -110,9 +110,14 @@ body {
   transform: scale(1.1);
 }
 
-/* *************** */
-/* SECTION HEADING */
-/* *************** */
+/* *********** */
+/* * SECTION * */
+/* *********** */
+
+.kcls-section {
+  max-width: 95%;
+  margin: auto;
+}
 
 .kcls-section-title {
   margin-bottom: 1rem;

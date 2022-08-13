@@ -9,7 +9,7 @@ export default function KCLSKnowYourContract() {
 	const KCLSKnowYourContractBlocks = [
 		[
 			"core/group",
-			{ className: "kcls-know-your-contract" },
+			{ className: "kcls-know-your-contract kcls-section" },
 			[
 				[
 					"core/group",

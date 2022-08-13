@@ -789,7 +789,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function KCLSCommunications() {
   const KCLSCommunicationsBlocks = [["core/group", {
-    className: "kcls-communications"
+    className: "kcls-communications kcls-section"
   }, [["core/group", {
     className: "kcls-section-title"
   }, [["core/heading", {
@@ -868,7 +868,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function KCLSKnowYourContract() {
   const KCLSKnowYourContractBlocks = [["core/group", {
-    className: "kcls-know-your-contract"
+    className: "kcls-know-your-contract kcls-section"
   }, [["core/group", {
     className: "kcls-section-title"
   }, [["core/heading", {
@@ -1000,7 +1000,7 @@ function KCLSStayActive() {
   const KCLSStayActiveBlocks = [["core/group", {
     className: "kcls-stay-active-section"
   }, [["core/group", {
-    className: "kcls-stay-active-section-content"
+    className: "kcls-stay-active-section-content kcls-section"
   }, [["core/group", {
     className: "kcls-stay-active-section-image"
   }, [["core/image", {

@@ -11,7 +11,7 @@ export default function KCLSStayActive() {
 			[
 				[
 					"core/group",
-					{ className: "kcls-stay-active-section-content" },
+					{ className: "kcls-stay-active-section-content kcls-section" },
 					[
 						[
 							"core/group",

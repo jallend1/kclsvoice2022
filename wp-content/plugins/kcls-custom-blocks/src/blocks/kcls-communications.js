@@ -10,7 +10,7 @@ export default function KCLSCommunications() {
 	const KCLSCommunicationsBlocks = [
 		[
 			"core/group",
-			{ className: "kcls-communications" },
+			{ className: "kcls-communications kcls-section" },
 			[
 				[
 					"core/group",
