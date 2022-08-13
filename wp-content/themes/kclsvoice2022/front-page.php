@@ -9,8 +9,7 @@
             <?php
         endwhile;
     endif; ?>
-    <?php get_template_part('template-parts/kcls-recent-news'); ?>
-    </div>
+</div>
     <?php get_footer(); ?>
 
 

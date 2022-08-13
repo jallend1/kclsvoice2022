@@ -25,7 +25,7 @@ function kcls_latest_news_block_renderer($attr){
 	?>
     <div class="kcls-news">
         <header class="kcls-section-title">
-            <h2 class="kcls-heading">Latest News FROM JASON</h2>
+            <h2 class="kcls-heading">Latest News</h2>
         </header>      
         <main class="kcls-section">
             <div class="kcls-recent-posts">
