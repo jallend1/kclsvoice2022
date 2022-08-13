@@ -380,14 +380,17 @@ body {
 .kcls-page-title {
   text-align: center;
   font-size: 3rem;
+  padding: 1.25rem;
 }
 
 .kcls-page-content {
-  padding: 2rem 0;
-  max-width: 80%;
+  padding: 3rem;
+  max-width: 1000px;
   min-width: 400px;
-  margin: auto;
+  margin: 1rem auto;
   line-height: 1.75rem;
+  background-color: rgb(243, 222, 193);
+  border-radius: 25px;
 }
 
 .kcls-page-content h2 {
