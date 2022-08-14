@@ -1,6 +1,7 @@
+
 <?php get_header(); ?>
 <header class="kcls-blog-banner">
-    <h1 class="kcls-page-title"><?php wp_title(''); ?></h1>
+    <h1 class="kcls-page-title"><?php the_archive_title(); ?></h1>
 </header>
 <div class="kcls-blog-list">
     <?php while ( have_posts() ) : the_post(); ?>
