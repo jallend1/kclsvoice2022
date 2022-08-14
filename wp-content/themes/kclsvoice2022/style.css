@@ -29,8 +29,6 @@ This theme, like WordPress, is licensed under the GPL.
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: var(--kcls-light);
   min-height: calc(100vh - 200px);

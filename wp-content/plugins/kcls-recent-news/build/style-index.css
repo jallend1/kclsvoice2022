@@ -37,7 +37,7 @@
   grid-area: main;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  justify-content: center;
 }
 
 .kcls-most-recent-post h3 {
@@ -56,17 +56,19 @@
   grid-template-columns: 2fr 1fr;
   align-items: center;
   margin: 1.2rem;
-  padding: 1.2rem;
+  padding: 1rem;
   box-shadow: 15px 15px 15px #071420;
   background-color: var(--kcls-blue);
   color: white;
   border-radius: 15px;
   max-width: 400px;
+  text-align: center;
 }
 
 .kcls-recent-post img {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
+  border-radius: 5px;
 }
 
 .kcls-recent-post-time {

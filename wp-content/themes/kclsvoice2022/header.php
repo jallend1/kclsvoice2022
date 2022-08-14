@@ -17,11 +17,8 @@
                         <img src="<?php echo get_theme_file_uri('assets/images/local1857logo.png'); ?>" alt="KCLS Voice Logo" >
                     <?php } ?>        
             </a>    
-            </div>
-            <div class="header-menu">
-                <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
-            </div>
-        </nav>
-    
-        
-    
+        </div>
+        <div class="header-menu">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
+        </div>
+    </nav>
