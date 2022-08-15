@@ -58,8 +58,8 @@
   margin: 1.2rem;
   padding: 1rem;
   box-shadow: 15px 15px 15px #071420;
-  background-color: var(--kcls-blue);
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 15px;
   max-width: 400px;
   text-align: center;
