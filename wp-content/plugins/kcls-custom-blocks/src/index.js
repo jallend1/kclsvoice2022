@@ -5,6 +5,7 @@ import KCLSCommunications from "./blocks/kcls-communications";
 import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
 import KCLSStayActive from "./blocks/kcls-stay-active";
+import KCLSProfileCard from "./blocks/kcls-profile-card";
 
 registerBlockType("kcls/kcls-communications", {
 	title: "KCLS Communications",
@@ -35,5 +36,13 @@ registerBlockType("kcls/stay-active", {
 	icon: "admin-customizer",
 	category: "common",
 	edit: KCLSStayActive,
+	save,
+});
+
+registerBlockType("kcls/kcls-profile-card", {
+	title: "KCLS - Profile Card",
+	icon: "admin-customizer",
+	category: "common",
+	edit: KCLSProfileCard,
 	save,
 });

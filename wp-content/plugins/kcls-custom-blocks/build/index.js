@@ -971,6 +971,51 @@ function KCLSMainHero() {
 
 /***/ }),
 
+/***/ "./src/blocks/kcls-profile-card.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/kcls-profile-card.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ KCLSProfileCard)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../editor.scss */ "./src/editor.scss");
+
+
+
+
+
+function KCLSProfileCard() {
+  const KCLSProfileCardBlocks = [["core/group", {
+    className: "kcls-profile-card"
+  }, [["core/image", {
+    url: "https://picsum.photos/200",
+    className: "kcls-profile-image"
+  }], ["core/heading", {
+    level: 2,
+    content: "President"
+  }], ["core/heading", {
+    level: 3,
+    content: "John Doe"
+  }], ["core/paragraph", {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisi euismod consectetur aliquam, nisl nisi consectetur nisl, euismod nisi nisl euismod nisl."
+  }]]]];
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
+    template: KCLSProfileCardBlocks
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/blocks/kcls-stay-active.js":
 /*!****************************************!*\
   !*** ./src/blocks/kcls-stay-active.js ***!
@@ -1045,6 +1090,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
 /* harmony import */ var _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/kcls-know-your-contract */ "./src/blocks/kcls-know-your-contract.js");
 /* harmony import */ var _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/kcls-stay-active */ "./src/blocks/kcls-stay-active.js");
+/* harmony import */ var _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/kcls-profile-card */ "./src/blocks/kcls-profile-card.js");
+
 
 
 
@@ -1078,6 +1125,13 @@ __webpack_require__.r(__webpack_exports__);
   icon: "admin-customizer",
   category: "common",
   edit: _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-profile-card", {
+  title: "KCLS - Profile Card",
+  icon: "admin-customizer",
+  category: "common",
+  edit: _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 

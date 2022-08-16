@@ -229,4 +229,27 @@
   font-size: 1.5rem;
 }
 
+.kcls-profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px #071420;
+  color: #071420;
+  background-color: #fff;
+  max-width: 300px;
+  text-align: center;
+}
+
+.kcls-profile-image {
+  border-radius: 50%;
+}
+
+.kcls-profile-image img {
+  padding: 0.25rem;
+  border: solid 3px var(--kcls-blue);
+}
+
 /*# sourceMappingURL=style-index.css.map*/
