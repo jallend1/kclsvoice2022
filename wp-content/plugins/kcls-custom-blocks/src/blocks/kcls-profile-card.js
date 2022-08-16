@@ -10,13 +10,17 @@ export default function KCLSProfileCard() {
 			[
 				[
 					"core/image",
-					{ url: "https://picsum.photos/200", className: "kcls-profile-image" },
+					{
+						url: "https://picsum.photos/200",
+						className: "kcls-profile-image",
+					},
 				],
 				[
 					"core/heading",
 					{
 						level: 2,
 						content: "President",
+						className: "kcls-profile-title",
 					},
 				],
 				[
@@ -24,6 +28,7 @@ export default function KCLSProfileCard() {
 					{
 						level: 3,
 						content: "John Doe",
+						className: "kcls-profile-name",
 					},
 				],
 				[
@@ -31,6 +36,7 @@ export default function KCLSProfileCard() {
 					{
 						content:
 							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisi euismod consectetur aliquam, nisl nisi consectetur nisl, euismod nisi nisl euismod nisl.",
+						className: "kcls-profile-description",
 					},
 				],
 			],

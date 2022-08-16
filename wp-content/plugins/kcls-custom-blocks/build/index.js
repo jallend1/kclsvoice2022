@@ -1002,12 +1002,15 @@ function KCLSProfileCard() {
     className: "kcls-profile-image"
   }], ["core/heading", {
     level: 2,
-    content: "President"
+    content: "President",
+    className: "kcls-profile-title"
   }], ["core/heading", {
     level: 3,
-    content: "John Doe"
+    content: "John Doe",
+    className: "kcls-profile-name"
   }], ["core/paragraph", {
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisi euismod consectetur aliquam, nisl nisi consectetur nisl, euismod nisi nisl euismod nisl."
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, nisi euismod consectetur aliquam, nisl nisi consectetur nisl, euismod nisi nisl euismod nisl.",
+    className: "kcls-profile-description"
   }]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSProfileCardBlocks

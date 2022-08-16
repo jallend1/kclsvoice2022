@@ -242,6 +242,15 @@
 // * Profile Card *
 // ****************
 
+.kcls-profile-cards > div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 325px);
+	grid-gap: 2rem;
+	justify-content: space-around;
+	padding: 2rem;
+	align-items: center;
+}
+
 .kcls-profile-card {
 	display: flex;
 	flex-direction: column;
@@ -263,4 +272,12 @@
 .kcls-profile-image img {
 	padding: 0.25rem;
 	border: solid 3px var(--kcls-blue);
+}
+
+.kcls-profile-title {
+	padding-bottom: 0.5rem;
+}
+
+.kcls-profile-name {
+	padding-bottom: 0.5rem;
 }
