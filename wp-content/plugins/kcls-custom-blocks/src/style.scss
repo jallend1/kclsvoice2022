@@ -242,6 +242,10 @@
 // * Profile Card *
 // ****************
 
+.kcls-profile-card {
+	margin: 2rem;
+}
+
 .kcls-profile-cards > div {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 325px);
@@ -280,4 +284,13 @@
 
 .kcls-profile-name {
 	padding-bottom: 0.5rem;
+}
+
+// **********************
+// * Leadership Section *
+// **********************
+
+.kcls-leadership-content > div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 325px);
 }

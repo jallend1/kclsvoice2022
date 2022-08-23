@@ -949,7 +949,7 @@ function KCLSLeadership() {
     content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Meet the Leadership")
   }]]], ["core/group", {
     className: "kcls-leadership-content"
-  }, []]]]];
+  }, [["kcls/kcls-profile-card"], ["kcls/kcls-profile-card"], ["kcls/kcls-profile-card"]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSLeadershipBlocks
   }));
@@ -1152,6 +1152,13 @@ __webpack_require__.r(__webpack_exports__);
   edit: _blocks_kcls_communications__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-profile-card", {
+  title: "KCLS - Profile Card",
+  icon: "admin-customizer",
+  category: "common",
+  edit: _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-leadership", {
   title: "KCLS Leadership",
   icon: "email",
@@ -1178,13 +1185,6 @@ __webpack_require__.r(__webpack_exports__);
   icon: "admin-customizer",
   category: "common",
   edit: _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__["default"],
-  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
-});
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-profile-card", {
-  title: "KCLS - Profile Card",
-  icon: "admin-customizer",
-  category: "common",
-  edit: _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 

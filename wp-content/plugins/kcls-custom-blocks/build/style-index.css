@@ -229,6 +229,10 @@
   font-size: 1.5rem;
 }
 
+.kcls-profile-card {
+  margin: 2rem;
+}
+
 .kcls-profile-cards > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, 325px);
@@ -267,6 +271,11 @@
 
 .kcls-profile-name {
   padding-bottom: 0.5rem;
+}
+
+.kcls-leadership-content > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 325px);
 }
 
 /*# sourceMappingURL=style-index.css.map*/

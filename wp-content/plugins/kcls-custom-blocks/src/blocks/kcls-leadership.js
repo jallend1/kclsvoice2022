@@ -21,7 +21,15 @@ export default function KCLSLeadership() {
 						],
 					],
 				],
-				["core/group", { className: "kcls-leadership-content" }, []],
+				[
+					"core/group",
+					{ className: "kcls-leadership-content" },
+					[
+						["kcls/kcls-profile-card"],
+						["kcls/kcls-profile-card"],
+						["kcls/kcls-profile-card"],
+					],
+				],
 			],
 		],
 	];

@@ -16,6 +16,14 @@ registerBlockType("kcls/kcls-communications", {
 	save,
 });
 
+registerBlockType("kcls/kcls-profile-card", {
+	title: "KCLS - Profile Card",
+	icon: "admin-customizer",
+	category: "common",
+	edit: KCLSProfileCard,
+	save,
+});
+
 registerBlockType("kcls/kcls-leadership", {
 	title: "KCLS Leadership",
 	icon: "email",
@@ -45,13 +53,5 @@ registerBlockType("kcls/stay-active", {
 	icon: "admin-customizer",
 	category: "common",
 	edit: KCLSStayActive,
-	save,
-});
-
-registerBlockType("kcls/kcls-profile-card", {
-	title: "KCLS - Profile Card",
-	icon: "admin-customizer",
-	category: "common",
-	edit: KCLSProfileCard,
 	save,
 });
