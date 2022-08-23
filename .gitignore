@@ -1,0 +1,32 @@
+# Ignore everything in the root except the "wp-content" directory
+/*
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# mu-plugins, plugins, and themes directories
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# ignore all mu-plugins, plugins, and themes
+# unless explicitly whitelisted at the end of this file
+wp-content/themes/*
+wp-content/plugins/*
+wp-content/mu-plugins/*
+
+# ignore node dependency directories (used by grunt)
+node_modules/
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!.scss-lint.yml
+!README.md
+!CHANGELOG.md
+!composer.json
+
+# Track these themes and plugins
+!wp-content/themes/kclsvoice2022/
+!wp-content/plugins/kcls-custom-blocks/*
+!wp-content/plugins/kcls-recent-news/*
