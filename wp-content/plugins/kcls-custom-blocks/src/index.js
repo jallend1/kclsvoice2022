@@ -6,12 +6,21 @@ import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
 import KCLSStayActive from "./blocks/kcls-stay-active";
 import KCLSProfileCard from "./blocks/kcls-profile-card";
+import KCLSLeadership from "./blocks/kcls-leadership";
 
 registerBlockType("kcls/kcls-communications", {
 	title: "KCLS Communications",
 	icon: "email",
 	category: "common",
 	edit: KCLSCommunications,
+	save,
+});
+
+registerBlockType("kcls/kcls-leadership", {
+	title: "KCLS Leadership",
+	icon: "email",
+	category: "common",
+	edit: KCLSLeadership,
 	save,
 });
 
