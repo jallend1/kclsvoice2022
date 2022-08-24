@@ -43,7 +43,7 @@ export default function KCLSStayActive() {
 									{
 										className: "kcls-stay-active-section-text",
 										content: __(
-											"It’s important to keep your information up to date with our union! Fill out this form to keep things current."
+											"It’s important to keep your information up to date! Fill out this form to keep things current."
 										),
 									},
 								],

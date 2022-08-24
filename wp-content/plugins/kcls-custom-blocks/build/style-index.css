@@ -85,14 +85,12 @@
   background-color: var(--kcls-green);
   color: white;
   margin: 0;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
   display: grid;
-  grid-gap: 1.8rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  text-align: center;
 }
 
 .kcls-stay-active-section-image figure {
@@ -104,7 +102,7 @@
 
 .kcls-stay-active-section-image figure img {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  max-height: 250px;
+  max-height: 150px;
 }
 
 .kcls-stay-active-section-title {
