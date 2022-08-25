@@ -7,12 +7,21 @@ import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
 import KCLSStayActive from "./blocks/kcls-stay-active";
 import KCLSProfileCard from "./blocks/kcls-profile-card";
 import KCLSLeadership from "./blocks/kcls-leadership";
+import KCLSSection from "./blocks/kcls-section";
 
 registerBlockType("kcls/kcls-communications", {
 	title: "KCLS Communications",
 	icon: "email",
 	category: "common",
 	edit: KCLSCommunications,
+	save,
+});
+
+registerBlockType("kcls/kcls-section", {
+	title: "KCLS Section",
+	icon: "email",
+	category: "common",
+	edit: KCLSSection,
 	save,
 });
 

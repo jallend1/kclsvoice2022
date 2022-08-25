@@ -1060,6 +1060,45 @@ function KCLSProfileCard() {
 
 /***/ }),
 
+/***/ "./src/blocks/kcls-section.js":
+/*!************************************!*\
+  !*** ./src/blocks/kcls-section.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ KCLSSection)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../editor.scss */ "./src/editor.scss");
+
+
+
+
+
+function KCLSSection() {
+  const KCLSSectionBlocks = [["core/group", {
+    className: "kcls-section-title"
+  }, [["core/heading", {
+    level: 2,
+    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Name Your New Section")
+  }]]], ["core/group", {
+    className: "kcls-section"
+  }, []]];
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
+    template: KCLSSectionBlocks
+  }));
+}
+
+/***/ }),
+
 /***/ "./src/blocks/kcls-stay-active.js":
 /*!****************************************!*\
   !*** ./src/blocks/kcls-stay-active.js ***!
@@ -1136,6 +1175,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/kcls-stay-active */ "./src/blocks/kcls-stay-active.js");
 /* harmony import */ var _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/kcls-profile-card */ "./src/blocks/kcls-profile-card.js");
 /* harmony import */ var _blocks_kcls_leadership__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/kcls-leadership */ "./src/blocks/kcls-leadership.js");
+/* harmony import */ var _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/kcls-section */ "./src/blocks/kcls-section.js");
+
 
 
 
@@ -1150,6 +1191,13 @@ __webpack_require__.r(__webpack_exports__);
   icon: "email",
   category: "common",
   edit: _blocks_kcls_communications__WEBPACK_IMPORTED_MODULE_3__["default"],
+  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-section", {
+  title: "KCLS Section",
+  icon: "email",
+  category: "common",
+  edit: _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_9__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-profile-card", {
