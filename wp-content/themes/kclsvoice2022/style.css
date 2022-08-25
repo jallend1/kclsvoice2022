@@ -281,7 +281,7 @@ body {
 
 .kcls-page-content {
   padding: 1rem;
-  max-width: 1000px;
+  max-width: 1100px;
   min-width: 400px;
   margin: 1rem auto;
   line-height: 1.75rem;
@@ -291,7 +291,7 @@ body {
 }
 
 .kcls-page-content h2 {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
 }
 
 .kcls-page-content p {
