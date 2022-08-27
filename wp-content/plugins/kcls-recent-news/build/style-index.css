@@ -38,12 +38,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0rem 2rem;
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 15px 15px 15px #071420;
+  border-radius: 15px;
 }
 
 .kcls-most-recent-post h3 {
   font-size: 1.7rem;
-  font-weight: bold;
-  margin: 0;
+  padding-top: 1rem;
 }
 
 .kcls-news-excerpt {
