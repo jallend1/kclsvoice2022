@@ -84,8 +84,8 @@ body {
 /* *********** */
 
 .kcls-section {
-  /* max-width: 95%; */
   margin: auto;
+  padding: 1rem 0;
 }
 
 .kcls-section-title {
