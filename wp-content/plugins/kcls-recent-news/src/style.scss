@@ -102,6 +102,10 @@
 	border-radius: 15px;
 }
 
+.kcls-view-blog-button:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
 	.kcls-recent-posts {
 		display: flex;
