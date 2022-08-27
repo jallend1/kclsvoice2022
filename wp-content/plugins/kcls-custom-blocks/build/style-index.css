@@ -242,8 +242,11 @@
   margin: auto;
 }
 
-.kcls-communications-text {
+.kcls-communications-text a.wp-block-button__link {
   font-size: 1.5rem;
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
 }
 
 .kcls-profile-card {

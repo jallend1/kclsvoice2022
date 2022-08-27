@@ -43,10 +43,11 @@ export default function KCLSCommunications() {
 									},
 								],
 								[
-									"core/paragraph",
+									"core/button",
 									{
 										className: "kcls-communications-text",
-										content: __("Email Newsletter"),
+										text: __("Email Newsletter"),
+										url: "http://www.google.com",
 									},
 								],
 							],
@@ -65,10 +66,11 @@ export default function KCLSCommunications() {
 									},
 								],
 								[
-									"core/paragraph",
+									"core/button",
 									{
 										className: "kcls-communications-text",
-										content: __("Find Your Steward"),
+										text: __("Find Your Steward"),
+										url: "http://www.google.com",
 									},
 								],
 							],
@@ -88,10 +90,11 @@ export default function KCLSCommunications() {
 									},
 								],
 								[
-									"core/paragraph",
+									"core/button",
 									{
 										className: "kcls-communications-text",
-										content: __("Text Alerts"),
+										text: __("Text Alerts"),
+										url: "http://www.google.com",
 									},
 								],
 							],
@@ -110,10 +113,11 @@ export default function KCLSCommunications() {
 									},
 								],
 								[
-									"core/paragraph",
+									"core/button",
 									{
 										className: "kcls-communications-text",
-										content: __("Watercooler"),
+										text: __("Watercooler"),
+										url: "http://www.google.com",
 									},
 								],
 							],

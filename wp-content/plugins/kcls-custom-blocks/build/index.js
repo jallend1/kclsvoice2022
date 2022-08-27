@@ -802,33 +802,37 @@ function KCLSCommunications() {
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_email_svg__WEBPACK_IMPORTED_MODULE_6__["default"]
-  }], ["core/paragraph", {
+  }], ["core/button", {
     className: "kcls-communications-text",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Email Newsletter")
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Email Newsletter"),
+    url: "http://www.google.com"
   }]]], ["core/group", {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_people_svg__WEBPACK_IMPORTED_MODULE_8__["default"]
-  }], ["core/paragraph", {
+  }], ["core/button", {
     className: "kcls-communications-text",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Find Your Steward")
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Find Your Steward"),
+    url: "http://www.google.com"
   }]]], ["core/group", {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_chat_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
-  }], ["core/paragraph", {
+  }], ["core/button", {
     className: "kcls-communications-text",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Text Alerts")
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Text Alerts"),
+    url: "http://www.google.com"
   }]]], ["core/group", {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_watercooler_svg__WEBPACK_IMPORTED_MODULE_7__["default"]
-  }], ["core/paragraph", {
+  }], ["core/button", {
     className: "kcls-communications-text",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Watercooler")
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Watercooler"),
+    url: "http://www.google.com"
   }]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSCommunicationsBlocks
