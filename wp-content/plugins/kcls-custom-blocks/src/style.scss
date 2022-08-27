@@ -85,28 +85,30 @@
 	background-color: var(--kcls-green);
 	color: white;
 	margin: 0;
-	padding: 1rem 0;
+	// padding: 1rem 0;
 }
 
 .kcls-stay-active-section-content > .wp-block-group__inner-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
+	max-width: 90%;
+	margin: auto;
+	height: 200px;
 }
 
 .kcls-stay-active-section-image figure {
-	max-height: 300px;
-	border-radius: 25px;
-	width: 100%;
 	text-align: center;
+	margin: 0;
 }
 
 .kcls-stay-active-section-image figure img {
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-	max-height: 150px;
+	height: 200px;
 }
 
 .kcls-stay-active-section-title {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .kcls-stay-active-section-text > div {
@@ -117,8 +119,8 @@
 }
 
 .kcls-stay-active-section-text p {
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
 	padding-top: 2rem;
 	font-weight: 200;
 }
