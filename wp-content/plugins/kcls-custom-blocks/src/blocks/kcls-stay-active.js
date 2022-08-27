@@ -51,7 +51,7 @@ export default function KCLSStayActive() {
 						],
 						[
 							"core/group",
-							{ className: "kcls-stay-active-section-cta-button" },
+							{ className: "kcls-stay-active-cta-button-section" },
 							[
 								[
 									"core/button",

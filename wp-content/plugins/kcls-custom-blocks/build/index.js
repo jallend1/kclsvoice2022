@@ -1144,7 +1144,7 @@ function KCLSStayActive() {
     className: "kcls-stay-active-section-text",
     content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("It’s important to keep your information up to date! Fill out this form to keep things current.")
   }]]], ["core/group", {
-    className: "kcls-stay-active-section-cta-button"
+    className: "kcls-stay-active-cta-button-section"
   }, [["core/button", {
     className: "kcls-stay-active-section-cta-button",
     href: "https://www.kcls.org/stay-active/",
