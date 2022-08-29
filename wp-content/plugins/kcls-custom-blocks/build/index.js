@@ -842,9 +842,16 @@ function KCLSCommunications() {
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_email_svg__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "Email Newsletter"
+  }], ["core/paragraph", {
+    className: "kcls-communications-item-text",
+    content: "Weekly missives from our union’s leadership with news and meeting details"
   }], ["core/button", {
-    className: "kcls-communications-text",
-    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Email Newsletter"),
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Learn More"),
     url: "http://www.google.com"
   }]]], ["core/group", {
     className: "kcls-communications-item"

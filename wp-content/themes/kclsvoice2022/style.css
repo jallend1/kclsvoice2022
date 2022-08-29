@@ -313,3 +313,9 @@ body {
   /* position: absolute;
   bottom: 0; */
 }
+
+.kcls-small-cta-button a {
+  color: #fff;
+  background-color: var(--kcls-green);
+  font-size: 0.75rem;
+}

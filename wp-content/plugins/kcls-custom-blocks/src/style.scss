@@ -240,24 +240,37 @@
 	box-shadow: 15px 15px 15px #071420;
 	color: #071420;
 	background-color: #fff;
+	text-align: center;
 }
 
-.kcls-communications-item:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
+// .kcls-communications-item:hover {
+// 	cursor: pointer;
+// 	transform: scale(1.1);
+// }
 
 .kcls-communications-image {
 	max-width: 100px;
 	margin: auto;
 }
 
-.kcls-communications-text a.wp-block-button__link {
-	font-size: 1.5rem;
-	background-color: transparent;
-	color: black;
-	font-weight: bold;
+.kcls-communications-item-heading {
+	padding: 1rem 0;
 }
+
+.kcls-communications-item-text {
+	padding-bottom: 1rem;
+}
+
+.kcls-communications-item-button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+// .kcls-communications-text a.wp-block-button__link {
+// 	font-size: 1.5rem;
+// 	background-color: transparent;
+// 	color: black;
+// 	font-weight: bold;
+// }
 
 // ****************
 // * Profile Card *
