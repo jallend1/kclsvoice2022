@@ -10,4 +10,14 @@
   border: 1px dotted #f00;
 }
 
+.block-editor-block-list__block .kcls-action-bar {
+  width: 100%;
+  background-color: var(--kcls-blue);
+  display: flex;
+}
+
+.kcls-action-bar p {
+  color: black;
+}
+
 /*# sourceMappingURL=index.css.map*/

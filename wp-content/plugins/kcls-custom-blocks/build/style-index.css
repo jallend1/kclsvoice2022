@@ -298,4 +298,30 @@
   grid-template-columns: repeat(auto-fit, 325px);
 }
 
+.kcls-action-bar {
+  width: 100%;
+  background-color: var(--kcls-blue);
+}
+
+.kcls-action-bar > div {
+  width: 80%;
+  max-width: 1100px;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.kcls-action-bar-text {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.kcls-action-bar-cta-button a {
+  background-color: var(--kcls-green);
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

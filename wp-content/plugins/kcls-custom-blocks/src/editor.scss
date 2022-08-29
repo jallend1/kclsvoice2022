@@ -7,3 +7,15 @@
 .wp-block-create-block-kcls-custom-blocks {
 	border: 1px dotted #f00;
 }
+
+.block-editor-block-list__block .kcls-action-bar {
+	width: 100%;
+	background-color: var(--kcls-blue);
+	display: flex;
+}
+
+.kcls-action-bar p {
+	color: black;
+}
+
+// class="block-editor-block-list__block wp-block wp-container-32 is-layout-default is-selected wp-block-group kcls-action-bar"

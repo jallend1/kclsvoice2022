@@ -1,6 +1,7 @@
 import { registerBlockType } from "@wordpress/blocks";
 import "./style.scss";
 import save from "./save";
+import KCLSActionBar from "./blocks/kcls-action-bar";
 import KCLSCommunications from "./blocks/kcls-communications";
 import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
@@ -8,6 +9,14 @@ import KCLSStayActive from "./blocks/kcls-stay-active";
 import KCLSProfileCard from "./blocks/kcls-profile-card";
 import KCLSLeadership from "./blocks/kcls-leadership";
 import KCLSSection from "./blocks/kcls-section";
+
+registerBlockType("kcls/action-bar", {
+	title: "KCLS Action Bar",
+	icon: "email",
+	category: "common",
+	edit: KCLSActionBar,
+	save,
+});
 
 registerBlockType("kcls/kcls-communications", {
 	title: "KCLS Communications",
