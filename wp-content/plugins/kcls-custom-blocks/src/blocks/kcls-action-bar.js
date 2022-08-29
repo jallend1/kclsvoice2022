@@ -8,8 +8,17 @@ export default function KCLSActionBar() {
 			"core/group",
 			{ className: "kcls-action-bar" },
 			[
-				["core/paragraph", { className: "kcls-action-bar-text" }],
-				["core/button", { className: "kcls-action-bar-cta-button" }],
+				[
+					"core/paragraph",
+					{
+						className: "kcls-action-bar-text",
+						content: "Have a concern? Get in touch with your union leadership!",
+					},
+				],
+				[
+					"core/button",
+					{ className: "kcls-action-bar-cta-button", text: "CONTACT" },
+				],
 			],
 		],
 	];

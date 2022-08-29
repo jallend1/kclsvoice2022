@@ -783,9 +783,11 @@ function KCLSActionBar() {
   const KCLSActionBarBlocks = [["core/group", {
     className: "kcls-action-bar"
   }, [["core/paragraph", {
-    className: "kcls-action-bar-text"
+    className: "kcls-action-bar-text",
+    content: "Have a concern? Get in touch with your union leadership!"
   }], ["core/button", {
-    className: "kcls-action-bar-cta-button"
+    className: "kcls-action-bar-cta-button",
+    text: "CONTACT"
   }]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSActionBarBlocks
