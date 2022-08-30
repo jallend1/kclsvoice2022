@@ -857,28 +857,49 @@ function KCLSCommunications() {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
-    url: _images_people_svg__WEBPACK_IMPORTED_MODULE_8__["default"]
-  }], ["core/button", {
-    className: "kcls-communications-text",
-    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Find Your Steward"),
-    url: "http://www.google.com"
-  }]]], ["core/group", {
-    className: "kcls-communications-item"
-  }, [["core/image", {
-    className: "kcls-communications-image",
     url: _images_chat_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "Text Alerts"
+  }], ["core/paragraph", {
+    className: "kcls-communications-item-text",
+    content: "Infrequent messages to your phone with urgent information"
   }], ["core/button", {
-    className: "kcls-communications-text",
-    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Text Alerts"),
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Learn More"),
     url: "http://www.google.com"
   }]]], ["core/group", {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
     url: _images_watercooler_svg__WEBPACK_IMPORTED_MODULE_7__["default"]
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "Watercooler"
+  }], ["core/paragraph", {
+    className: "kcls-communications-item-text",
+    content: "An informal message group for member-to-member communication"
   }], ["core/button", {
-    className: "kcls-communications-text",
-    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Watercooler"),
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Learn More"),
+    url: "http://www.google.com"
+  }]]], ["core/group", {
+    className: "kcls-communications-item"
+  }, [["core/image", {
+    className: "kcls-communications-image",
+    url: _images_people_svg__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "Find Your Steward"
+  }], ["core/paragraph", {
+    className: "kcls-communications-item-text",
+    content: "Locate your closest union steward"
+  }], ["core/button", {
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Learn More"),
     url: "http://www.google.com"
   }]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {

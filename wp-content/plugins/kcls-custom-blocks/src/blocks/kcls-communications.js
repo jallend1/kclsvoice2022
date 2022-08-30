@@ -79,38 +79,31 @@ export default function KCLSCommunications() {
 									"core/image",
 									{
 										className: "kcls-communications-image",
-										url: StewardIcon,
-									},
-								],
-								[
-									"core/button",
-									{
-										className: "kcls-communications-text",
-										text: __("Find Your Steward"),
-										url: "http://www.google.com",
-									},
-								],
-							],
-						],
-
-						[
-							"core/group",
-							{
-								className: "kcls-communications-item",
-							},
-							[
-								[
-									"core/image",
-									{
-										className: "kcls-communications-image",
 										url: ChatIcon,
 									},
 								],
 								[
+									"core/heading",
+									{
+										className: "kcls-communications-item-heading",
+										level: 3,
+										content: "Text Alerts",
+									},
+								],
+								[
+									"core/paragraph",
+									{
+										className: "kcls-communications-item-text",
+										content:
+											"Infrequent messages to your phone with urgent information",
+									},
+								],
+								[
 									"core/button",
 									{
-										className: "kcls-communications-text",
-										text: __("Text Alerts"),
+										className:
+											"kcls-communications-item-button kcls-small-cta-button",
+										text: __("Learn More"),
 										url: "http://www.google.com",
 									},
 								],
@@ -130,10 +123,66 @@ export default function KCLSCommunications() {
 									},
 								],
 								[
+									"core/heading",
+									{
+										className: "kcls-communications-item-heading",
+										level: 3,
+										content: "Watercooler",
+									},
+								],
+								[
+									"core/paragraph",
+									{
+										className: "kcls-communications-item-text",
+										content:
+											"An informal message group for member-to-member communication",
+									},
+								],
+								[
 									"core/button",
 									{
-										className: "kcls-communications-text",
-										text: __("Watercooler"),
+										className:
+											"kcls-communications-item-button kcls-small-cta-button",
+										text: __("Learn More"),
+										url: "http://www.google.com",
+									},
+								],
+							],
+						],
+						[
+							"core/group",
+							{
+								className: "kcls-communications-item",
+							},
+							[
+								[
+									"core/image",
+									{
+										className: "kcls-communications-image",
+										url: StewardIcon,
+									},
+								],
+								[
+									"core/heading",
+									{
+										className: "kcls-communications-item-heading",
+										level: 3,
+										content: "Find Your Steward",
+									},
+								],
+								[
+									"core/paragraph",
+									{
+										className: "kcls-communications-item-text",
+										content: "Locate your closest union steward",
+									},
+								],
+								[
+									"core/button",
+									{
+										className:
+											"kcls-communications-item-button kcls-small-cta-button",
+										text: __("Learn More"),
 										url: "http://www.google.com",
 									},
 								],
