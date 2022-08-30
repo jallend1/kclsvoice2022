@@ -5,7 +5,7 @@ import KCLSActionBar from "./blocks/kcls-action-bar";
 import KCLSCommunications from "./blocks/kcls-communications";
 import KCLSMainHero from "./blocks/kcls-main-hero";
 import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
-import KCLSStayActive from "./blocks/kcls-stay-active";
+// import KCLSStayActive from "./blocks/kcls-stay-active";
 import KCLSProfileCard from "./blocks/kcls-profile-card";
 import KCLSLeadership from "./blocks/kcls-leadership";
 import KCLSSection from "./blocks/kcls-section";
@@ -66,10 +66,10 @@ registerBlockType("kcls/know-your-contract", {
 	save,
 });
 
-registerBlockType("kcls/stay-active", {
-	title: "KCLS - Stay Active",
-	icon: "admin-customizer",
-	category: "common",
-	edit: KCLSStayActive,
-	save,
-});
+// registerBlockType("kcls/stay-active", {
+// 	title: "KCLS - Stay Active",
+// 	icon: "admin-customizer",
+// 	category: "common",
+// 	edit: KCLSStayActive,
+// 	save,
+// });
