@@ -89,16 +89,13 @@ body {
 }
 
 .kcls-section-title {
-  margin-bottom: 1rem;
-  width: 80%;
-  max-width: 600px;
-  color: white;
+  display: inline-block;
+  margin: 1rem 2rem;
+  padding: 0 2rem 0.25rem 0;
+  color: var(--kcls-blue);
   font-weight: bold;
-  font-size: 1.25rem;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background-color: var(--kcls-blue);
-  padding: 1.1rem 3rem;
+  font-size: 1.5rem;
+  border-bottom: solid 1px var(--kcls-green);
 }
 
 /* *************** */
