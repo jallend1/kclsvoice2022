@@ -165,54 +165,59 @@
 // /* * CONTRACTS * */
 // /* ************* */
 
-.kcls-know-your-contract > div {
-	margin: 0;
-	color: white;
-	width: 100%;
-}
+// .kcls-know-your-contract > div {
+// margin: 0;
+// color: white;
+// width: 100%;
+// }
 
-.kcls-contracts {
-	// max-width: 95%;
+// .kcls-contracts {
+// max-width: 95%;
+// margin: auto;
+// padding: 3rem 0;
+// }
+
+.kcls-contracts-columns {
+	max-width: 90%;
 	margin: auto;
-	padding: 3rem 0;
 }
 
-.kcls-contract > div {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	min-width: 300px;
-	margin: auto;
-	padding: 2rem;
-	border-radius: 15px;
-	box-shadow: 15px 15px 15px #071420;
-	color: #071420;
-	background-color: #fff;
-	max-width: 400px;
-}
+// .kcls-contract > div {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	min-width: 300px;
+// 	margin: auto;
+// 	padding: 2rem;
+// 	border-radius: 15px;
+// 	box-shadow: 15px 15px 15px #071420;
+// 	color: #071420;
+// 	background-color: #fff;
+// 	max-width: 400px;
+// }
 
-.kcls-contract img {
-	max-height: 50px;
-}
+// .kcls-contract img {
+// 	max-height: 50px;
+// }
 
-.kcls-contract:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
+// .kcls-contract:hover {
+// 	cursor: pointer;
+// 	transform: scale(1.1);
+// }
 
-.kcls-contract-image {
-	border-radius: 50%;
-	border: solid 3px var(--kcls-blue);
-	padding: 1.15rem;
-}
+// .kcls-contract-image {
+// 	border-radius: 50%;
+// 	border: solid 3px var(--kcls-blue);
+// 	padding: 1.15rem;
+// }
 
-.kcls-contract-title {
-	margin: 2rem;
-	font-weight: bold;
-	text-align: center;
-	font-size: 1.25rem;
-	word-break: normal;
-}
+// .kcls-contract-title {
+// 	margin: 2rem;
+// 	font-weight: bold;
+// 	text-align: center;
+// 	font-size: 1.25rem;
+// 	word-break: normal;
+// }
 
 // *****************
 // * STAY IN TOUCH *

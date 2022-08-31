@@ -39,21 +39,39 @@ export default function KCLSKnowYourContract() {
 										[
 											"core/group",
 											{
-												className: "kcls-contract",
+												className: "kcls-communications-item",
 											},
 											[
 												[
 													"core/image",
 													{
 														url: Contract1,
-														className: "kcls-contract-image",
+														className: "kcls-communications-image",
+													},
+												],
+												[
+													"core/heading",
+													{
+														className: "kcls-communications-item-heading",
+														level: 3,
+														content: "1857M - Main Unit",
 													},
 												],
 												[
 													"core/paragraph",
 													{
-														className: "kcls-contract-title",
-														content: __("Facilities Contract"),
+														className: "kcls-communications-item-text",
+														content:
+															"All represented staff who are not supervisors, pages or in facilities.",
+													},
+												],
+												[
+													"core/button",
+													{
+														className:
+															"kcls-communications-item-button kcls-small-cta-button",
+														text: __("Read the Contract"),
+														url: "http://www.google.com",
 													},
 												],
 											],
@@ -67,21 +85,39 @@ export default function KCLSKnowYourContract() {
 										[
 											"core/group",
 											{
-												className: "kcls-contract",
+												className: "kcls-communications-item",
 											},
 											[
 												[
 													"core/image",
 													{
+														className: "kcls-communications-image",
 														url: Contract2,
-														className: "kcls-contract-image",
+													},
+												],
+												[
+													"core/heading",
+													{
+														className: "kcls-communications-item-heading",
+														level: 3,
+														content: "1857P - Page Unit",
 													},
 												],
 												[
 													"core/paragraph",
 													{
-														className: "kcls-contract-title",
-														content: __("Main Unit"),
+														className: "kcls-communications-item-text",
+														content:
+															"Representing all pages in the branches, Service Center and MDS",
+													},
+												],
+												[
+													"core/button",
+													{
+														className:
+															"kcls-communications-item-button kcls-small-cta-button",
+														text: __("Read the Contract"),
+														url: "http://www.google.com",
 													},
 												],
 											],
@@ -95,21 +131,39 @@ export default function KCLSKnowYourContract() {
 										[
 											"core/group",
 											{
-												className: "kcls-contract",
+												className: "kcls-communications-item",
 											},
 											[
 												[
 													"core/image",
 													{
+														className: "kcls-communications-image",
 														url: Contract3,
-														className: "kcls-contract-image",
+													},
+												],
+												[
+													"core/heading",
+													{
+														className: "kcls-communications-item-heading",
+														level: 3,
+														content: "1857F - Facilities Unit",
 													},
 												],
 												[
 													"core/paragraph",
 													{
-														className: "kcls-contract-title",
-														content: __("Page Unit"),
+														className: "kcls-communications-item-text",
+														content:
+															"Representing maintenance workers and AMH Service Specialists",
+													},
+												],
+												[
+													"core/button",
+													{
+														className:
+															"kcls-communications-item-button kcls-small-cta-button",
+														text: __("Read the Contract"),
+														url: "http://www.google.com",
 													},
 												],
 											],

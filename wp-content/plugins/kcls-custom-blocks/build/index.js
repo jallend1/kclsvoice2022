@@ -953,33 +953,57 @@ function KCLSKnowYourContract() {
   }, [["core/column", {
     className: "kcls-contracts-column"
   }, [["core/group", {
-    className: "kcls-contract"
+    className: "kcls-communications-item"
   }, [["core/image", {
     url: _images_contract_1_png__WEBPACK_IMPORTED_MODULE_5__,
-    className: "kcls-contract-image"
+    className: "kcls-communications-image"
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "1857M - Main Unit"
   }], ["core/paragraph", {
-    className: "kcls-contract-title",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Facilities Contract")
+    className: "kcls-communications-item-text",
+    content: "All represented staff who are not supervisors, pages or in facilities."
+  }], ["core/button", {
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Read the Contract"),
+    url: "http://www.google.com"
   }]]]]], ["core/column", {
     className: "kcls-contracts-column"
   }, [["core/group", {
-    className: "kcls-contract"
+    className: "kcls-communications-item"
   }, [["core/image", {
-    url: _images_contract_2_png__WEBPACK_IMPORTED_MODULE_6__,
-    className: "kcls-contract-image"
+    className: "kcls-communications-image",
+    url: _images_contract_2_png__WEBPACK_IMPORTED_MODULE_6__
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "1857P - Page Unit"
   }], ["core/paragraph", {
-    className: "kcls-contract-title",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Main Unit")
+    className: "kcls-communications-item-text",
+    content: "Representing all pages in the branches, Service Center and MDS"
+  }], ["core/button", {
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Read the Contract"),
+    url: "http://www.google.com"
   }]]]]], ["core/column", {
     className: "kcls-contracts-column"
   }, [["core/group", {
-    className: "kcls-contract"
+    className: "kcls-communications-item"
   }, [["core/image", {
-    url: _images_contract_3_png__WEBPACK_IMPORTED_MODULE_7__,
-    className: "kcls-contract-image"
+    className: "kcls-communications-image",
+    url: _images_contract_3_png__WEBPACK_IMPORTED_MODULE_7__
+  }], ["core/heading", {
+    className: "kcls-communications-item-heading",
+    level: 3,
+    content: "1857F - Facilities Unit"
   }], ["core/paragraph", {
-    className: "kcls-contract-title",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Page Unit")
+    className: "kcls-communications-item-text",
+    content: "Representing maintenance workers and AMH Service Specialists"
+  }], ["core/button", {
+    className: "kcls-communications-item-button kcls-small-cta-button",
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Read the Contract"),
+    url: "http://www.google.com"
   }]]]]]]]]]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
     template: KCLSKnowYourContractBlocks
@@ -1171,65 +1195,6 @@ function KCLSSection() {
 
 /***/ }),
 
-/***/ "./src/blocks/kcls-stay-active.js":
-/*!****************************************!*\
-  !*** ./src/blocks/kcls-stay-active.js ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ KCLSStayActive)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_teamwork_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../images/teamwork.jpg */ "./src/images/teamwork.jpg");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../editor.scss */ "./src/editor.scss");
-
-
-
-
-
-
-function KCLSStayActive() {
-  const KCLSStayActiveBlocks = [["core/group", {
-    className: "kcls-stay-active-section"
-  }, [["core/group", {
-    className: "kcls-stay-active-section-content kcls-section"
-  }, [["core/group", {
-    className: "kcls-stay-active-section-image"
-  }, [["core/image", {
-    url: _images_teamwork_jpg__WEBPACK_IMPORTED_MODULE_4__,
-    alt: "Teamwork makes the dream work."
-  }]]], ["core/group", {
-    className: "kcls-stay-active-section-text"
-  }, [["core/heading", {
-    level: 2,
-    className: "kcls-stay-active-section-title",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Stay Active")
-  }], ["core/paragraph", {
-    className: "kcls-stay-active-section-text",
-    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("It’s important to keep your information up to date! Fill out this form to keep things current.")
-  }]]], ["core/group", {
-    className: "kcls-stay-active-cta-button-section"
-  }, [["core/button", {
-    className: "kcls-stay-active-section-cta-button",
-    href: "https://www.kcls.org/stay-active/",
-    target: "_blank",
-    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Update or Confirm Your Membership")
-  }]]]]]]]];
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
-    template: KCLSStayActiveBlocks
-  }));
-}
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -1245,17 +1210,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_kcls_communications__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/kcls-communications */ "./src/blocks/kcls-communications.js");
 /* harmony import */ var _blocks_kcls_main_hero__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/kcls-main-hero */ "./src/blocks/kcls-main-hero.js");
 /* harmony import */ var _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/kcls-know-your-contract */ "./src/blocks/kcls-know-your-contract.js");
-/* harmony import */ var _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/kcls-stay-active */ "./src/blocks/kcls-stay-active.js");
-/* harmony import */ var _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/kcls-profile-card */ "./src/blocks/kcls-profile-card.js");
-/* harmony import */ var _blocks_kcls_leadership__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/kcls-leadership */ "./src/blocks/kcls-leadership.js");
-/* harmony import */ var _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/kcls-section */ "./src/blocks/kcls-section.js");
+/* harmony import */ var _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/kcls-profile-card */ "./src/blocks/kcls-profile-card.js");
+/* harmony import */ var _blocks_kcls_leadership__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/kcls-leadership */ "./src/blocks/kcls-leadership.js");
+/* harmony import */ var _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/kcls-section */ "./src/blocks/kcls-section.js");
 
 
 
 
 
 
-
+ // import KCLSStayActive from "./blocks/kcls-stay-active";
 
 
 
@@ -1278,21 +1242,21 @@ __webpack_require__.r(__webpack_exports__);
   title: "KCLS Section",
   icon: "email",
   category: "common",
-  edit: _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_10__["default"],
+  edit: _blocks_kcls_section__WEBPACK_IMPORTED_MODULE_9__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-profile-card", {
   title: "KCLS - Profile Card",
   icon: "admin-customizer",
   category: "common",
-  edit: _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_8__["default"],
+  edit: _blocks_kcls_profile_card__WEBPACK_IMPORTED_MODULE_7__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/kcls-leadership", {
   title: "KCLS Leadership",
   icon: "email",
   category: "common",
-  edit: _blocks_kcls_leadership__WEBPACK_IMPORTED_MODULE_9__["default"],
+  edit: _blocks_kcls_leadership__WEBPACK_IMPORTED_MODULE_8__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/main-hero", {
@@ -1308,14 +1272,13 @@ __webpack_require__.r(__webpack_exports__);
   category: "common",
   edit: _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_6__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
-});
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/stay-active", {
-  title: "KCLS - Stay Active",
-  icon: "admin-customizer",
-  category: "common",
-  edit: _blocks_kcls_stay_active__WEBPACK_IMPORTED_MODULE_7__["default"],
-  save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
-});
+}); // registerBlockType("kcls/stay-active", {
+// 	title: "KCLS - Stay Active",
+// 	icon: "admin-customizer",
+// 	category: "common",
+// 	edit: KCLSStayActive,
+// 	save,
+// });
 
 /***/ }),
 
@@ -1405,16 +1368,6 @@ module.exports = __webpack_require__.p + "images/contract-3.e14a117b.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "images/snoqualmie.16b243b8.jpg";
-
-/***/ }),
-
-/***/ "./src/images/teamwork.jpg":
-/*!*********************************!*\
-  !*** ./src/images/teamwork.jpg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/teamwork.09a52062.jpg";
 
 /***/ }),
 
