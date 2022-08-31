@@ -26,6 +26,9 @@ function kcls_latest_news_block_renderer($attr){
     <div class="kcls-news">
         <header class="kcls-section-title">
             <h2 class="kcls-heading">Latest News</h2>
+            <div class="kcls-read-blog-button">
+                <a href="<?php echo site_url() . '/news'; ?>">Read All</a>
+</div>
         </header>      
         <main class="kcls-section">
             <div class="kcls-recent-posts">
@@ -64,13 +67,6 @@ function kcls_latest_news_block_renderer($attr){
                     </div>
                 <?php endwhile; ?>
             </div>
-            <footer class="kcls-recent-news-footer">
-                <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
-                    <button class="kcls-view-blog-button">
-                        See More News...
-                    </button>
-                </a>
-            </footer>
         </main>
     </div>
 	<?php
