@@ -1,10 +1,3 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
 .wp-block-create-block-kcls-custom-blocks {
 	background-color: #21759b;
 	color: #fff;
@@ -77,147 +70,14 @@
 	background-color: var(--kcls-green);
 }
 
-/* *************** */
-/* * STAY ACTIVE * */
-/* *************** */
-
-// .kcls-stay-active-section {
-// 	background-color: var(--kcls-green);
-// 	color: white;
-// 	margin: 1.5rem 0;
-// 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-// }
-
-// .kcls-stay-active-section-content > .wp-block-group__inner-container {
-// 	display: grid;
-// 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-// 	gap: 2rem;
-// 	max-width: 90%;
-// 	margin: auto;
-// 	justify-content: space-around;
-// }
-
-// .kcls-stay-active-section-image figure {
-// 	text-align: center;
-// 	margin: 0;
-// }
-
-// .kcls-stay-active-section-image figure img {
-// 	height: 200px;
-// }
-
-// .kcls-stay-active-section-title {
-// 	font-size: 2rem;
-// }
-
-// .kcls-stay-active-section-text > div {
-// 	height: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// }
-
-// .kcls-stay-active-section-text p {
-// 	font-size: 1rem;
-// 	line-height: 1.5rem;
-// 	padding-top: 2rem;
-// 	font-weight: 200;
-// }
-
-// .kcls-stay-active-cta-button-section > div {
-// 	height: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	align-items: center;
-// }
-
-// .kcls-stay-active-section-cta-button {
-// 	width: 200px;
-// }
-
-// .kcls-stay-active-section-cta-button a {
-// 	background-color: var(--kcls-blue);
-// 	border: none;
-// 	color: white;
-// 	font-size: 1.15rem;
-// 	border-radius: 15px;
-// 	padding: 1.25rem;
-// 	font-weight: bold;
-// }
-
-// @media (max-width: 1100px) {
-// 	.kcls-stay-active-section {
-// 		max-width: 50%;
-// 		min-width: 300px;
-// 		margin: 1rem auto;
-// 		border-radius: 15px;
-// 		padding: 1rem;
-// 	}
-// 	.kcls-stay-active-section-content > .wp-block-group__inner-container {
-// 		display: flex;
-// 		flex-direction: column;
-// 		text-align: center;
-// 	}
-// }
-
 // /* ************* */
 // /* * CONTRACTS * */
 // /* ************* */
-
-// .kcls-know-your-contract > div {
-// margin: 0;
-// color: white;
-// width: 100%;
-// }
-
-// .kcls-contracts {
-// max-width: 95%;
-// margin: auto;
-// padding: 3rem 0;
-// }
 
 .kcls-contracts-columns {
 	max-width: 90%;
 	margin: auto;
 }
-
-// .kcls-contract > div {
-// 	display: flex;
-// 	justify-content: space-between;
-// 	align-items: center;
-// 	min-width: 300px;
-// 	margin: auto;
-// 	padding: 2rem;
-// 	border-radius: 15px;
-// 	box-shadow: 15px 15px 15px #071420;
-// 	color: #071420;
-// 	background-color: #fff;
-// 	max-width: 400px;
-// }
-
-// .kcls-contract img {
-// 	max-height: 50px;
-// }
-
-// .kcls-contract:hover {
-// 	cursor: pointer;
-// 	transform: scale(1.1);
-// }
-
-// .kcls-contract-image {
-// 	border-radius: 50%;
-// 	border: solid 3px var(--kcls-blue);
-// 	padding: 1.15rem;
-// }
-
-// .kcls-contract-title {
-// 	margin: 2rem;
-// 	font-weight: bold;
-// 	text-align: center;
-// 	font-size: 1.25rem;
-// 	word-break: normal;
-// }
 
 // *****************
 // * STAY IN TOUCH *
@@ -248,11 +108,6 @@
 	text-align: center;
 }
 
-// .kcls-communications-item:hover {
-// 	cursor: pointer;
-// 	transform: scale(1.1);
-// }
-
 .kcls-communications-image {
 	max-width: 100px;
 	margin: auto;
@@ -270,12 +125,6 @@
 	cursor: pointer;
 	transform: scale(1.1);
 }
-// .kcls-communications-text a.wp-block-button__link {
-// 	font-size: 1.5rem;
-// 	background-color: transparent;
-// 	color: black;
-// 	font-weight: bold;
-// }
 
 // ****************
 // * Profile Card *

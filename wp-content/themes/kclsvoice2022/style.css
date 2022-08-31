@@ -15,7 +15,7 @@ This theme, like WordPress, is licensed under the GPL.
 */
 
 :root {
-  --kcls-light: #eef3f8;
+  --kcls-light: rgb(245, 245, 245);
   --kcls-blue: #124a92;
   --kcls-green: #009e57;
 }
