@@ -1219,7 +1219,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import KCLSStayActive from "./blocks/kcls-stay-active";
 
 
 
@@ -1272,13 +1271,7 @@ __webpack_require__.r(__webpack_exports__);
   category: "common",
   edit: _blocks_kcls_know_your_contract__WEBPACK_IMPORTED_MODULE_6__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_2__["default"]
-}); // registerBlockType("kcls/stay-active", {
-// 	title: "KCLS - Stay Active",
-// 	icon: "admin-customizer",
-// 	category: "common",
-// 	edit: KCLSStayActive,
-// 	save,
-// });
+});
 
 /***/ }),
 
