@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 100px 0 50px 0;
 }
 
 .kcls-hero-content > div {
