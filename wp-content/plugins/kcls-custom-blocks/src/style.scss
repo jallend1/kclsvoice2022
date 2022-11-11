@@ -1,3 +1,5 @@
+@import "colors";
+
 .wp-block-create-block-kcls-custom-blocks {
 	background-color: #21759b;
 	color: #fff;
@@ -67,7 +69,7 @@
 	padding: 2rem;
 	font-size: 2rem;
 	font-weight: bold;
-	background-color: var(--kcls-green);
+	background-color: $kcls-green;
 }
 
 // /* ************* */
@@ -163,7 +165,7 @@
 
 .kcls-profile-image img {
 	padding: 0.25rem;
-	border: solid 3px var(--kcls-blue);
+	border: solid 3px $kcls-blue;
 }
 
 .kcls-profile-title {
@@ -189,7 +191,7 @@
 
 .kcls-action-bar {
 	width: 100%;
-	background-color: var(--kcls-blue);
+	background-color: $kcls-blue;
 }
 
 .kcls-action-bar > div {
@@ -209,6 +211,6 @@
 }
 
 .kcls-action-bar-cta-button a {
-	background-color: var(--kcls-green);
+	background-color: $kcls-green;
 	font-weight: bold;
 }

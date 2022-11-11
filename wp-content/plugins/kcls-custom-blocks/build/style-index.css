@@ -69,7 +69,7 @@
   padding: 2rem;
   font-size: 2rem;
   font-weight: bold;
-  background-color: var(--kcls-green);
+  background-color: #009e57;
 }
 
 .kcls-contracts-columns {
@@ -153,7 +153,7 @@
 
 .kcls-profile-image img {
   padding: 0.25rem;
-  border: solid 3px var(--kcls-blue);
+  border: solid 3px #124a92;
 }
 
 .kcls-profile-title {
@@ -171,7 +171,7 @@
 
 .kcls-action-bar {
   width: 100%;
-  background-color: var(--kcls-blue);
+  background-color: #124a92;
 }
 
 .kcls-action-bar > div {
@@ -191,7 +191,7 @@
 }
 
 .kcls-action-bar-cta-button a {
-  background-color: var(--kcls-green);
+  background-color: #009e57;
   font-weight: bold;
 }
 
