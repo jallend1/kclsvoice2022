@@ -304,7 +304,7 @@ body {
 /* ********** */
 
 .kcls-footer {
-  background-color: var(--kcls-blue);
+  /* background-color: var(--kcls-blue); */
   height: 100px;
   width: 100%;
   /* position: absolute;
