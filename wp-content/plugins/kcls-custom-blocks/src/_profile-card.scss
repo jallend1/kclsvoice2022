@@ -1,0 +1,47 @@
+// ****************
+// * Profile Card *
+// ****************
+
+.kcls-profile-card {
+	margin: 2rem;
+}
+
+.kcls-profile-cards > div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 325px);
+	grid-gap: 2rem;
+	justify-content: space-around;
+	padding: 2rem;
+	align-items: center;
+}
+
+.kcls-profile-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 15px 15px 15px #071420;
+	color: #071420;
+	background-color: #fff;
+	max-width: 300px;
+	text-align: center;
+}
+
+.kcls-profile-image {
+	border-radius: 50%;
+}
+
+.kcls-profile-image img {
+	padding: 0.25rem;
+	border: solid 3px $kcls-blue;
+}
+
+.kcls-profile-title {
+	padding-bottom: 0.5rem;
+}
+
+.kcls-profile-name {
+	padding-bottom: 0.5rem;
+}

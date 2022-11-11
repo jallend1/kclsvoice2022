@@ -1,68 +1,12 @@
 @import "colors";
 
+@import "main-banner";
+@import "profile-card";
+
 .wp-block-create-block-kcls-custom-blocks {
 	background-color: #21759b;
 	color: #fff;
 	padding: 2px;
-}
-
-/* *********** */
-/* MAIN BANNER */
-/* *********** */
-
-.kcls-hero-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 100px 0 50px 0;
-}
-
-.kcls-hero-content > div {
-	min-height: 60vh;
-	padding: 2rem;
-	display: grid;
-	grid-template-columns: 1.5fr 1fr;
-}
-
-.kcls-left-banner {
-	height: 100%;
-}
-
-.kcls-left-banner > div {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	padding: 2rem;
-	min-width: 400px;
-}
-
-.kcls-left-banner h1 {
-	font-size: 4rem;
-	font-weight: bold;
-	margin: 0;
-}
-
-.kcls-left-banner h2 {
-	font-size: 2rem;
-	font-weight: bold;
-	margin: 0;
-}
-
-.kcls-left-banner p {
-	padding: 1.25rem 0;
-	line-height: 1.5rem;
-	max-width: 500px;
-}
-
-.kcls-right-banner > div {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 2rem;
 }
 
 .kcls-cta-button a {
@@ -127,54 +71,6 @@
 .kcls-communications-item-button:hover {
 	cursor: pointer;
 	transform: scale(1.1);
-}
-
-// ****************
-// * Profile Card *
-// ****************
-
-.kcls-profile-card {
-	margin: 2rem;
-}
-
-.kcls-profile-cards > div {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 325px);
-	grid-gap: 2rem;
-	justify-content: space-around;
-	padding: 2rem;
-	align-items: center;
-}
-
-.kcls-profile-card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
-	border-radius: 15px;
-	box-shadow: 15px 15px 15px #071420;
-	color: #071420;
-	background-color: #fff;
-	max-width: 300px;
-	text-align: center;
-}
-
-.kcls-profile-image {
-	border-radius: 50%;
-}
-
-.kcls-profile-image img {
-	padding: 0.25rem;
-	border: solid 3px $kcls-blue;
-}
-
-.kcls-profile-title {
-	padding-bottom: 0.5rem;
-}
-
-.kcls-profile-name {
-	padding-bottom: 0.5rem;
 }
 
 // **********************
