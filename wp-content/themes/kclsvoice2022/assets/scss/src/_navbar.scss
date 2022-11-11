@@ -1,0 +1,35 @@
+/* *************** */
+/*    NAV MENU     */
+/* *************** */
+
+.kcls-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.menu {
+  height: 80px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 0 1.2rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: white;
+}
