@@ -4,6 +4,10 @@ function kcls_voice_styles() {
     wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Inter:400,700', array(), '1.0.0' );
     wp_enqueue_style( 'kcls-voice-main-css', get_stylesheet_uri(), ['google-fonts'], filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_script('kcls-voice-custom-script', get_template_directory_uri() . '/assets/js/script.js', array(), filemtime(get_template_directory() . '/assets/js/script.js'), true );
+    wp_register_style('kcls-voice-scss', get_template_directory_uri() . '/assets/scss/dist/app.css', array(), filemtime(get_template_directory() . '/assets/scss/dist/app.css'), 'all');
+    wp_enqueue_style('kcls-voice-scss');
+    wp_register_script('kcls-voice-scss-js', get_template_directory_uri() . '/assets/scss/dist/app.js', array(), filemtime(get_template_directory() . '/assets/scss/dist/app.js'), true);
+    wp_enqueue_script('kcls-voice-scss-js');
 }
 
 function kcls_voice_register_menus() {
