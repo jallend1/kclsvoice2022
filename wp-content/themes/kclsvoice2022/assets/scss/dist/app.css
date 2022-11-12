@@ -107,6 +107,11 @@
 /* ************ */
 /* * BLOG LIST */
 /* ************ */
+.kcls-blog-list-container {
+  margin: auto;
+  max-width: 90%;
+}
+
 .kcls-blog-list {
   padding: 1rem;
   display: grid;
