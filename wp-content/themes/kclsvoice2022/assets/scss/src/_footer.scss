@@ -7,5 +7,21 @@
   height: 100px;
   width: 100%;
   /* position: absolute;
-    bottom: 0; */
+  bottom: 0; */
+}
+
+.kcls-voice-footer {
+  border-bottom: solid 1px $kcls-green;
+  padding: 1rem 0;
+}
+
+.kcls-voice-designer-footer {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem 0;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(65, 64, 64);
+  }
 }
