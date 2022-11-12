@@ -1,3 +1,5 @@
+@import "colors";
+
 .wp-block-kcls-kcls-recent-news {
 	background-color: #21759b;
 	color: #fff;
@@ -9,7 +11,7 @@
 /* *********** */
 
 .kcls-news {
-	background-color: var(--kcls-light);
+	background-color: $kcls-light;
 }
 
 .kcls-news a {
@@ -39,11 +41,14 @@
 	background-color: white;
 	box-shadow: 15px 15px 15px #071420;
 	border-radius: 15px;
-}
-
-.kcls-most-recent-post h3 {
-	font-size: 1.7rem;
-	padding-top: 1rem;
+	h3 {
+		font-size: 1.7rem;
+		padding-top: 1rem;
+	}
+	img {
+		max-width: 100%;
+		border-radius: 15px;
+	}
 }
 
 .kcls-news-excerpt {
@@ -63,12 +68,12 @@
 	border-radius: 15px;
 	max-width: 400px;
 	text-align: center;
-}
 
-.kcls-recent-post img {
-	max-width: 80px;
-	height: auto;
-	border-radius: 5px;
+	img {
+		max-width: 80px;
+		height: auto;
+		border-radius: 5px;
+	}
 }
 
 .kcls-recent-post-time {
@@ -89,7 +94,7 @@
 
 .kcls-view-blog-button {
 	padding: 1.25rem;
-	background-color: var(--kcls-green);
+	background-color: $kcls-green;
 	border: none;
 	color: white;
 	font-size: 1.25rem;

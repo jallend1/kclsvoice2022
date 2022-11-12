@@ -11,7 +11,7 @@
 /* LATEST NEWS */
 /* *********** */
 .kcls-news {
-  background-color: var(--kcls-light);
+  background-color: rgb(245, 245, 245);
 }
 
 .kcls-news a {
@@ -44,10 +44,13 @@
   box-shadow: 15px 15px 15px #071420;
   border-radius: 15px;
 }
-
 .kcls-most-recent-post h3 {
   font-size: 1.7rem;
   padding-top: 1rem;
+}
+.kcls-most-recent-post img {
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .kcls-news-excerpt {
@@ -68,7 +71,6 @@
   max-width: 400px;
   text-align: center;
 }
-
 .kcls-recent-post img {
   max-width: 80px;
   height: auto;
@@ -93,7 +95,7 @@
 
 .kcls-view-blog-button {
   padding: 1.25rem;
-  background-color: var(--kcls-green);
+  background-color: #009e57;
   border: none;
   color: white;
   font-size: 1.25rem;
