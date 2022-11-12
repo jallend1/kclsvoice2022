@@ -126,6 +126,7 @@
   padding: 1rem;
   border: rgba(15, 15, 15, 0.3) solid 1px;
   box-shadow: rgba(15, 15, 15, 0.3) 5px 5px 5px;
+  font-size: 0.9rem;
 }
 
 .kcls-blog-list-post-image {
@@ -142,6 +143,21 @@
   padding: 1rem;
   border-radius: 5px;
   font-size: 0.75rem;
+}
+
+.kcls-news-excerpt {
+  display: block;
+  background-color: #009e57;
+  width: 125px;
+  border-radius: 15px;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+.kcls-news-excerpt a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 /* **************** */
