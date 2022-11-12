@@ -1,0 +1,59 @@
+/* ******** */
+/* * PAGE * */
+/* ******** */
+
+.kcls-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: calc(100vh - 100px - 100px); */
+  background-color: $kcls-light;
+  position: relative;
+  background: rgb(18, 74, 146);
+  background: linear-gradient(43deg, $kcls-blue 0%, $kcls-green 100%);
+}
+
+.kcls-page-banner {
+  margin: 0;
+  color: white;
+  width: 100%;
+  min-height: 40vh;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.8)),
+    url(../../images/bookshelves.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.kcls-page-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.25rem;
+}
+
+.kcls-page-content {
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  min-width: 400px;
+  margin: 2rem auto;
+  line-height: 1.75rem;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 15px 15px 15px black;
+}
+
+.kcls-page-content h2 {
+  /* margin: 2rem 0; */
+}
+
+.kcls-page-content p {
+  margin: 1rem 0;
+}
+
+.kcls-page-content ul {
+  margin: 0 1rem;
+}
