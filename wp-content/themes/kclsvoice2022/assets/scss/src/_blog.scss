@@ -80,8 +80,16 @@
   border-radius: 20px;
   background-color: #fff;
   padding: 1rem;
+  border: rgba(15, 15, 15, 0.3) solid 1px;
+  box-shadow: rgba(15, 15, 15, 0.3) 5px 5px 5px;
 }
 
+.kcls-blog-list-post-image {
+  text-align: center;
+  img {
+    border-radius: 15px;
+  }
+}
 .kcls-blog-list-heading {
   color: white;
   font-weight: bold;

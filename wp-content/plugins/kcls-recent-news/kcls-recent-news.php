@@ -27,7 +27,7 @@ function kcls_latest_news_block_renderer($attr){
         <header class="kcls-section-title">
             <h2 class="kcls-heading">Latest News</h2>
             <div class="kcls-read-blog-button">
-                <a href="<?php echo site_url() . '/news'; ?>">Read All</a>
+                <a href="<?php echo site_url() . '/news'; ?>">See All News...</a>
 </div>
         </header>      
         <main class="kcls-section">

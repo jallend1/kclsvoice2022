@@ -12,6 +12,19 @@
             </div>
             <div class="kcls-blog-post">
                 <main class="kcls-blog-post-content">
+                    <!-- If post has a feature image, display it -->
+                    <div class="kcls-blog-list-post-image">
+                    <?php if ( has_post_thumbnail() ){
+                                        the_post_thumbnail('thumbnail');
+                                    } 
+                                    // If no featured image, display the first image from the post or default logo
+                                    else {
+                                        $kcls_post_img = kcls_get_post_image();
+                                        echo '<img width="150" src="' . $kcls_post_img . '" alt="' . get_the_title() . '">';
+                                    } ?> 
+                    
+
+                        </div>
                     <?php the_excerpt(); ?>
                 </main>
             </div>
