@@ -946,6 +946,9 @@ function KCLSKnowYourContract() {
   }, [["core/heading", {
     level: 2,
     content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Know Your Contract")
+  }], ["core/button", {
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("View Older Contracts..."),
+    className: "kcls-communications-item-button kcls-small-cta-button"
   }]]], ["core/group", {
     className: "kcls-contracts"
   }, [["core/columns", {

@@ -22,6 +22,14 @@ export default function KCLSKnowYourContract() {
 								content: __("Know Your Contract"),
 							},
 						],
+						[
+							"core/button",
+							{
+								text: __("View Older Contracts..."),
+								className:
+									"kcls-communications-item-button kcls-small-cta-button",
+							},
+						],
 					],
 				],
 				[

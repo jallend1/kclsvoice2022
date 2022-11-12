@@ -103,6 +103,18 @@
   padding-bottom: 0.5rem;
 }
 
+.kcls-contracts-columns {
+  max-width: 90%;
+  margin: auto;
+}
+
+.kcls-know-your-contract > div > .kcls-section-title > div {
+  display: flex;
+}
+.kcls-know-your-contract > div > .kcls-section-title > div h2 {
+  padding-right: 2rem;
+}
+
 .wp-block-create-block-kcls-custom-blocks {
   background-color: #21759b;
   color: #fff;
@@ -115,11 +127,6 @@
   font-size: 2rem;
   font-weight: bold;
   background-color: #009e57;
-}
-
-.kcls-contracts-columns {
-  max-width: 90%;
-  margin: auto;
 }
 
 .kcls-communications {

@@ -2,6 +2,7 @@
 
 @import "main-banner";
 @import "profile-card";
+@import "contracts";
 
 .wp-block-create-block-kcls-custom-blocks {
 	background-color: #21759b;
@@ -15,15 +16,6 @@
 	font-size: 2rem;
 	font-weight: bold;
 	background-color: $kcls-green;
-}
-
-// /* ************* */
-// /* * CONTRACTS * */
-// /* ************* */
-
-.kcls-contracts-columns {
-	max-width: 90%;
-	margin: auto;
 }
 
 // *****************
