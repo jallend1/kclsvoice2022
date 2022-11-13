@@ -1,13 +1,76 @@
+@import "colors";
+
 .wp-block-create-block-kcls-custom-blocks {
 	border: 1px dotted #f00;
 }
 
 .block-editor-block-list__block .kcls-action-bar {
 	width: 100%;
-	background-color: #124a92;
+	background-color: $kcls-blue;
 	display: flex;
 }
 
-.kcls-action-bar-cta-button > div {
-	background-color: #009e57;
+.kcls-small-cta-button > div.wp-element-button,
+.kcls-action-bar-cta-button > div.wp-element-button {
+	background-color: $kcls-green;
+	font-size: 0.8rem;
+}
+
+/* *********** */
+/* MAIN BANNER */
+/* *********** */
+
+.kcls-hero-content {
+	padding: 0;
+}
+
+.kcls-hero-content > div {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+}
+
+.kcls-left-banner > div {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.kcls-hero-content .kcls-left-banner > h1 {
+	margin: 0;
+}
+
+.kcls-left-banner {
+	h1 {
+		font-size: 2rem;
+		font-weight: bold;
+		// TODO: Find a less embarrassing way to not make this centered in the editor
+		margin: 0 !important;
+	}
+	h2 {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	p {
+		max-width: 500px;
+		font-size: 0.9rem;
+	}
+}
+
+.kcls-cta-button a {
+	color: #fff;
+	background-color: $kcls-green;
+	font-size: 0.75rem;
+}
+
+.kcls-right-banner {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	.kcls-cta-button > div {
+		background-color: $kcls-green;
+	}
 }
