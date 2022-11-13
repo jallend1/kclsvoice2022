@@ -3,16 +3,19 @@
 /* ********** */
 
 .kcls-footer {
-  /* background-color: var(--kcls-blue); */
   height: 100px;
   width: 100%;
-  /* position: absolute;
-  bottom: 0; */
+  background-color: $kcls-light;
 }
 
 .kcls-voice-footer {
   border-bottom: solid 1px $kcls-green;
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: black;
+  }
 }
 
 .kcls-voice-designer-footer {

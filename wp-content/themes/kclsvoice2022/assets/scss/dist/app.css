@@ -38,16 +38,19 @@
 /* * FOOTER * */
 /* ********** */
 .kcls-footer {
-  /* background-color: var(--kcls-blue); */
   height: 100px;
   width: 100%;
-  /* position: absolute;
-  bottom: 0; */
+  background-color: rgb(245, 245, 245);
 }
 
 .kcls-voice-footer {
   border-bottom: solid 1px #009e57;
   padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.kcls-voice-footer a {
+  color: black;
 }
 
 .kcls-voice-designer-footer {
