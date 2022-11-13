@@ -115,20 +115,6 @@
   padding-right: 2rem;
 }
 
-.wp-block-create-block-kcls-custom-blocks {
-  background-color: #21759b;
-  color: #fff;
-  padding: 2px;
-}
-
-.kcls-cta-button a {
-  border-radius: 25px;
-  padding: 2rem;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: #009e57;
-}
-
 .kcls-communications {
   margin-bottom: 2rem;
 }
@@ -172,11 +158,6 @@
   transform: scale(1.1);
 }
 
-.kcls-leadership-content > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 325px);
-}
-
 .kcls-action-bar {
   width: 100%;
   background-color: #124a92;
@@ -201,6 +182,25 @@
 .kcls-action-bar-cta-button a {
   background-color: #009e57;
   font-weight: bold;
+}
+
+.wp-block-create-block-kcls-custom-blocks {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+.kcls-cta-button a {
+  border-radius: 25px;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #009e57;
+}
+
+.kcls-leadership-content > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 325px);
 }
 
 /*# sourceMappingURL=style-index.css.map*/

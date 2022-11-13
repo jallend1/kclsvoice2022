@@ -2,7 +2,6 @@
 <div class="kcls-page-banner">
     <h1 class="kcls-page-title"><?php the_title(); ?></h1>
 </div>
-WE ARE INDEX!
 <div class="kcls-page-content">
     <?php
     if ( have_posts() ) :

@@ -3,6 +3,8 @@
 @import "main-banner";
 @import "profile-card";
 @import "contracts";
+@import "communications";
+@import "action-bar";
 
 .wp-block-create-block-kcls-custom-blocks {
 	background-color: #21759b;
@@ -18,53 +20,6 @@
 	background-color: $kcls-green;
 }
 
-// *****************
-// * STAY IN TOUCH *
-// *****************
-
-.kcls-communications {
-	margin-bottom: 2rem;
-}
-
-.kcls-communications-content > div {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 300px);
-	grid-gap: 2rem;
-	justify-content: space-around;
-	padding: 2rem;
-}
-
-.kcls-communications-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 2rem;
-	border-radius: 15px;
-	box-shadow: 15px 15px 15px #071420;
-	color: #071420;
-	background-color: #fff;
-	text-align: center;
-}
-
-.kcls-communications-image {
-	max-width: 100px;
-	margin: auto;
-}
-
-.kcls-communications-item-heading {
-	padding: 1rem 0;
-}
-
-.kcls-communications-item-text {
-	padding-bottom: 1rem;
-}
-
-.kcls-communications-item-button:hover {
-	cursor: pointer;
-	transform: scale(1.1);
-}
-
 // **********************
 // * Leadership Section *
 // **********************
@@ -72,34 +27,4 @@
 .kcls-leadership-content > div {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 325px);
-}
-
-// **************
-// * Action Bar *
-// **************
-
-.kcls-action-bar {
-	width: 100%;
-	background-color: $kcls-blue;
-}
-
-.kcls-action-bar > div {
-	width: 80%;
-	max-width: 1100px;
-	padding: 1rem;
-	margin: auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.kcls-action-bar-text {
-	color: white;
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.kcls-action-bar-cta-button a {
-	background-color: $kcls-green;
-	font-weight: bold;
 }
