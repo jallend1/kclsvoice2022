@@ -28,6 +28,7 @@ export default function KCLSKnowYourContract() {
 								text: __("View Older Contracts..."),
 								className:
 									"kcls-communications-item-button kcls-small-cta-button",
+								url: "/union-contracts/",
 							},
 						],
 					],
