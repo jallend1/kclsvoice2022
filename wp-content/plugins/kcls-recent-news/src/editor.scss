@@ -1,9 +1,26 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
+.kcls-voice-editor-news-container {
+	display: grid;
+	max-width: 840px;
+	margin: auto;
+	grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"main main side-1 side-2"
+		"main main side-3 side-4";
+}
 
-.wp-block-kcls-kcls-recent-news {
-	border: 1px dotted #f00;
+.kcls-voice-editor-news-main {
+	grid-area: main;
+}
+
+.kcls-voice-editor-news {
+	border: solid 1px gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 1rem;
+	text-align: center;
+	a {
+		color: red;
+	}
 }
