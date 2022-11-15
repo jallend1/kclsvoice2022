@@ -32,18 +32,27 @@ function Edit() {
   const posts = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_4__.useSelect)(select => {
     return select("core").getEntityRecords("postType", "post");
   }, []);
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {
+  const KCLSRecentNewsBlocks = [["core/group", {
+    className: "kcls-section-title"
+  }, [["core/heading", {
+    level: 2,
+    content: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("Latest News")
+  }], ["core/button", {
+    text: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)("See All News..."),
+    className: "kcls-read-blog-button kcls-small-cta-button",
+    url: "/news/"
+  }]]]];
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    template: KCLSRecentNewsBlocks
+  }, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)())), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "kcls-voice-editor-news-container"
-  }), !posts && "Loading", posts && posts.length === 0 && "No Posts", posts && posts.length > 0 ? posts.slice(0, 5).map((post, index) => {
-    {
-      /* Slices the latest five blog entries and renders them into the editor */
-    }
+  }, !posts && "Loading", posts && posts.length === 0 && "No Posts", posts && posts.length > 0 ? posts.slice(0, 5).map((post, index) => {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       class: index === 0 ? "kcls-voice-editor-news kcls-voice-editor-news-main" : "kcls-voice-editor-news"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", {
       href: post.link
     }, post.title.rendered));
-  }) : null);
+  }) : null));
 }
 
 /***/ }),

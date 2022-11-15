@@ -1,3 +1,5 @@
+@import "colors";
+
 .kcls-voice-editor-news-container {
 	display: grid;
 	max-width: 840px;
@@ -23,4 +25,15 @@
 	a {
 		color: red;
 	}
+}
+
+.kcls-section-title > div {
+	display: flex;
+	justify-content: left;
+	margin: 1rem 2rem;
+	padding: 0 2rem 0.75rem 0;
+	color: $kcls-blue;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-bottom: solid 1px $kcls-green;
 }

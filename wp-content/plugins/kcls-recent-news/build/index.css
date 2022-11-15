@@ -30,4 +30,15 @@
   color: red;
 }
 
+.kcls-section-title > div {
+  display: flex;
+  justify-content: left;
+  margin: 1rem 2rem;
+  padding: 0 2rem 0.75rem 0;
+  color: #124a92;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: solid 1px #009e57;
+}
+
 /*# sourceMappingURL=index.css.map*/
