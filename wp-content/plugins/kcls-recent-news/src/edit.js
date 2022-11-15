@@ -44,6 +44,7 @@ export default function Edit() {
 				{/* Slices the latest five blog entries and renders them into the editor */}
 				{posts && posts.length > 0
 					? posts.slice(0, 5).map((post, index) => {
+							console.log(post);
 							return (
 								<div
 									class={
@@ -53,6 +54,11 @@ export default function Edit() {
 									}
 								>
 									<a href={post.link}>{post.title.rendered}</a>
+									{/* <img src={post.featured_media} /> */}
+									{/* This is not acceptable, but a starting point! */}
+									{post.excerpt.rendered}
+									{/* Retrieve image based on post ID */}
+									<img src={post.featured_media} />
 								</div>
 							);
 					  })

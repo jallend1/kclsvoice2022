@@ -13,8 +13,6 @@
  * @package           kcls
  */
 
-//  TODO: Return a custom block prepended onto this dynamic block for the section header
-
 function kcls_latest_news_block_renderer($attr){
     $args = array(
         'post_type' => 'post',

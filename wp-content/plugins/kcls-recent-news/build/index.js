@@ -47,11 +47,14 @@ function Edit() {
   }, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)())), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "kcls-voice-editor-news-container"
   }, !posts && "Loading", posts && posts.length === 0 && "No Posts", posts && posts.length > 0 ? posts.slice(0, 5).map((post, index) => {
+    console.log(post);
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       class: index === 0 ? "kcls-voice-editor-news kcls-voice-editor-news-main" : "kcls-voice-editor-news"
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("a", {
       href: post.link
-    }, post.title.rendered));
+    }, post.title.rendered), post.excerpt.rendered, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
+      src: post.featured_media
+    }));
   }) : null));
 }
 
