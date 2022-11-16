@@ -32,12 +32,8 @@ export default function Edit() {
 		],
 	];
 	return (
-		<div>
+		<div className="kcls-recent-news-block">
 			<InnerBlocks template={KCLSRecentNewsBlocks} {...useBlockProps()} />
-			{/* {__(
-				"The latest blog posts will appear here on the public facing page, but for now it is not visible in from the editor.",
-				"kcls-recent-news"
-			)} */}
 			<div className="kcls-voice-editor-news-container">
 				{!posts && "Loading"}
 				{posts && posts.length === 0 && "No Posts"}
@@ -53,12 +49,21 @@ export default function Edit() {
 											: "kcls-voice-editor-news"
 									}
 								>
-									<a href={post.link}>{post.title.rendered}</a>
+									<h3 className="kcls-recent-news-editor-heading">
+										{post.title.rendered}
+									</h3>
+									{index === 0 && (
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua.
+										</p>
+									)}
 									{/* <img src={post.featured_media} /> */}
 									{/* This is not acceptable, but a starting point! */}
-									{post.excerpt.rendered}
+									{/* {post.excerpt.rendered} */}
 									{/* Retrieve image based on post ID */}
-									<img src={post.featured_media} />
+									{/* <img src={post.featured_media} /> */}
 								</div>
 							);
 					  })
