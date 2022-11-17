@@ -23,13 +23,7 @@ function kcls_latest_news_block_renderer($attr){
     $the_query = new WP_Query($args); 
     ob_start();
 	?>
-    <div class="kcls-news">
-        <header class="kcls-section-title">
-            <h2 class="kcls-heading">Latest News</h2>
-            <div class="kcls-read-blog-button">
-                <a href="<?php echo site_url() . '/news'; ?>">See All News...</a>
-            </div>
-        </header>      
+        
         <main class="kcls-section">
             <div class="kcls-recent-posts">
                 <?php if ( $the_query->have_posts() ) ?>
@@ -68,15 +62,20 @@ function kcls_latest_news_block_renderer($attr){
                 <?php endwhile; ?>
             </div>
         </main>
-    </div>
+
 	<?php
 	wp_reset_postdata();
     return ob_get_clean();
  }
 
 function kcls_kcls_recent_news_block_init() {
-	register_block_type( __DIR__ . '/build', [
-		'render_callback' => 'kcls_latest_news_block_renderer',
+	wp_register_script('kcls-recent-news-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
+    register_block_type( __DIR__ . '/build', [
+		'editor_script' => 'kcls-recent-news-block',
 	]);
+
+    register_block_type('kcls/news-core', [
+        'render_callback' => 'kcls_latest_news_block_renderer',
+    ]);
 }
 add_action( 'init', 'kcls_kcls_recent_news_block_init' );

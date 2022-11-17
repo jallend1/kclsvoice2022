@@ -8,32 +8,8 @@ export default function Edit() {
 		return select("core").getEntityRecords("postType", "post");
 	}, []);
 
-	const KCLSRecentNewsBlocks = [
-		[
-			"core/group",
-			{ className: "kcls-section-title" },
-			[
-				[
-					"core/heading",
-					{
-						level: 2,
-						content: __("Latest News"),
-					},
-				],
-				[
-					"core/button",
-					{
-						text: __("See All News..."),
-						className: "kcls-read-blog-button kcls-small-cta-button",
-						url: "/news/",
-					},
-				],
-			],
-		],
-	];
 	return (
 		<div className="kcls-recent-news-block">
-			<InnerBlocks template={KCLSRecentNewsBlocks} {...useBlockProps()} />
 			<div className="kcls-voice-editor-news-container">
 				{!posts && "Loading"}
 				{posts && posts.length === 0 && "No Posts"}
