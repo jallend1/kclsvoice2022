@@ -5,6 +5,7 @@ import Edit from "./edit";
 import metadata from "./block.json";
 import save from "./save";
 
+// The block that renders the blogs
 registerBlockType("kcls/news-core", {
 	title: "KCLS News Core",
 	icon: "email",
@@ -13,6 +14,7 @@ registerBlockType("kcls/news-core", {
 	save: () => null,
 });
 
+// The OVERALL block that contains the News Core block AND the headings
 registerBlockType(metadata.name, {
 	edit: KCLSNewsBlock,
 	save,

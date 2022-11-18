@@ -68,11 +68,14 @@ function kcls_latest_news_block_renderer($attr){
  }
 
 function kcls_kcls_recent_news_block_init() {
-	wp_register_script('kcls-recent-news-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
+	
+    // Renders the overall block that contains headings AND the News Core block
+    wp_register_script('kcls-recent-news-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
     register_block_type( __DIR__ . '/build', [
 		'editor_script' => 'kcls-recent-news-block',
 	]);
 
+    // Registers the portion of the news block that renders the blogs
     register_block_type('kcls/news-core', [
         'render_callback' => 'kcls_latest_news_block_renderer',
     ]);

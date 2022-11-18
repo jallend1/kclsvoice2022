@@ -61,6 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // The block that renders the blogs
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("kcls/news-core", {
   title: "KCLS News Core",
@@ -68,7 +69,8 @@ __webpack_require__.r(__webpack_exports__);
   category: "common",
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
   save: () => null
-});
+}); // The OVERALL block that contains the News Core block AND the headings
+
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_4__.name, {
   edit: _kcls_news_block__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_5__["default"]
