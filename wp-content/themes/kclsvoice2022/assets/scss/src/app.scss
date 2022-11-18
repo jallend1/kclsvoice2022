@@ -52,20 +52,3 @@ body {
   background-color: $kcls-green;
   font-size: 0.75rem;
 }
-
-.kcls-news > header {
-  max-width: 400px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.kcls-read-blog-button {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #fff;
-  background-color: $kcls-green;
-  font-size: 0.75rem;
-}

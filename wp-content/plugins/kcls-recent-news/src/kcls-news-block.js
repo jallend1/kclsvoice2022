@@ -6,7 +6,7 @@ export default function KCLSNewsBlock() {
 	const KCLSNewsBlockBlocks = [
 		[
 			"core/group",
-			{ className: "kcls-news" },
+			{ className: "kcls-news kcls-section" },
 			[
 				[
 					"core/group",

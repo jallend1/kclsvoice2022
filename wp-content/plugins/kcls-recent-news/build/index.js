@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function KCLSNewsBlock() {
   const KCLSNewsBlockBlocks = [["core/group", {
-    className: "kcls-news"
+    className: "kcls-news kcls-section"
   }, [["core/group", {
     className: "kcls-section-title"
   }, [["core/heading", {

@@ -23,7 +23,6 @@ function kcls_latest_news_block_renderer($attr){
     $the_query = new WP_Query($args); 
     ob_start();
 	?>
-        
         <main class="kcls-section">
             <div class="kcls-recent-posts">
                 <?php if ( $the_query->have_posts() ) ?>
