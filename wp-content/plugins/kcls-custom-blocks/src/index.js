@@ -8,6 +8,7 @@ import KCLSKnowYourContract from "./blocks/kcls-know-your-contract";
 import KCLSProfileCard from "./blocks/kcls-profile-card";
 import KCLSLeadership from "./blocks/kcls-leadership";
 import KCLSSection from "./blocks/kcls-section";
+import KCLSProfileCardSection from "./blocks/kcls-profile-card-section";
 
 registerBlockType("kcls/action-bar", {
 	title: "KCLS Action Bar",
@@ -62,5 +63,13 @@ registerBlockType("kcls/know-your-contract", {
 	icon: "admin-customizer",
 	category: "common",
 	edit: KCLSKnowYourContract,
+	save,
+});
+
+registerBlockType("kcls/kcls-profile-card-section", {
+	title: "KCLS - Profile Card Section",
+	icon: "admin-customizer",
+	category: "common",
+	edit: KCLSProfileCardSection,
 	save,
 });
