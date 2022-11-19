@@ -8,9 +8,6 @@
 /* *********** */
 /* LATEST NEWS */
 /* *********** */
-.kcls-news {
-  background-color: rgb(245, 245, 245);
-}
 .kcls-news header {
   max-width: 400px;
   display: flex;

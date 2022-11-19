@@ -37,7 +37,9 @@ function Edit() {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
       className: "kcls-recent-news-editor-heading"
     }, post.title.rendered), index === 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."));
-  }) : null));
+  }) : null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "kcls-editor-news-overlay"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, "This automatically pulls the most recent five posts, and is not editable."))));
 }
 
 /***/ }),

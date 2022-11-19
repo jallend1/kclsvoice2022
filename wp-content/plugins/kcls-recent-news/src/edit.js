@@ -37,6 +37,12 @@ export default function Edit() {
 							);
 					  })
 					: null}
+				<div className="kcls-editor-news-overlay">
+					<h3>
+						This automatically pulls the most recent five posts, and is not
+						editable.
+					</h3>
+				</div>
 			</div>
 		</div>
 	);

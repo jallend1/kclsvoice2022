@@ -6,6 +6,7 @@
 }
 
 .kcls-voice-editor-news-container {
+  position: relative;
   display: grid;
   max-width: 840px;
   margin: auto;
@@ -15,6 +16,23 @@
 }
 .kcls-voice-editor-news-container p {
   font-size: 0.75rem;
+}
+
+.kcls-editor-news-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.kcls-editor-news-overlay h3 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .kcls-voice-editor-news-main {
