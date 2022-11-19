@@ -39,7 +39,9 @@ export default function KCLSKnowYourContract() {
 					[
 						[
 							"core/columns",
-							{ className: "kcls-contracts-columns" },
+							{
+								className: "kcls-contracts-columns",
+							},
 							[
 								[
 									"core/column",

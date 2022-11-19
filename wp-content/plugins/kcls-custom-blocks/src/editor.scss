@@ -76,14 +76,35 @@
 }
 
 .kcls-communications-item {
+	.kcls-communications-item-heading {
+		padding: 0;
+	}
+
+	.kcls-communications-item-text {
+		line-height: 1.3rem;
+		padding: 0;
+	}
+
 	// Pretty wild way to adjust the image size in the Editor
 	.kcls-communications-image {
 		width: 50%;
+		padding: 0;
 		div {
 			width: 100%;
 			img {
 				width: 100%;
 			}
 		}
+	}
+}
+
+.kcls-contracts-columns {
+	max-width: 90%;
+	margin: auto;
+	// WordPress styles mark it important, so I'm overriding it by doing the same cuz I am the captain now
+	flex-wrap: wrap !important;
+
+	.kcls-contracts-column {
+		min-width: 200px;
 	}
 }

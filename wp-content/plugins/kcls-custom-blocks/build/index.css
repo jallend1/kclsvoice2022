@@ -71,14 +71,31 @@
   background-color: #009e57;
 }
 
+.kcls-communications-item .kcls-communications-item-heading {
+  padding: 0;
+}
+.kcls-communications-item .kcls-communications-item-text {
+  line-height: 1.3rem;
+  padding: 0;
+}
 .kcls-communications-item .kcls-communications-image {
   width: 50%;
+  padding: 0;
 }
 .kcls-communications-item .kcls-communications-image div {
   width: 100%;
 }
 .kcls-communications-item .kcls-communications-image div img {
   width: 100%;
+}
+
+.kcls-contracts-columns {
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap !important;
+}
+.kcls-contracts-columns .kcls-contracts-column {
+  min-width: 200px;
 }
 
 /*# sourceMappingURL=index.css.map*/
