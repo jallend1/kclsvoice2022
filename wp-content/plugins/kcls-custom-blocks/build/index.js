@@ -841,7 +841,8 @@ function KCLSCommunications() {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
-    url: _images_email_svg__WEBPACK_IMPORTED_MODULE_6__["default"]
+    url: _images_email_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
+    alt: "Envelope"
   }], ["core/heading", {
     className: "kcls-communications-item-heading",
     level: 3,
@@ -857,7 +858,8 @@ function KCLSCommunications() {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
-    url: _images_chat_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
+    url: _images_chat_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
+    alt: "Chat bubbles"
   }], ["core/heading", {
     className: "kcls-communications-item-heading",
     level: 3,
@@ -873,7 +875,8 @@ function KCLSCommunications() {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
-    url: _images_watercooler_svg__WEBPACK_IMPORTED_MODULE_7__["default"]
+    url: _images_watercooler_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
+    alt: "Three people connected"
   }], ["core/heading", {
     className: "kcls-communications-item-heading",
     level: 3,
@@ -889,7 +892,8 @@ function KCLSCommunications() {
     className: "kcls-communications-item"
   }, [["core/image", {
     className: "kcls-communications-image",
-    url: _images_people_svg__WEBPACK_IMPORTED_MODULE_8__["default"]
+    url: _images_people_svg__WEBPACK_IMPORTED_MODULE_8__["default"],
+    alt: "A person in a map pin"
   }], ["core/heading", {
     className: "kcls-communications-item-heading",
     level: 3,

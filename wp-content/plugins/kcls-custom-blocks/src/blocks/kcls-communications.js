@@ -40,6 +40,7 @@ export default function KCLSCommunications() {
 									{
 										className: "kcls-communications-image",
 										url: EmailIcon,
+										alt: "Envelope",
 									},
 								],
 								[
@@ -80,6 +81,7 @@ export default function KCLSCommunications() {
 									{
 										className: "kcls-communications-image",
 										url: ChatIcon,
+										alt: "Chat bubbles",
 									},
 								],
 								[
@@ -120,6 +122,7 @@ export default function KCLSCommunications() {
 									{
 										className: "kcls-communications-image",
 										url: WatercoolerIcon,
+										alt: "Three people connected",
 									},
 								],
 								[
@@ -160,6 +163,7 @@ export default function KCLSCommunications() {
 									{
 										className: "kcls-communications-image",
 										url: StewardIcon,
+										alt: "A person in a map pin",
 									},
 								],
 								[
