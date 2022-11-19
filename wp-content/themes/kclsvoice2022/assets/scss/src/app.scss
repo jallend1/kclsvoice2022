@@ -16,7 +16,7 @@ html,
 body {
   font-family: 'Inter', sans-serif;
   background-color: $kcls-light;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 250px);
 }
 
 /* ************** */
@@ -51,4 +51,28 @@ body {
   color: #fff;
   background-color: $kcls-green;
   font-size: 0.75rem;
+}
+
+.kcls-page-not-found {
+  min-height: calc(100vh - 150px);
+  padding-top: 100px;
+  text-align: center;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.3)),
+    url(../../images/card-catalog.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  p {
+    color: #fff;
+    font-size: 1rem;
+  }
 }

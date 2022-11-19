@@ -3,14 +3,13 @@
 /* ********** */
 
 .kcls-footer {
-  height: 100px;
   width: 100%;
   background-color: $kcls-light;
 }
 
 .kcls-voice-footer {
   border-bottom: solid 1px $kcls-green;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   a {
@@ -21,7 +20,7 @@
 .kcls-voice-designer-footer {
   font-size: 0.75rem;
   text-align: center;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
   a {
     text-decoration: none;
     font-weight: bold;

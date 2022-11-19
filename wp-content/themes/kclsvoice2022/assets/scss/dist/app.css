@@ -38,14 +38,13 @@
 /* * FOOTER * */
 /* ********** */
 .kcls-footer {
-  height: 100px;
   width: 100%;
   background-color: rgb(245, 245, 245);
 }
 
 .kcls-voice-footer {
   border-bottom: solid 1px #009e57;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -56,7 +55,7 @@
 .kcls-voice-designer-footer {
   font-size: 0.75rem;
   text-align: center;
-  padding: 1rem 0;
+  padding-top: 0.5rem;
 }
 .kcls-voice-designer-footer a {
   text-decoration: none;
@@ -299,7 +298,7 @@ html,
 body {
   font-family: "Inter", sans-serif;
   background-color: rgb(245, 245, 245);
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 250px);
 }
 
 /* ************** */
@@ -332,4 +331,26 @@ body {
   color: #fff;
   background-color: #009e57;
   font-size: 0.75rem;
+}
+
+.kcls-page-not-found {
+  min-height: calc(100vh - 150px);
+  padding-top: 100px;
+  text-align: center;
+  background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.3)), url(../../images/card-catalog.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.kcls-page-not-found h1 {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.kcls-page-not-found p {
+  color: #fff;
+  font-size: 1rem;
 }
