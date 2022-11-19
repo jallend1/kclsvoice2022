@@ -12,7 +12,7 @@ export default function KCLSProfileCard() {
 					"core/image",
 					{
 						url: "https://picsum.photos/200",
-						className: "kcls-profile-image",
+						className: "kcls-profile-image is-style-rounded",
 					},
 				],
 				[

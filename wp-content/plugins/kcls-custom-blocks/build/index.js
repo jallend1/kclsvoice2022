@@ -1185,7 +1185,7 @@ function KCLSProfileCard() {
     className: "kcls-profile-card"
   }, [["core/image", {
     url: "https://picsum.photos/200",
-    className: "kcls-profile-image"
+    className: "kcls-profile-image is-style-rounded"
   }], ["core/heading", {
     level: 2,
     content: "President",
