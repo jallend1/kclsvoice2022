@@ -74,3 +74,16 @@
 		background-color: $kcls-green;
 	}
 }
+
+.kcls-communications-item {
+	// Pretty wild way to adjust the image size in the Editor
+	.kcls-communications-image {
+		width: 50%;
+		div {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
