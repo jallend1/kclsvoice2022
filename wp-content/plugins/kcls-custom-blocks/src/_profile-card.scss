@@ -3,19 +3,6 @@
 // ****************
 
 .kcls-profile-card {
-	margin: 2rem;
-}
-
-.kcls-profile-cards > div {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 325px);
-	grid-gap: 2rem;
-	justify-content: space-around;
-	padding: 2rem;
-	align-items: center;
-}
-
-.kcls-profile-card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
