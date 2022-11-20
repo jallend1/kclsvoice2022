@@ -15,12 +15,39 @@
 
 include 'iCalEasyReader.php';
 
+// Sorts events by start date
+function kcls_sort_events($a, $b) {
+	return $a['DTSTART'] <=> $b['DTSTART'];
+}
+
+// function kcls_sort_events_by_closest($a, $b) {
+// 	// If $a and $b have a value, compare them
+// 	if ($a['DTSTART'] && $b['DTSTART']) {
+// 		$now = new DateTime();
+// 		$a_start = new DateTime($a['DTSTART']);
+// 		$b_start = new DateTime($b['DTSTART']);
+// 		$a_diff = $a_start->diff($now);
+// 		$b_diff = $b_start->diff($now);
+// 		return $a_diff <=> $b_diff;
+// 	}
+// }
+
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
+	usort($lines['VEVENT'], 'kcls_sort_events');
 	return $lines['VEVENT'];
 }
 
+function parse_ical_date($date){
+	$year = substr($date, 0, 4);
+	$month = substr($date, 4, 2);
+	$day = substr($date, 6, 2);
+	$hour = substr($date, 9, 2);
+	$minute = substr($date, 11, 2);
+	return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute);
+	
+}
 
  function kcls_events_block_renderer($attr){
 	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');	
@@ -28,13 +55,19 @@ function kcls_get_events($url){
 	ob_start();
 	?>
 	<div class="kcls-event-container">
-		<?php foreach($events as $event): ?> 
+		<?php foreach($events as $event): 
+			$eventDate = parse_ical_date($event['DTSTART']);
+			?> 
 			<div class="kcls-event">
 				<h3><?php echo $event['SUMMARY']; ?></h3>
-				<p>What: <?php echo $event['DESCRIPTION']; ?></p>
-				<p>When: <?php echo $event['DTSTART']; ?></p>
-				
-				<p>Until: <?php echo $event['DTEND']; ?></p>
+				<div class="kcls-event-body">
+					<p>What: <?php echo $event['DESCRIPTION']; ?></p>
+					<p>When: <?php echo $event['DTSTART']; ?></p>
+					<p>Until: <?php echo $event['DTEND']; ?></p>
+					<p>Year: <?php echo $eventDate['year']; ?></p>
+					<p>Month: <?php echo $eventDate['month']; ?></p>
+					<p>Day: <?php echo $eventDate['day']; ?></p>
+				</div>
 			</div>
 		<?php endforeach; ?>
 	</div>

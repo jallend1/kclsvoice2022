@@ -3,3 +3,26 @@
 	color: #fff;
 	padding: 2px;
 }
+
+.kcls-event-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+	flex-wrap: wrap;
+}
+
+.kcls-event {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 15px 15px 15px #071420;
+	color: #071420;
+	background-color: #fff;
+	max-width: 350px;
+	text-align: center;
+}
+
+.kcls-profile-card {
+}
