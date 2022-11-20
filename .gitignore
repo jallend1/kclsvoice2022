@@ -30,3 +30,4 @@ node_modules/
 !wp-content/themes/kclsvoice2022/
 !wp-content/plugins/kcls-custom-blocks/
 !wp-content/plugins/kcls-recent-news/
+!wp-content/plugins/kcls-events/

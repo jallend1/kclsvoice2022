@@ -40,12 +40,14 @@ function kcls_get_events($url){
 }
 
 function parse_ical_date($date){
-	$year = substr($date, 0, 4);
-	$month = substr($date, 4, 2);
-	$day = substr($date, 6, 2);
-	$hour = substr($date, 9, 2);
-	$minute = substr($date, 11, 2);
-	return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute);
+	if(is_string($date)){
+		$year = substr($date, 0, 4);
+		$month = substr($date, 4, 2);
+		$day = substr($date, 6, 2);
+		$hour = substr($date, 9, 2);
+		$minute = substr($date, 11, 2);
+		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute);
+	}
 	
 }
 
