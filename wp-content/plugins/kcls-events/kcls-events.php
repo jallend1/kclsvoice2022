@@ -15,28 +15,17 @@
 
 include 'iCalEasyReader.php';
 
-// Sorts events by start date
+// TODO: NOT sorting the events in the expected way
 function kcls_sort_events($a, $b) {
-	return $a['DTSTART'] <=> $b['DTSTART'];
+	return $a['DSTART'] > $b['DSTART'] ? 1 : -1;
+	// return $b['DSTART'] <=> $a['DSTART'];
 }
-
-// function kcls_sort_events_by_closest($a, $b) {
-// 	// If $a and $b have a value, compare them
-// 	if ($a['DTSTART'] && $b['DTSTART']) {
-// 		$now = new DateTime();
-// 		$a_start = new DateTime($a['DTSTART']);
-// 		$b_start = new DateTime($b['DTSTART']);
-// 		$a_diff = $a_start->diff($now);
-// 		$b_diff = $b_start->diff($now);
-// 		return $a_diff <=> $b_diff;
-// 	}
-// }
 
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
 	usort($lines['VEVENT'], 'kcls_sort_events');
-	return $lines['VEVENT'];
+	return array_slice($lines['VEVENT'], 0, 4);
 }
 
 function parse_ical_date($date){
@@ -46,14 +35,15 @@ function parse_ical_date($date){
 		$day = substr($date, 6, 2);
 		$hour = substr($date, 9, 2);
 		$minute = substr($date, 11, 2);
-		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute);
+		$second = substr($date, 13, 2);
+		$timezone = substr($date, 15, 6);
+		$datetime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
+		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime);
 	}
-	
 }
 
  function kcls_events_block_renderer($attr){
 	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');	
-	// print_r(kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics'));
 	ob_start();
 	?>
 	<div class="kcls-event-container">
@@ -69,6 +59,7 @@ function parse_ical_date($date){
 					<p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
+					<p>Datetime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
 				</div>
 			</div>
 		<?php endforeach; ?>
