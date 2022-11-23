@@ -20,8 +20,8 @@ function kcls_get_events($url){
 	$lines = $ical->load(file_get_contents($url));
 	// Sorts the two-dimensional array by the DSTART key
 	usort($lines['VEVENT'], function($a, $b) {
-		if($a['DTSTART'] && $b['DTSTART']) {
-			return $b['DTSTART'] <=> $a['DTSTART'];
+		if($a['DTEND'] && $b['DTEND']) {
+			return $b['DTEND'] <=> $a['DTEND'];
 		}
 	});
 	// Returns the latest five events
@@ -54,8 +54,15 @@ function parse_ical_date($date){
 				<h3><?php echo $event['SUMMARY']; ?></h3>
 				<div class="kcls-event-body">
 					<p>What: <?php echo $event['DESCRIPTION']; ?></p>
-					<p>When: <?php echo $event['DTSTART']; ?></p>
-					<p>Until: <?php echo $event['DTEND']; ?></p>
+					
+					<p>When: <?php 
+						// If all day event, DTSTART will be an array with the date as a value
+						echo (is_array($event['DTSTART']) ? $event['DTSTART']['value'] : $event['DTSTART']); ?>
+					</p>
+					<p>Until: <?php 
+						// If all day event, DTEND will be an array with the date as a value
+						echo (is_array($event['DTEND']) ? $event['DTSTART']['value'] :  $event['DTEND']); ?>
+					</p>
 					<p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
