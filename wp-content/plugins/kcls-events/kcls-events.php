@@ -15,13 +15,20 @@
 
 include 'iCalEasyReader.php';
 
+function standardizeStartTime($arr){
+	// All day events have their start time stored as an array, while events with a start time have it stored as a string
+	return is_array($arr['DTSTART']) ? $arr['DTSTART']['value'] : $arr['DTSTART'];
+}
+
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
-	// Sorts the two-dimensional array by the DSTART key
+	// Sorts the two-dimensional array by the DTSTART key
 	usort($lines['VEVENT'], function($a, $b) {
-		if($a['DTEND'] && $b['DTEND']) {
-			return $b['DTEND'] <=> $a['DTEND'];
+		if($a['DTSTART'] && $b['DTSTART']) {
+			$firstEvent = standardizeStartTime($a);
+			$secondEvent = standardizeStartTime($b);
+			return $secondEvent <=> $firstEvent;
 		}
 	});
 	// Returns the latest five events
