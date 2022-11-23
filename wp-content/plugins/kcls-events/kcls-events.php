@@ -15,16 +15,16 @@
 
 include 'iCalEasyReader.php';
 
-// TODO: NOT sorting the events in the expected way
-function kcls_sort_events($a, $b) {
-	return $a['DSTART'] > $b['DSTART'] ? 1 : -1;
-	// return $b['DSTART'] <=> $a['DSTART'];
-}
-
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
-	usort($lines['VEVENT'], 'kcls_sort_events');
+	// Sorts the two-dimensional array by the DSTART key
+	usort($lines['VEVENT'], function($a, $b) {
+		if($a['DTSTART'] && $b['DTSTART']) {
+			return $b['DTSTART'] <=> $a['DTSTART'];
+		}
+	});
+	// Returns the latest five events
 	return array_slice($lines['VEVENT'], 0, 4);
 }
 
@@ -43,7 +43,7 @@ function parse_ical_date($date){
 }
 
  function kcls_events_block_renderer($attr){
-	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');	
+	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');
 	ob_start();
 	?>
 	<div class="kcls-event-container">
@@ -59,7 +59,7 @@ function parse_ical_date($date){
 					<p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
-					<p>Datetime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
+					
 				</div>
 			</div>
 		<?php endforeach; ?>
