@@ -17,7 +17,8 @@ include 'iCalEasyReader.php';
 
 function standardizeStartTime($arr){
 	// All day events have their start time stored as an array, while events with a start time have it stored as a string
-	return is_array($arr['DTSTART']) ? $arr['DTSTART']['value'] : $arr['DTSTART'];
+	// return is_array($arr['DTSTART']) ? $arr['DTSTART']['value'] : $arr['DTSTART'];
+	return is_array($arr) ? $arr['value'] : $arr;
 }
 
 function kcls_get_events($url){
@@ -26,8 +27,8 @@ function kcls_get_events($url){
 	// Sorts the two-dimensional array by the DTSTART key
 	usort($lines['VEVENT'], function($a, $b) {
 		if($a['DTSTART'] && $b['DTSTART']) {
-			$firstEvent = standardizeStartTime($a);
-			$secondEvent = standardizeStartTime($b);
+			$firstEvent = standardizeStartTime($a['DTSTART']);
+			$secondEvent = standardizeStartTime($b['DTSTART']);
 			return $secondEvent <=> $firstEvent;
 		}
 	});
@@ -61,15 +62,8 @@ function parse_ical_date($date){
 				<h3><?php echo $event['SUMMARY']; ?></h3>
 				<div class="kcls-event-body">
 					<p>What: <?php echo $event['DESCRIPTION']; ?></p>
-					
-					<p>When: <?php 
-						// If all day event, DTSTART will be an array with the date as a value
-						echo (is_array($event['DTSTART']) ? $event['DTSTART']['value'] : $event['DTSTART']); ?>
-					</p>
-					<p>Until: <?php 
-						// If all day event, DTEND will be an array with the date as a value
-						echo (is_array($event['DTEND']) ? $event['DTSTART']['value'] :  $event['DTEND']); ?>
-					</p>
+					<p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
+					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p>
 					<p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
