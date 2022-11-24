@@ -17,7 +17,6 @@ include 'iCalEasyReader.php';
 
 function standardizeStartTime($arr){
 	// All day events have their start time stored as an array, while events with a start time have it stored as a string
-	// return is_array($arr['DTSTART']) ? $arr['DTSTART']['value'] : $arr['DTSTART'];
 	return is_array($arr) ? $arr['value'] : $arr;
 }
 
@@ -46,7 +45,8 @@ function parse_ical_date($date){
 		$second = substr($date, 13, 2);
 		$timezone = substr($date, 15, 6);
 		$datetime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
-		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime);
+		$currentDateTime = new DateTime();
+		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime, 'currentDateTime' => $currentDateTime);
 	}
 }
 
@@ -67,7 +67,10 @@ function parse_ical_date($date){
 					<p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
-					
+					<p>DateTime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
+					<p>CurrentDateTime: <?php echo $eventDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p>
+					<!-- TODO:  -->
+					<?php echo date_diff($eventDate['datetime'], $eventDate['currentDateTime'])->format('%r%a'); ?>
 				</div>
 			</div>
 		<?php endforeach; ?>
@@ -83,3 +86,4 @@ function parse_ical_date($date){
 }
 
 add_action( 'init', 'create_block_kcls_events_block_init' );
+
