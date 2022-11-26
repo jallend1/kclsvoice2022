@@ -90,9 +90,17 @@ function parse_ical_date($date){
 }
 
  function create_block_kcls_events_block_init() {
-	register_block_type( __DIR__ . '/build', [
-		'render_callback' => 'kcls_events_block_renderer',
-	] );
+	 
+	 wp_register_script('kcls-events-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
+	 register_block_type( __DIR__ . '/build', [
+		 'editor_script' => 'kcls-events-block',
+	 ]);
+	 
+	register_block_type('kcls/events-core', [
+		 'render_callback' => 'kcls_events_block_renderer',
+	 ]);
+
+
 }
 
 add_action( 'init', 'create_block_kcls_events_block_init' );
