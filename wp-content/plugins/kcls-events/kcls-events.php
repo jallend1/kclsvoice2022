@@ -57,11 +57,13 @@ function parse_ical_date($date){
 	<div class="kcls-event-container">
 		<?php foreach($events as $event): 
 			$eventDate = parse_ical_date($event['DTSTART']);
+			$dateObject = DateTime::createFromFormat('!m', $eventDate['month']);
+			$prettyMonth = $dateObject->format('M');
 			?> 
 			<div class="kcls-event">
 			<header class="kcls-event-header">
 				<div class="kcls-event-header-date">
-					<div class="kcls-event-header-date-month"><?php echo $eventDate['month']; ?></div>
+					<div class="kcls-event-header-date-month"><?php echo $prettyMonth; ?></div>
 					<div class="kcls-event-header-date-day"><?php echo $eventDate['day']; ?></div>
 				</div>
 				<div>
