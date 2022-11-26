@@ -21,10 +21,11 @@ function standardizeStartTime($arr){
 }
 
 function convertICStoDateTime($icsDate){
+	$eventDate = standardizeStartTime($icsDate);
 	// Convert the date from the ics file to a DateTime object
-	$year = substr($icsDate, 0, 4);
-	$month = substr($icsDate, 4, 2);
-	$day = substr($icsDate, 6, 2);
+	$year = substr($eventDate, 0, 4);
+	$month = substr($eventDate, 4, 2);
+	$day = substr($eventDate, 6, 2);
 	$eventDateTime = new DateTime($year . '-' . $month . '-' . $day);
 	return $eventDateTime;
 }
@@ -32,37 +33,29 @@ function convertICStoDateTime($icsDate){
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
-	// Sorts the two-dimensional array by the DTSTART key
+	
 	usort($lines['VEVENT'], function($a, $b) {
+		$currentDateTime = new DateTime();
 		if($a['DTSTART'] && $b['DTSTART']) {
-			$currentDateTime = new DateTime();
-			$firstEventICS = standardizeStartTime($a['DTSTART']);
-			$secondEventICS = standardizeStartTime($b['DTSTART']);
-			$firstEvent = convertICStoDateTime($firstEventICS);
-			$secondEvent = convertICStoDateTime($secondEventICS);
-			// $firstEvent = parse_ical_date($firstEventICS);
-			// $secondEvent = parse_ical_date($secondEventICS);
+			// Converts ICS date to PHP DateTime object
+			$firstEvent = convertICStoDateTime($a['DTSTART']);
+			$secondEvent = convertICStoDateTime($b['DTSTART']);
+			// Sort the array by distance to the current date
 			$firstEventDistance = date_diff($firstEvent, $currentDateTime)->format('%r%a');
 			$secondEventDistance = date_diff($secondEvent, $currentDateTime)->format('%r%a');
 			return $firstEventDistance <=> $secondEventDistance;
-			
 		}
-	});
-		
+	});		
 	$latestEvents = array_slice($lines['VEVENT'], 0, 4);
 	return array_filter($latestEvents, function($event){
 		// Filter out events that have already passed
 		$currentDateTime = new DateTime();
-		$eventICS = standardizeStartTime($event['DTSTART']);
-		$eventDateTime = convertICStoDateTime($eventICS);
-		// $eventDateTime = parse_ical_date($eventICS);
+		$eventDateTime = convertICStoDateTime($event['DTSTART']);
 		$eventDistance = date_diff($eventDateTime, $currentDateTime)->format('%r%a');
 		return $eventDistance <= 0;
 	});
-	// return array_slice($lines['VEVENT'], 0, 4);
-		}
+}
 	
-
 function parse_ical_date($date){
 	if(is_string($date)){
 		$year = substr($date, 0, 4);
@@ -101,8 +94,8 @@ function parse_ical_date($date){
 			</header>	
 				<div class="kcls-event-body">
 					<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
-					<p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
-					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p>
+					<!-- <p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
+					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p> -->
 					<!-- <p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
