@@ -20,20 +20,48 @@ function standardizeStartTime($arr){
 	return is_array($arr) ? $arr['value'] : $arr;
 }
 
+function convertICStoDateTime($icsDate){
+	// Convert the date from the ics file to a DateTime object
+	$year = substr($icsDate, 0, 4);
+	$month = substr($icsDate, 4, 2);
+	$day = substr($icsDate, 6, 2);
+	$eventDateTime = new DateTime($year . '-' . $month . '-' . $day);
+	return $eventDateTime;
+}
+
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
 	// Sorts the two-dimensional array by the DTSTART key
 	usort($lines['VEVENT'], function($a, $b) {
 		if($a['DTSTART'] && $b['DTSTART']) {
-			$firstEvent = standardizeStartTime($a['DTSTART']);
-			$secondEvent = standardizeStartTime($b['DTSTART']);
-			return $secondEvent <=> $firstEvent;
+			$currentDateTime = new DateTime();
+			$firstEventICS = standardizeStartTime($a['DTSTART']);
+			$secondEventICS = standardizeStartTime($b['DTSTART']);
+			$firstEvent = convertICStoDateTime($firstEventICS);
+			$secondEvent = convertICStoDateTime($secondEventICS);
+			// $firstEvent = parse_ical_date($firstEventICS);
+			// $secondEvent = parse_ical_date($secondEventICS);
+			$firstEventDistance = date_diff($firstEvent, $currentDateTime)->format('%r%a');
+			$secondEventDistance = date_diff($secondEvent, $currentDateTime)->format('%r%a');
+			return $firstEventDistance <=> $secondEventDistance;
+			
 		}
 	});
-	// Returns the latest five events
-	return array_slice($lines['VEVENT'], 0, 4);
-}
+		
+	$latestEvents = array_slice($lines['VEVENT'], 0, 4);
+	return array_filter($latestEvents, function($event){
+		// Filter out events that have already passed
+		$currentDateTime = new DateTime();
+		$eventICS = standardizeStartTime($event['DTSTART']);
+		$eventDateTime = convertICStoDateTime($eventICS);
+		// $eventDateTime = parse_ical_date($eventICS);
+		$eventDistance = date_diff($eventDateTime, $currentDateTime)->format('%r%a');
+		return $eventDistance <= 0;
+	});
+	// return array_slice($lines['VEVENT'], 0, 4);
+		}
+	
 
 function parse_ical_date($date){
 	if(is_string($date)){
@@ -44,7 +72,8 @@ function parse_ical_date($date){
 		$minute = substr($date, 11, 2);
 		$second = substr($date, 13, 2);
 		$timezone = substr($date, 15, 6);
-		$datetime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
+		// $eventDateTime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
+		$datetime = new DateTime($year . '-' . $month . '-' . $day);
 		$currentDateTime = new DateTime();
 		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime, 'currentDateTime' => $currentDateTime);
 	}
@@ -95,7 +124,7 @@ function parse_ical_date($date){
 	 register_block_type( __DIR__ . '/build', [
 		 'editor_script' => 'kcls-events-block',
 	 ]);
-	 
+
 	register_block_type('kcls/events-core', [
 		 'render_callback' => 'kcls_events_block_renderer',
 	 ]);
