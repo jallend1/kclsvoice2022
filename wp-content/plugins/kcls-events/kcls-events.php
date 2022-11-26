@@ -30,30 +30,33 @@ function convertICStoDateTime($icsDate){
 	return $eventDateTime;
 }
 
+function kcls_sort_events($a, $b){
+	$currentDateTime = new DateTime();
+	if($a['DTSTART'] && $b['DTSTART']) {
+		// Converts ICS date to PHP DateTime object
+		$firstEvent = convertICStoDateTime($a['DTSTART']);
+		$secondEvent = convertICStoDateTime($b['DTSTART']);
+		// Sort the array by distance to the current date
+		$firstEventDistance = date_diff($firstEvent, $currentDateTime)->format('%r%a');
+		$secondEventDistance = date_diff($secondEvent, $currentDateTime)->format('%r%a');
+		return $firstEventDistance <=> $secondEventDistance;
+	}
+}
+
+function filter_passed_events($event){
+	// Filter out events that have already passed
+	$currentDateTime = new DateTime();
+	$eventDateTime = convertICStoDateTime($event['DTSTART']);
+	$eventDistance = date_diff($eventDateTime, $currentDateTime)->format('%r%a');
+	return $eventDistance <= 0;
+}
+
 function kcls_get_events($url){
 	$ical = new iCalEasyReader();
 	$lines = $ical->load(file_get_contents($url));
-	
-	usort($lines['VEVENT'], function($a, $b) {
-		$currentDateTime = new DateTime();
-		if($a['DTSTART'] && $b['DTSTART']) {
-			// Converts ICS date to PHP DateTime object
-			$firstEvent = convertICStoDateTime($a['DTSTART']);
-			$secondEvent = convertICStoDateTime($b['DTSTART']);
-			// Sort the array by distance to the current date
-			$firstEventDistance = date_diff($firstEvent, $currentDateTime)->format('%r%a');
-			$secondEventDistance = date_diff($secondEvent, $currentDateTime)->format('%r%a');
-			return $firstEventDistance <=> $secondEventDistance;
-		}
-	});		
+	usort($lines['VEVENT'], 'kcls_sort_events');
 	$latestEvents = array_slice($lines['VEVENT'], 0, 4);
-	return array_filter($latestEvents, function($event){
-		// Filter out events that have already passed
-		$currentDateTime = new DateTime();
-		$eventDateTime = convertICStoDateTime($event['DTSTART']);
-		$eventDistance = date_diff($eventDateTime, $currentDateTime)->format('%r%a');
-		return $eventDistance <= 0;
-	});
+	return array_filter($latestEvents, 'filter_passed_events');
 }
 	
 function parse_ical_date($date){
