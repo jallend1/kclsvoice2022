@@ -69,7 +69,7 @@ function parse_ical_date($date){
 				</div>
 			</header>	
 				<div class="kcls-event-body">
-					<?php echo trim($event['DESCRIPTION']); ?>
+					<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
 					<p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
 					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p>
 					<!-- <p>Year: <?php echo $eventDate['year']; ?></p>
