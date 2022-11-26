@@ -6,7 +6,7 @@ export default function KCLSEventBlock() {
 	const KCLSEventBlockBlocks = [
 		[
 			"core/group",
-			{ className: "kcls-news kcls-section" },
+			{ className: "kcls-events kcls-section" },
 			[
 				[
 					"core/group",

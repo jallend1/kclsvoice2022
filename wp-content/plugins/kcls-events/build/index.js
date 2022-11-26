@@ -88,7 +88,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function KCLSEventBlock() {
   const KCLSEventBlockBlocks = [["core/group", {
-    className: "kcls-news kcls-section"
+    className: "kcls-events kcls-section"
   }, [["core/group", {
     className: "kcls-section-title"
   }, [["core/heading", {
