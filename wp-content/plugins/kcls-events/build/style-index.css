@@ -30,14 +30,26 @@
 .kcls-event-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: #071420 1px solid;
   width: 100%;
   padding-bottom: 1rem;
 }
 
+.kcls-event-header-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #009e57;
+  color: #fff;
+  border-radius: 15px;
+}
+
 .kcls-event-title {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #124a92;
 }
 
 .kcls-event-header-date-day {
