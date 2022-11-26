@@ -59,16 +59,24 @@ function parse_ical_date($date){
 			$eventDate = parse_ical_date($event['DTSTART']);
 			?> 
 			<div class="kcls-event">
-				<h3><?php echo $event['SUMMARY']; ?></h3>
+			<header class="kcls-event-header">
+				<div class="kcls-event-header-date">
+					<div class="kcls-event-header-date-month"><?php echo $eventDate['month']; ?></div>
+					<div class="kcls-event-header-date-day"><?php echo $eventDate['day']; ?></div>
+				</div>
+				<div>
+					<h3 class="kcls-event-title"><?php echo $event['SUMMARY']; ?></h3>
+				</div>
+			</header>	
 				<div class="kcls-event-body">
-					<p>What: <?php echo $event['DESCRIPTION']; ?></p>
+					<?php echo trim($event['DESCRIPTION']); ?>
 					<p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
 					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p>
-					<p>Year: <?php echo $eventDate['year']; ?></p>
+					<!-- <p>Year: <?php echo $eventDate['year']; ?></p>
 					<p>Month: <?php echo $eventDate['month']; ?></p>
 					<p>Day: <?php echo $eventDate['day']; ?></p>
 					<p>DateTime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
-					<p>CurrentDateTime: <?php echo $eventDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p>
+					<p>CurrentDateTime: <?php echo $eventDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p> -->
 					<!-- TODO:  -->
 					<?php echo date_diff($eventDate['datetime'], $eventDate['currentDateTime'])->format('%r%a'); ?>
 				</div>

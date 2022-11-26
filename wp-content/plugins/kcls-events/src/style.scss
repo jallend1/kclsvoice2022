@@ -13,7 +13,7 @@
 .kcls-event {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	// justify-content: space-evenly;
 	align-items: center;
 	padding: 2rem;
 	border-radius: 15px;
@@ -25,5 +25,24 @@
 	margin: 1rem;
 }
 
-.kcls-profile-card {
+.kcls-event-header {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: #071420 1px solid;
+	width: 100%;
+	padding-bottom: 1rem;
+}
+
+.kcls-event-title {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.kcls-event-header-date-day {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.kcls-event-header-date-month {
+	font-size: 0.75rem;
 }
