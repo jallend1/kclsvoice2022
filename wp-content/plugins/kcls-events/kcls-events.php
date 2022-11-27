@@ -82,31 +82,34 @@ function parse_ical_date($date){
 	?>
 	<div class="kcls-event-container">
 		<?php foreach($events as $event): 
-			$eventDate = parse_ical_date($event['DTSTART']);
-			$dateObject = DateTime::createFromFormat('!m', $eventDate['month']);
+			$eventStartDate = parse_ical_date($event['DTSTART']);
+			$eventEndDate = parse_ical_date($event['DTEND']);
+			$dateObject = DateTime::createFromFormat('!m', $eventStartDate['month']);
 			$prettyMonth = $dateObject->format('M');
 			?> 
 			<div class="kcls-event">
 			<header class="kcls-event-header">
 				<div class="kcls-event-header-date">
 					<div class="kcls-event-header-date-month"><?php echo $prettyMonth; ?></div>
-					<div class="kcls-event-header-date-day"><?php echo $eventDate['day']; ?></div>
+					<div class="kcls-event-header-date-day"><?php echo $eventStartDate['day']; ?></div>
 				</div>
 				<div>
 					<h3 class="kcls-event-title"><?php echo $event['SUMMARY']; ?></h3>
+					<h4 class="kcls-event-time"><?php echo $eventStartDate['hour'] . ':' . $eventStartDate['minute'] . ' - ' . $eventEndDate['hour'] . ':' . $eventEndDate['minute']; ?></h4>
+					
 				</div>
 			</header>	
 				<div class="kcls-event-body">
 					<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
 					<!-- <p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
 					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p> -->
-					<!-- <p>Year: <?php echo $eventDate['year']; ?></p>
-					<p>Month: <?php echo $eventDate['month']; ?></p>
-					<p>Day: <?php echo $eventDate['day']; ?></p>
-					<p>DateTime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
-					<p>CurrentDateTime: <?php echo $eventDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p> -->
+					<!-- <p>Year: <?php echo $eventStartDate['year']; ?></p>
+					<p>Month: <?php echo $eventStartDate['month']; ?></p>
+					<p>Day: <?php echo $eventStartDate['day']; ?></p>
+					<p>DateTime: <?php echo $eventStartDate['datetime']->format('Y-m-d H:i:s'); ?></p>
+					<p>CurrentDateTime: <?php echo $eventStartDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p> -->
 					<!-- TODO:  -->
-					<!-- <?php echo date_diff($eventDate['datetime'], $eventDate['currentDateTime'])->format('%r%a'); ?> -->
+					<!-- <?php echo date_diff($eventStartDate['datetime'], $eventStartDate['currentDateTime'])->format('%r%a'); ?> -->
 				</div>
 			</div>
 		<?php endforeach; ?>
