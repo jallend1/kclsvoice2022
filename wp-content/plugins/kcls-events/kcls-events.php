@@ -52,11 +52,12 @@ function filter_passed_events($event){
 }
 
 function kcls_get_events($url){
-	$ical = new iCalEasyReader();
-	$lines = $ical->load(file_get_contents($url));
+	$ics = new iCalEasyReader();
+	$lines = $ics->load(file_get_contents($url));
 	usort($lines['VEVENT'], 'kcls_sort_events');
-	$latestEvents = array_slice($lines['VEVENT'], 0, 4);
-	return array_filter($latestEvents, 'filter_passed_events');
+	$filteredEvents = array_filter($lines['VEVENT'], 'filter_passed_events');	
+	$latestEvents = array_slice($filteredEvents, 0, 4);
+	return $latestEvents;
 }
 	
 function parse_ical_date($date){
@@ -105,7 +106,7 @@ function parse_ical_date($date){
 					<p>DateTime: <?php echo $eventDate['datetime']->format('Y-m-d H:i:s'); ?></p>
 					<p>CurrentDateTime: <?php echo $eventDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p> -->
 					<!-- TODO:  -->
-					<?php echo date_diff($eventDate['datetime'], $eventDate['currentDateTime'])->format('%r%a'); ?>
+					<!-- <?php echo date_diff($eventDate['datetime'], $eventDate['currentDateTime'])->format('%r%a'); ?> -->
 				</div>
 			</div>
 		<?php endforeach; ?>
