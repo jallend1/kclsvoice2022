@@ -62,24 +62,11 @@ function kcls_get_events($url){
 	
 function parse_ical_date($date){
 	if(is_string($date)){
-		
-		$year = substr($date, 0, 4);
-		$month = substr($date, 4, 2);
-		$day = substr($date, 6, 2);
-		$hour = substr($date, 9, 2);
-		$minute = substr($date, 11, 2);
-		$second = substr($date, 13, 2);
-		$timezone = substr($date, 15, 6);
-		// $eventDateTime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
-		$datetime = new DateTime($year . '-' . $month . '-' . $day);
-		$datetime = date_create($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second);
-		echo $date . "   ";
-		echo date_format($datetime, 'F j, Y H:i:s');
+		$calendarDate = substr($date, 0, 8);
+		$time = substr($date, 9, 6);
+		$datetime = date_create($calendarDate . ' ' . $time);
 		$datetime->setTimezone(new DateTimeZone('America/Los_Angeles'));
-		echo date_format($datetime, 'F j, Y H:i:s');
-		$currentDateTime = new DateTime();
-		// echo date_format($currentDateTime, 'F j, Y H:i:s');
-		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime, 'currentDateTime' => $currentDateTime);
+		return $datetime;
 	}
 }
 
@@ -91,32 +78,26 @@ function parse_ical_date($date){
 		<?php foreach($events as $event): 
 			$eventStartDate = parse_ical_date($event['DTSTART']);
 			$eventEndDate = parse_ical_date($event['DTEND']);
-			$dateObject = DateTime::createFromFormat('!m', $eventStartDate['month']);
-			$prettyMonth = $dateObject->format('M');
 			?> 
 			<div class="kcls-event">
 			<header class="kcls-event-header">
 				<div class="kcls-event-header-date">
-					<div class="kcls-event-header-date-month"><?php echo $prettyMonth; ?></div>
-					<div class="kcls-event-header-date-day"><?php echo $eventStartDate['day']; ?></div>
+					<div class="kcls-event-header-date-month">
+						<?php echo date_format($eventStartDate, 'M'); ?>
+					</div>
+					<div class="kcls-event-header-date-day">
+						<?php echo date_format($eventStartDate, 'd'); ?>
+					</div>
 				</div>
 				<div>
 					<h3 class="kcls-event-title"><?php echo $event['SUMMARY']; ?></h3>
-					<h4 class="kcls-event-time"><?php echo $eventStartDate['hour'] . ':' . $eventStartDate['minute'] . ' - ' . $eventEndDate['hour'] . ':' . $eventEndDate['minute']; ?></h4>
-					
+					<h4 class="kcls-event-time">
+						<?php echo date_format($eventStartDate, 'g:i a') . ' - ' . date_format($eventEndDate, 'g:i a'); ?>
+					</h4>
 				</div>
 			</header>	
 				<div class="kcls-event-body">
 					<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
-					<!-- <p>When: <?php echo standardizeStartTime($event['DTSTART']); ?></p>
-					<p>Until: <?php echo standardizeStartTime($event['DTEND']); ?></p> -->
-					<!-- <p>Year: <?php echo $eventStartDate['year']; ?></p>
-					<p>Month: <?php echo $eventStartDate['month']; ?></p>
-					<p>Day: <?php echo $eventStartDate['day']; ?></p>
-					<p>DateTime: <?php echo $eventStartDate['datetime']->format('Y-m-d H:i:s'); ?></p>
-					<p>CurrentDateTime: <?php echo $eventStartDate['currentDateTime']->format('Y-m-d H:i:s'); ?></p> -->
-					<!-- TODO:  -->
-					<!-- <?php echo date_diff($eventStartDate['datetime'], $eventStartDate['currentDateTime'])->format('%r%a'); ?> -->
 				</div>
 			</div>
 		<?php endforeach; ?>
