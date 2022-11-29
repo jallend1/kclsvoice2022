@@ -39,7 +39,7 @@ function kcls_sort_events($a, $b){
 		// Sort the array by distance to the current date
 		$firstEventDistance = date_diff($firstEvent, $currentDateTime)->format('%r%a');
 		$secondEventDistance = date_diff($secondEvent, $currentDateTime)->format('%r%a');
-		return $firstEventDistance <=> $secondEventDistance;
+		return $secondEventDistance <=> $firstEventDistance ;
 	}
 }
 
