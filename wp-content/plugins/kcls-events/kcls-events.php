@@ -62,6 +62,7 @@ function kcls_get_events($url){
 	
 function parse_ical_date($date){
 	if(is_string($date)){
+		
 		$year = substr($date, 0, 4);
 		$month = substr($date, 4, 2);
 		$day = substr($date, 6, 2);
@@ -71,7 +72,13 @@ function parse_ical_date($date){
 		$timezone = substr($date, 15, 6);
 		// $eventDateTime = new DateTime($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second . ' ' . $timezone);
 		$datetime = new DateTime($year . '-' . $month . '-' . $day);
+		$datetime = date_create($year . '-' . $month . '-' . $day . ' ' . $hour . ':' . $minute . ':' . $second);
+		echo $date . "   ";
+		echo date_format($datetime, 'F j, Y H:i:s');
+		$datetime->setTimezone(new DateTimeZone('America/Los_Angeles'));
+		echo date_format($datetime, 'F j, Y H:i:s');
 		$currentDateTime = new DateTime();
+		// echo date_format($currentDateTime, 'F j, Y H:i:s');
 		return array('year' => $year, 'month' => $month, 'day' => $day, 'hour' => $hour, 'minute' => $minute, 'datetime' => $datetime, 'currentDateTime' => $currentDateTime);
 	}
 }
