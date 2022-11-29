@@ -16,16 +16,19 @@
 .kcls-event-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-	// grid-gap: 0.75rem;
 	padding: 0 2rem;
 	margin: 1rem auto;
 	justify-content: space-around;
 }
 
+.kcls-events-none {
+	text-align: center;
+	padding: 2rem 0;
+}
+
 .kcls-event {
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-evenly;
 	align-items: center;
 	padding: 2rem;
 	border-radius: 15px;
@@ -51,7 +54,6 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 1rem;
-	// background-color: #fff9c4;
 	background-color: $kcls-green;
 	color: #fff;
 	border-radius: 15px;

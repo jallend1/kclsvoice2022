@@ -3,10 +3,10 @@
   "apiVersion": 2,
   "name": "kcls/kcls-events",
   "version": "0.1.0",
-  "title": "KCLS Events",
+  "title": "Local 1857 Events",
   "category": "widgets",
   "icon": "smiley",
-  "description": "Block that displays upcoming union events from the Google Calendar",
+  "description": "Block that displays upcoming Local 1857 union events from the Google Calendar",
   "supports": {
     "html": false
   },

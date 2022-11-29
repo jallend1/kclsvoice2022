@@ -22,6 +22,11 @@
   justify-content: space-around;
 }
 
+.kcls-events-none {
+  text-align: center;
+  padding: 2rem 0;
+}
+
 .kcls-event {
   display: flex;
   flex-direction: column;

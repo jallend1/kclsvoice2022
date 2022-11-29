@@ -73,51 +73,51 @@ function parse_ical_date($date){
  function kcls_events_block_renderer($attr){
 	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');
 	ob_start();
-	?>
-	<div class="kcls-event-container">
-		<?php foreach($events as $event): 
-			$eventStartDate = parse_ical_date($event['DTSTART']);
-			$eventEndDate = parse_ical_date($event['DTEND']);
-			?> 
-			<div class="kcls-event">
-			<header class="kcls-event-header">
-				<div class="kcls-event-header-date">
-					<div class="kcls-event-header-date-month">
-						<?php echo date_format($eventStartDate, 'M'); ?>
+	if(count($events) === 0): ?>
+		<h4 class="kcls-events-none">No events have been found at this time. If you believe this is in error, please reach out to the eBoard for more details.</h4>
+	<?php else: ?>
+		<div class="kcls-event-container">	
+			<?php foreach($events as $event): 
+				$eventStartDate = parse_ical_date($event['DTSTART']);
+				$eventEndDate = parse_ical_date($event['DTEND']);
+				?> 
+				<div class="kcls-event">
+					<header class="kcls-event-header">
+						<div class="kcls-event-header-date">
+							<div class="kcls-event-header-date-month">
+								<?php echo date_format($eventStartDate, 'M'); ?>
+							</div>
+							<div class="kcls-event-header-date-day">
+								<?php echo date_format($eventStartDate, 'd'); ?>
+							</div>
+						</div>
+						<div>
+							<h3 class="kcls-event-title"><?php echo $event['SUMMARY']; ?></h3>
+							<h4 class="kcls-event-time">
+								<?php echo date_format($eventStartDate, 'g:i a') . ' - ' . date_format($eventEndDate, 'g:i a'); ?>
+							</h4>
+						</div>
+					</header>	
+					<div class="kcls-event-body">
+						<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
 					</div>
-					<div class="kcls-event-header-date-day">
-						<?php echo date_format($eventStartDate, 'd'); ?>
-					</div>
 				</div>
-				<div>
-					<h3 class="kcls-event-title"><?php echo $event['SUMMARY']; ?></h3>
-					<h4 class="kcls-event-time">
-						<?php echo date_format($eventStartDate, 'g:i a') . ' - ' . date_format($eventEndDate, 'g:i a'); ?>
-					</h4>
-				</div>
-			</header>	
-				<div class="kcls-event-body">
-					<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
-				</div>
-			</div>
-		<?php endforeach; ?>
-	</div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?> 
 	<?php
 	return ob_get_clean();
 }
 
- function create_block_kcls_events_block_init() {
-	 
-	 wp_register_script('kcls-events-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
-	 register_block_type( __DIR__ . '/build', [
-		 'editor_script' => 'kcls-events-block',
-	 ]);
+function create_block_kcls_events_block_init() { 
+	wp_register_script('kcls-events-block', plugins_url('build/index.js', __FILE__), array('wp-blocks', 'wp-element', 'wp-editor'));
+	register_block_type( __DIR__ . '/build', [
+		'editor_script' => 'kcls-events-block',
+	]);
 
 	register_block_type('kcls/events-core', [
-		 'render_callback' => 'kcls_events_block_renderer',
-	 ]);
-
-
+		'render_callback' => 'kcls_events_block_renderer',
+	]);
 }
 
 add_action( 'init', 'create_block_kcls_events_block_init' );
