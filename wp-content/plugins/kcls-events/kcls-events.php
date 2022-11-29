@@ -70,6 +70,22 @@ function parse_ical_date($date){
 	}
 }
 
+function kcls_compile_events_data(){
+	$rawEvents = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');
+	$eventsData = [];
+	foreach($rawEvents as $event){
+		$eventData = [];
+		$eventData['title'] = $event['SUMMARY'];
+		$eventData['description'] = $event['DESCRIPTION'];
+		$eventData['location'] = $event['LOCATION'];
+		$eventData['start'] = parse_ical_date($event['DTSTART']);
+		$eventData['end'] = parse_ical_date($event['DTEND']);
+		$eventsData[] = $eventData;
+	}
+	return $eventsData;
+}
+
+
  function kcls_events_block_renderer($attr){
 	$events = kcls_get_events('https://calendar.google.com/calendar/ical/1857comms%40gmail.com/public/basic.ics');
 	ob_start();
@@ -117,7 +133,14 @@ function create_block_kcls_events_block_init() {
 
 	register_block_type('kcls/events-core', [
 		'render_callback' => 'kcls_events_block_renderer',
-	]);
+		'attributes' => [
+			'events' => [
+				'type' => 'array',
+				'default' => kcls_compile_events_data(),
+			],
+			]
+		]
+	);
 }
 
 add_action( 'init', 'create_block_kcls_events_block_init' );
