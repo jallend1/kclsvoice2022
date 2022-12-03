@@ -111,10 +111,8 @@ function KCLSEventBlock() {
   }], ["core/button", {
     text: "See All Events",
     className: "kcls-read-blog-button",
-    url: "/events/"
-  }]]], ["kcls/events-core", {
-    content: "This is a placeholder for the KCLS Events Block."
-  }]]]];
+    url: "/meetings/"
+  }]]], ["kcls/events-core"]]]];
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
     className: "kcls-event-block"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InnerBlocks, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)(), {

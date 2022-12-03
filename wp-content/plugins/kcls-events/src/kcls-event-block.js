@@ -25,15 +25,12 @@ export default function KCLSEventBlock() {
 							{
 								text: "See All Events",
 								className: "kcls-read-blog-button",
-								url: "/events/",
+								url: "/meetings/",
 							},
 						],
 					],
 				],
-				[
-					"kcls/events-core",
-					{ content: "This is a placeholder for the KCLS Events Block." },
-				],
+				["kcls/events-core"],
 			],
 		],
 	];
