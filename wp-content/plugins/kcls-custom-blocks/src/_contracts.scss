@@ -5,11 +5,24 @@
 .kcls-contracts-columns {
 	max-width: 90%;
 	margin: auto;
+	min-height: 100%;
 }
 
 .kcls-know-your-contract > div > .kcls-section-title > div {
 	display: flex;
 	h2 {
 		padding-right: 2rem;
+	}
+}
+
+.kcls-contracts-column {
+	.kcls-communications-item {
+		height: 100%;
+		.kcls-communications-item-heading {
+			font-size: 1.5rem;
+		}
+		.kcls-communications-item-text {
+			font-size: 0.9rem;
+		}
 	}
 }

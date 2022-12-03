@@ -59,12 +59,6 @@
 	border-radius: 15px;
 }
 
-.kcls-event-title {
-	font-size: 1.25rem;
-	font-weight: bold;
-	color: $kcls-blue;
-}
-
 .kcls-event-header-date-day {
 	font-size: 1.25rem;
 	font-weight: bold;
@@ -72,6 +66,16 @@
 
 .kcls-event-header-date-month {
 	font-size: 0.75rem;
+}
+
+.kcls-event-title {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: $kcls-blue;
+}
+
+.kcls-event-time {
+	padding-top: 0.75rem;
 }
 
 .kcls-event-body {
