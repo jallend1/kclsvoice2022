@@ -33,10 +33,10 @@ function convertICStoDateTime($icsDate){
 function get1857EventImage($eventName){
 	$eventImage = '';
 	if(strpos($eventName, 'Listening Session') !== false): $eventImage = 'assets/listening.png';
-	elseif (strpos($eventName, 'Executive Board') === false): $eventImage = 'assets/meeting.png';
-	elseif(strpos($eventName, 'General Membership Meeting') === false): $eventImage = 'assets/discussion.png';
+	elseif (strpos($eventName, 'Executive Board') !== false): $eventImage = 'assets/meeting.png';
+	elseif(strpos($eventName, 'General Membership Meeting') !== false): $eventImage = 'assets/discussion.png';
+	else: $eventImage = 'assets/local1857logo.png';
 	endif; 
-	// Prepend plugin directory to the image path
 	return plugin_dir_url( __FILE__ ) . $eventImage;
 }
 
