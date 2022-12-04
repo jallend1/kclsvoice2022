@@ -30,6 +30,16 @@ function convertICStoDateTime($icsDate){
 	return $eventDateTime;
 }
 
+function get1857EventImage($eventName){
+	$eventImage = '';
+	if(strpos($eventName, 'Listening Session') !== false): $eventImage = 'assets/listening.png';
+	elseif (strpos($eventName, 'Executive Board') === false): $eventImage = 'assets/meeting.png';
+	elseif(strpos($eventName, 'General Membership Meeting') === false): $eventImage = 'assets/discussion.png';
+	endif; 
+	// Prepend plugin directory to the image path
+	return plugin_dir_url( __FILE__ ) . $eventImage;
+}
+
 function kcls_sort_events($a, $b){
 	$currentDateTime = new DateTime();
 	if($a['DTSTART'] && $b['DTSTART']) {
@@ -117,6 +127,9 @@ function kcls_compile_events_data(){
 					<div class="kcls-event-body">
 						<?php echo str_replace("<br>", "", $event['DESCRIPTION']); ?>
 					</div>
+					<footer class="kcls-event-logo">
+						<img src="<?php echo get1857EventImage($event['SUMMARY']); ?>" alt="<?php echo $event['SUMMARY']; ?>" />					
+					</footer>
 				</div>
 			<?php endforeach; ?>
 		</div>

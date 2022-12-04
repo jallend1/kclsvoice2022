@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 15px 15px 15px #071420;
@@ -45,9 +46,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: #071420 1px solid;
+  border-bottom: #124a92 1px solid;
   width: 100%;
   padding-bottom: 1rem;
+}
+
+.kcls-event-header-left {
+  display: flex;
+  flex-direction: column;
 }
 
 .kcls-event-header-date {
@@ -67,6 +73,16 @@
 
 .kcls-event-header-date-month {
   font-size: 0.75rem;
+}
+
+.kcls-event footer {
+  width: 100%;
+  border-top: solid 1px #124a92;
+  padding-top: 1rem;
+}
+
+.kcls-event-logo img {
+  max-width: 30px;
 }
 
 .kcls-event-title {
