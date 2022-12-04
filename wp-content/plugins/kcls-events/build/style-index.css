@@ -75,6 +75,11 @@
   font-size: 0.75rem;
 }
 
+.kcls-event .kcls-event-body {
+  padding: 1rem;
+  line-height: 1.35rem;
+  font-size: 0.9rem;
+}
 .kcls-event footer {
   width: 100%;
   border-top: solid 1px #124a92;
@@ -93,11 +98,6 @@
 
 .kcls-event-time {
   padding-top: 0.75rem;
-}
-
-.kcls-event-body {
-  padding: 1rem;
-  line-height: 1.5rem;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

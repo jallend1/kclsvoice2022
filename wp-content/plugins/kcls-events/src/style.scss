@@ -75,6 +75,12 @@
 }
 
 .kcls-event {
+	.kcls-event-body {
+		padding: 1rem;
+		line-height: 1.35rem;
+		font-size: 0.9rem;
+	}
+
 	footer {
 		width: 100%;
 		border-top: solid 1px $kcls-blue;
@@ -96,9 +102,4 @@
 
 .kcls-event-time {
 	padding-top: 0.75rem;
-}
-
-.kcls-event-body {
-	padding: 1rem;
-	line-height: 1.5rem;
 }
