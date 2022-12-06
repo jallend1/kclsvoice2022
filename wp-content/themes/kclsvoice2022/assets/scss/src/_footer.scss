@@ -4,16 +4,18 @@
 
 .kcls-footer {
   width: 100%;
-  background-color: $kcls-light;
+  background-color: $kcls-blue;
+  margin-top: 1rem;
 }
 
 .kcls-voice-footer {
+  border-top: solid 1px $kcls-light;
   border-bottom: solid 1px $kcls-green;
   padding-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   a {
-    color: black;
+    color: $kcls-light;
   }
 }
 
@@ -21,9 +23,10 @@
   font-size: 0.75rem;
   text-align: center;
   padding-top: 0.5rem;
+  color: $kcls-light;
   a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(65, 64, 64);
+    color: $kcls-light;
   }
 }
