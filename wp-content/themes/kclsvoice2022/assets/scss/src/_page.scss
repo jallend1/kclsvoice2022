@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: calc(100vh - 100px - 100px); */
   background-color: $kcls-light;
   position: relative;
   background: rgb(18, 74, 146);
@@ -19,6 +18,7 @@
   color: white;
   width: 100%;
   min-height: 40vh;
+  min-height: 200px;
   background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(15, 15, 15, 0.8)),
     url(../../images/bookshelves.jpg);
   background-size: cover;
