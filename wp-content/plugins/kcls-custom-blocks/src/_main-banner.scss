@@ -56,3 +56,21 @@
 	justify-content: flex-end;
 	padding: 2rem;
 }
+
+@media (max-width: 900px) {
+	.kcls-hero-content > div {
+		grid-template-columns: 1fr;
+		margin: 0;
+		padding: 0;
+
+		.kcls-right-banner > div {
+			margin: 0;
+			padding: 0;
+		}
+
+		.kcls-cta-button a {
+			font-size: 1.25rem;
+			padding: 1rem;
+		}
+	}
+}

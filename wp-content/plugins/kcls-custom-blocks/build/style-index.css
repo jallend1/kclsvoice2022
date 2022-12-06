@@ -59,6 +59,21 @@
   padding: 2rem;
 }
 
+@media (max-width: 900px) {
+  .kcls-hero-content > div {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+  .kcls-hero-content > div .kcls-right-banner > div {
+    margin: 0;
+    padding: 0;
+  }
+  .kcls-hero-content > div .kcls-cta-button a {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+}
 .kcls-contracts-columns {
   max-width: 90%;
   margin: auto;
