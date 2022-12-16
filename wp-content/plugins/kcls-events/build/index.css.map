@@ -1,1 +1,0 @@
-{"version":3,"file":"index.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://kcls-events/./src/editor.scss"],"sourcesContent":[".wp-block-create-block-kcls-events {\n\tborder: 1px dotted #f00;\n}\n"],"names":[],"sourceRoot":""}
