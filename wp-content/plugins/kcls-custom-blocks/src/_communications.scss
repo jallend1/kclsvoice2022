@@ -7,10 +7,9 @@
 }
 
 .kcls-communications-content > div {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, 300px);
-	grid-gap: 2rem;
-	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding: 2rem;
 }
 
@@ -19,12 +18,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 1rem;
 	padding: 2rem;
 	border-radius: 15px;
 	box-shadow: 15px 15px 15px #071420;
 	color: #071420;
 	background-color: #fff;
 	text-align: center;
+	max-width: 300px;
 }
 
 .kcls-communications-image {
