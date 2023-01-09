@@ -178,6 +178,7 @@
   background-color: #fff;
   max-width: 300px;
   text-align: center;
+  margin: 1rem 0;
 }
 
 .kcls-profile-image {
@@ -198,12 +199,10 @@
 }
 
 .kcls-profile-card-section-content > div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 325px);
-  grid-gap: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 2rem;
-  align-items: center;
 }
 
 .wp-block-create-block-kcls-custom-blocks {
