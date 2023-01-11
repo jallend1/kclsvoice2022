@@ -89,12 +89,20 @@
 
 .kcls-contracts-column .kcls-communications-item {
   height: 100%;
+  margin: 0 1rem;
 }
 .kcls-contracts-column .kcls-communications-item .kcls-communications-item-heading {
   font-size: 1.5rem;
 }
 .kcls-contracts-column .kcls-communications-item .kcls-communications-item-text {
   font-size: 0.9rem;
+}
+
+.kcls-contracts-column > .kcls-communications-item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .kcls-communications {
