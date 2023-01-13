@@ -29,8 +29,10 @@ function kcls_get_post_image() {
     global $post;
     $first_img = '';
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches [1] [0];
-    if(!$first_img) {
+    if( count($matches[1]) > 0 ) {
+        $first_img = $matches[1][0];
+    }
+    else{
         $first_img = get_template_directory_uri() . '/assets/images/local1857logo.png';
     }
     return $first_img;
